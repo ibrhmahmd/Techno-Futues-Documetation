@@ -4,15 +4,6 @@
 - Basic computer skills
 - VS Code installed 
 
-## Teaching Approach
-Each 3-hour session follows this structure:
-- Quick review of previous session and homework (10 min)
-- Overview of today's topics (5 min)
-- Three parts:
-  - Demo: I code (20-30 min)
-  - Apply: You code (15-20 min)
-  - Feedback and help
-- Wrap-up and homework (10 min)
 
 ## Session 1: HTML Introduction & Basic Structure
 

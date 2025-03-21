@@ -6,6 +6,8 @@
 - VS Code installed
 - Chrome or Edge browser
 
+
+
 ## Course Structure
 
 ### HTML (5 sessions)
@@ -30,12 +32,18 @@
 - **Session 9:** Animations & Transitions
 - **Session 10:** CSS Best Practices & Advanced Techniques
 
+
+
+
 ### HTML+CSS Projects (5 sessions)
 - **Session 1:** Project Planning
 - **Session 2:** Static Website - Part 1
 - **Session 3:** Static Website - Part 2
 - **Session 4:** Portfolio Website - Part 1
 - **Session 5:** Portfolio Website - Part 2
+
+
+
 
 ### JavaScript (15 sessions)
 - **Session 1:** JavaScript Introduction & Basic Syntax
@@ -54,8 +62,7 @@
 - **Session 14:** Final Project - Part 1
 - **Session 15:** Final Project - Part 2
 
-## Learning Approach
-
+## Approach
 Each 3-hour session follows this structure:
 - **Review:** Quick review of previous session and homework (10 min)
 - **Intro:** Overview of today's topics (5 min)
@@ -66,7 +73,6 @@ Each 3-hour session follows this structure:
 - **Wrap-up:** Summary and homework assignment (10 min)
 
 ## Assessment Method
-
 - In-class coding exercises
 - Homework assignments
 - Mini-projects
