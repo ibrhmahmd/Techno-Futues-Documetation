@@ -1,9 +1,6 @@
 
-### **Quick HTML Revision with Code Snippets**
 
----
-
-### **1️⃣ Introduction to HTML**
+### 1️⃣ Introduction to HTML
 		
 📌 **Basic Structure of an HTML Page:**
 
