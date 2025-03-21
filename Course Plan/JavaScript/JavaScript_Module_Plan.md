@@ -4,7 +4,7 @@
 - Completed HTML Module
 - Completed CSS Module
 - VS Code with JavaScript extensions
-
+ 
 ## Teaching Approach
 Each 3-hour session follows this structure:
 - Quick review of previous session and homework check (10 minutes)
