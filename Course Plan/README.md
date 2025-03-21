@@ -33,25 +33,18 @@ Each 3-hour session follows a consistent structure:
 
 ## Prerequisites for Students
 
-- Basic computer literacy
+- Basic computer skills
 - Familiarity with using a web browser
 - No prior programming experience required
 - A computer with VS Code installed
 - Chrome or Edge browser
 
-## Offline Compatibility
 
-All course materials and resources are designed to work offline:
-- Local copies of necessary libraries
-- Downloadable code examples
-- Offline-accessible documentation
-- Self-contained project resources
- 
 ## Assessment Method
 
 The course uses project-based assessment with:
 - In-class exercises
-- Homework assignments
+- Assignments
 - Mini-projects throughout each module
 - Final projects that combine all learned skills
 

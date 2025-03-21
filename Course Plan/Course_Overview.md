@@ -69,15 +69,28 @@
 
 ## Learning Approach
 
-Each session includes:
-- Theoretical instruction (~ 1 hour)
-- Guided practice (~ 1 hour)
-- Independent exercises/mini-projects (~ 1 hour)
-- Homework assignments
+Each 3-hour session follows this structure:
+- **Start:** Quick review of previous session and homework check
+- **Introduction:** Brief overview of topics to be covered in the session
+- **Part 1:** 
+  - Instructor demonstrates code with explanation (20-30 minutes)
+  - Students apply the demonstrated concepts (15-20 minutes)
+  - Instructor provides feedback and assistance
+- **Part 2:** 
+  - Instructor demonstrates new concepts (20-30 minutes)
+  - Students apply these concepts (15-20 minutes)
+  - Instructor provides feedback and assistance
+- **Part 3:** 
+  - Instructor demonstrates final concepts (20-30 minutes)
+  - Students apply these concepts (15-20 minutes)
+  - Instructor provides feedback and assistance
+- **Wrap-up:** Summary of key points and assignment of homework
+
+This iterative "I code, you code" approach ensures students get immediate practice with each new concept.
 
 ## Assessment Method
 
-- In-class exercises
+- In-class coding exercises
 - Homework assignments
 - Mini-projects
 - Final portfolio project 
