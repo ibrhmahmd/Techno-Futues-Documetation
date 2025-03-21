@@ -6,7 +6,6 @@
 - Start each session with a quick recap of the previous session
 - Use the "I do, we do, you do" approach: demonstrate, practice together, then let students try independently
 - Take short breaks every 50-60 minutes to maintain focus
-- Keep track of time for each section to ensure all content is covered
 - Reserve the last 5-10 minutes of each session for questions and clarification
 
 ### Student Engagement
@@ -85,16 +84,13 @@
 ### Downloadable Content
 - Create a course resources package for offline use, including:
   - HTML/CSS/JS cheat sheets
-  - Code snippets and templates
   - Exercise starter files
   - Project assets (images, fonts, etc.)
   - Reference documentation in PDF format
 
 ### Local Development Environment
 - Provide detailed setup instructions for VS Code
-- Include recommended VS Code extensions as local files
 - Create project templates for different types of assignments
-- Provide a library of common resources (reset.css, normalize.css, etc.)
 - Include local copies of fonts and icons
 
 ## Assessment Methods
@@ -102,13 +98,11 @@
 ### Formative Assessment
 - In-class coding exercises
 - Code reviews
-- Quick quizzes at the start/end of sessions
 - Observation during guided practice
 - Peer teaching opportunities
 
 ### Summative Assessment
 - Project-based assessments
-- Code challenges
 - Portfolio development
 - Final comprehensive project
 
@@ -120,34 +114,13 @@
 - Provide visual examples of completed code
 - Use color-coding in syntax highlighting
 
-### Auditory Learners
-- Explain concepts verbally
-- Encourage discussion and Q&A
-- Have students explain concepts in their own words
-- Use analogies and stories to explain technical concepts
 
-### Kinesthetic Learners
-- Provide plenty of hands-on exercises
-- Use physical metaphors (e.g., box model with actual boxes)
-- Encourage students to write code from scratch
-- Incorporate activities where students move around the classroom
 
 ## Common Challenges and Solutions
 
 ### Challenge: Students at Different Skill Levels
 **Solution:** Prepare tiered exercises (basic, intermediate, advanced) and allow students to progress at their own pace.
 
-### Challenge: Technical Problems
-**Solution:** Create a troubleshooting guide for common issues and setup peer support pairs.
-
-### Challenge: Maintaining Engagement in Long Sessions
-**Solution:** Mix theoretical content with practical exercises and introduce short, relevant coding challenges.
-
-### Challenge: Abstract Concepts in JavaScript
-**Solution:** Use visual aids, real-world analogies, and build concepts incrementally.
-
-### Challenge: Keeping Up with Course Pace
-**Solution:** Provide recorded sessions or detailed notes, and offer additional support hours.
 
 ## Additional Resources for Instructors
 
