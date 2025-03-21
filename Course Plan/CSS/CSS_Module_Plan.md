@@ -1,165 +1,153 @@
 
 ## Prerequisites
 - Completed HTML Module
-- VS Code with Live Server and CSS extensions
-
-## Teaching Approach
-Each 3-hour session follows this structure:
-- Quick review of previous session and homework check (10 minutes)
-- Brief overview of topics for the current session (5 minutes)
-- Three cycles of:
-  - Instructor demonstration and explanation (20-30 minutes)
-  - Student application of concepts (15-20 minutes)
-  - Feedback and assistance
-- Wrap-up and homework assignment (10 minutes)
 
 ## Session 1: CSS Introduction & Selectors
 
 ### Review & Introduction
-- Review of HTML concepts
-- Introduction to CSS and why we need it
-- Overview of topics for the session
+- Review HTML concepts
+- Why we need CSS
 
 ### Part 1: CSS Integration Methods
-**Instructor Demonstrates:**
-- Three ways to apply CSS:
-  - Inline CSS with `style` attribute
-  - Internal CSS with `<style>` tags
-  - External CSS with .css files and `<link>` tags
-- Basic CSS syntax (selectors, properties, values)
+**Demo:**
+- Three ways to add CSS:
+  - Inline (style attribute)
+  - Internal (style tags)
+  - External (CSS files and link tags)
+- Basic syntax (selectors, properties, values)
 - CSS comments
 
-**Students Apply:**
-- Create a simple HTML page with headings and paragraphs
-- Apply styling using all three methods
-- Write proper CSS comments
+**Apply:**
+- Create HTML page with headings and paragraphs
+- Style it using all three methods
+- Write comments
 
 ### Part 2: Basic Selectors
-**Instructor Demonstrates:**
+**Demo:**
 - Element selectors (p, h1, div)
 - Class selectors (.classname)
 - ID selectors (#idname)
 - Combining selectors
 
-**Students Apply:**
-- Add classes and IDs to HTML elements
-- Create CSS rules using different selector types
-- Apply different styles to elements with the same tag but different classes
+**Apply:**
+- Add classes and IDs to elements
+- Create CSS rules with different selectors
+- Style same tags with different classes
 
 ### Part 3: Inspecting with DevTools
-**Instructor Demonstrates:**
+**Demo:**
 - Opening browser DevTools
 - Inspecting elements
-- Viewing applied CSS
-- Making temporary CSS changes in the browser
+- Viewing CSS
+- Making temporary changes
 
-**Students Apply:**
-- Inspect their own page with DevTools
-- Make temporary changes using DevTools
-- Find and fix issues with their CSS
+**Apply:**
+- Inspect your page with DevTools
+- Make temporary changes
+- Find and fix CSS issues
 
 ### Homework
-- Convert your HTML-only personal page to use external CSS
+- Convert your HTML-only page to use external CSS
 - Use at least 5 different selectors
-- Apply styling to text, backgrounds, and borders
-- Experiment with more advanced selectors (universal, attribute)
+- Style text, backgrounds, and borders
+- Try advanced selectors (universal, attribute)
 
 ## Session 2: Box Model & Basic Styling
 
 ### Review & Introduction
-- Review of CSS integration methods and selectors
-- Check homework assignments
-- Introduction to the box model
+- Review CSS integration and selectors
+- Check homework
+- Intro to box model
 
 ### Part 1: The Box Model
-**Instructor Demonstrates:**
-- The CSS Box Model explained:
+**Demo:**
+- CSS Box Model explained:
   - Content
   - Padding
   - Border
   - Margin
-- Using browser DevTools to visualize the box model
+- Using DevTools to see box model
 
-**Students Apply:**
-- Create boxes with visible borders, padding, and margins
-- Use DevTools to inspect the box model of their elements
-- Experiment with different box model values
+**Apply:**
+- Create boxes with borders, padding, margins
+- Inspect box model in DevTools
+- Try different values
 
 ### Part 2: Width, Height & Box-Sizing
-**Instructor Demonstrates:**
+**Demo:**
 - Setting width and height
 - Min and max width/height
-- The box-sizing property (content-box vs. border-box)
-- Shorthand properties for margin and padding
+- Box-sizing property (content-box vs. border-box)
+- Shorthand for margin and padding
 
-**Students Apply:**
-- Create boxes with specified dimensions
-- Apply box-sizing: border-box to elements
-- Use shorthand properties for margin and padding
+**Apply:**
+- Create boxes with specific dimensions
+- Apply box-sizing: border-box
+- Use margin/padding shorthands
 
 ### Part 3: Display Property
-**Instructor Demonstrates:**
-- Display property values:
+**Demo:**
+- Display values:
   - block
   - inline
   - inline-block
   - none
-- Impact on box model behavior
+- How they affect box model
 
-**Students Apply:**
-- Change display properties of various elements
-- Create a simple layout using inline-block
+**Apply:**
+- Change display of various elements
+- Create simple layout with inline-block
 - Hide and show elements with display:none
 
 ### Homework
-- Create a card-based layout with:
-  - At least 3 cards with consistent spacing
+- Create card-based layout with:
+  - 3+ cards with consistent spacing
   - Good use of margin and padding
-  - Borders and background colors
+  - Borders and backgrounds
   - Proper box-sizing
-- Additional exploration: Try using calc() for widths
+- Try using calc() for widths
 
 ## Session 3: Colors, Backgrounds & Borders
 
 ### Review & Introduction
-- Review of box model and display properties
-- Check homework assignments
-- Introduction to colors and backgrounds
+- Review box model and display
+- Check homework
+- Intro to colors and backgrounds
 
 ### Part 1: Colors
-**Instructor Demonstrates:**
+**Demo:**
 - Color properties:
   - color (text)
   - background-color
 - Color values:
   - Named colors
-  - Hex values (#RRGGBB)
+  - Hex (#RRGGBB)
   - RGB and RGBA
 - Color contrast and accessibility
 
-**Students Apply:**
-- Create a color palette for a webpage
+**Apply:**
+- Create color palette for webpage
 - Apply text and background colors
-- Experiment with different color values
-- Check color contrast for accessibility
+- Try different color values
+- Check contrast for accessibility
 
 ### Part 2: Backgrounds
-**Instructor Demonstrates:**
-- Essential background properties:
+**Demo:**
+- Background properties:
   - background-image
   - background-repeat
   - background-position
   - background-size (cover, contain)
 - Background shorthand
 
-**Students Apply:**
+**Apply:**
 - Add background images to elements
-- Control image repetition and positioning
-- Use background-size for responsive backgrounds
-- Apply background shorthand
+- Control image repetition and position
+- Make responsive backgrounds
+- Use background shorthand
 
 ### Part 3: Borders & Rounded Corners
-**Instructor Demonstrates:**
+**Demo:**
 - Border properties:
   - border-width
   - border-style
@@ -168,29 +156,29 @@ Each 3-hour session follows this structure:
 - Border-radius for rounded corners
 - Box-shadow basics
 
-**Students Apply:**
-- Apply different border styles to elements
-- Create rounded corners with border-radius
-- Add subtle shadows to elements
-- Create a button with borders and hover effects
+**Apply:**
+- Apply different border styles
+- Create rounded corners
+- Add subtle shadows
+- Make button with hover effects
 
 ### Homework
-- Create a themed webpage with:
-  - Consistent color scheme (at least 4 colors)
-  - Background image in the header
-  - Different border styles throughout
-  - Rounded corners and shadows where appropriate
-- Additional exploration: linear and radial gradients
+- Create themed webpage with:
+  - Color scheme (4+ colors)
+  - Background image in header
+  - Various border styles
+  - Rounded corners and shadows
+- Try gradients
 
 ## Session 4: Typography & Text Styling
 
 ### Review & Introduction
-- Review of colors, backgrounds, and borders
-- Check homework assignments
-- Introduction to web typography
+- Review colors, backgrounds, borders
+- Check homework
+- Intro to web typography
 
 ### Part 1: Font Properties
-**Instructor Demonstrates:**
+**Demo:**
 - Key font properties:
   - font-family
   - font-size
@@ -199,14 +187,14 @@ Each 3-hour session follows this structure:
 - Font stacks and fallbacks
 - Web safe fonts
 
-**Students Apply:**
-- Set up font stacks for their webpage
-- Apply different font sizes and weights
+**Apply:**
+- Set up font stacks
+- Apply different sizes and weights
 - Create emphasis with font-style
-- Use proper fallback fonts
+- Use proper fallbacks
 
 ### Part 2: Text Properties
-**Instructor Demonstrates:**
+**Demo:**
 - Essential text properties:
   - text-align
   - text-decoration
@@ -214,42 +202,42 @@ Each 3-hour session follows this structure:
   - line-height
 - Letter-spacing and word-spacing
 
-**Students Apply:**
-- Apply text alignment to paragraphs and headings
-- Use text-decoration for links and highlights
-- Transform text case with text-transform
+**Apply:**
+- Align paragraphs and headings
+- Style links with text-decoration
+- Transform text case
 - Improve readability with line-height
 
 ### Part 3: Web Fonts
-**Instructor Demonstrates:**
-- Adding Google Fonts to a webpage
-- Using @font-face for custom fonts
-- Font icons basics (Font Awesome)
+**Demo:**
+- Adding Google Fonts
+- Using @font-face
+- Font icons (Font Awesome)
 - Performance considerations
 
-**Students Apply:**
-- Add Google Fonts to their project
-- Implement icons with Font Awesome
-- Apply custom fonts to different elements
-- Ensure all fonts are available locally (offline use)
+**Apply:**
+- Add Google Fonts to project
+- Implement icons
+- Apply custom fonts
+- Download fonts for offline use
 
 ### Homework
-- Create a typography-focused page with:
-  - Custom fonts from Google Fonts (downloaded for offline use)
+- Create typography-focused page with:
+  - Custom fonts (downloaded for offline use)
   - Well-structured headings and paragraphs
   - Pull quotes or highlighted text
   - Icons for lists or navigation
-- Additional exploration: Variable fonts
+- Try variable fonts
 
 ## Session 5: Layout Basics with Display & Position
 
 ### Review & Introduction
-- Review of typography and text styling
-- Check homework assignments
-- Introduction to CSS layout techniques
+- Review typography and text styling
+- Check homework
+- Intro to layout techniques
 
 ### Part 1: Position Property
-**Instructor Demonstrates:**
+**Demo:**
 - Position values:
   - static (default)
   - relative
@@ -258,27 +246,27 @@ Each 3-hour session follows this structure:
 - Positioning context
 - Offset properties (top, right, bottom, left)
 
-**Students Apply:**
+**Apply:**
 - Create relatively positioned elements
-- Position elements absolutely within containers
-- Create a fixed header or navigation
+- Position elements absolutely in containers
+- Create fixed header/navigation
 - Understand positioning context
 
 ### Part 2: Z-index & Stacking
-**Instructor Demonstrates:**
-- Z-index property and how it works
+**Demo:**
+- Z-index property
 - Stacking contexts
 - Controlling overlap
 - Common z-index issues
 
-**Students Apply:**
+**Apply:**
 - Create overlapping elements
-- Control stacking order with z-index
-- Build a simple modal or popup
-- Troubleshoot z-index issues
+- Control stacking order
+- Build simple modal/popup
+- Fix z-index issues
 
 ### Part 3: Overflow Control
-**Instructor Demonstrates:**
+**Demo:**
 - Overflow property:
   - visible
   - hidden
@@ -287,143 +275,143 @@ Each 3-hour session follows this structure:
 - Controlling content behavior
 - Creating scrollable containers
 
-**Students Apply:**
-- Create containers with different overflow behaviors
-- Build a scrollable content area
+**Apply:**
+- Create containers with different overflow
+- Build scrollable content area
 - Handle text and image overflow
-- Apply overflow control to a card layout
+- Apply overflow to card layout
 
 ### Homework
-- Create a page with advanced positioning:
+- Create page with advanced positioning:
   - Fixed navigation header
-  - Content with relative and absolute elements
-  - A modal or popup with proper z-index
-  - Scrollable sections with overflow control
-- Additional exploration: sticky positioning
+  - Content with relative/absolute elements
+  - Modal/popup with proper z-index
+  - Scrollable sections
+- Try sticky positioning
 
 ## Session 6: Flexbox Layout
 
 ### Review & Introduction
-- Review of positioning and layout basics
-- Check homework assignments
-- Introduction to Flexbox
+- Review positioning and layout
+- Check homework
+- Intro to Flexbox
 
 ### Part 1: Flexbox Container
-**Instructor Demonstrates:**
-- Creating a flex container with `display: flex`
+**Demo:**
+- Creating flex container (display: flex)
 - Main axis vs. cross axis
-- Key container properties:
+- Container properties:
   - flex-direction
   - justify-content
   - align-items
 
-**Students Apply:**
-- Convert existing layouts to use flexbox
-- Control alignment of items
-- Change flex direction
-- Center content both horizontally and vertically
+**Apply:**
+- Convert layouts to use flexbox
+- Control alignment
+- Change direction
+- Center content horizontally and vertically
 
 ### Part 2: Flexbox Items
-**Instructor Demonstrates:**
-- Key item properties:
+**Demo:**
+- Item properties:
   - flex-grow
   - flex-shrink
   - flex-basis
-- The flex shorthand property
+- Flex shorthand
 
-**Students Apply:**
-- Create flexible items that grow and shrink
-- Control the size of specific flex items
-- Apply the flex shorthand
-- Create a layout with different-sized items
+**Apply:**
+- Create flexible items
+- Control specific item sizes
+- Use flex shorthand
+- Make layout with different-sized items
 
 ### Part 3: Practical Flexbox Layout
-**Instructor Demonstrates:**
-- Building a navigation bar with flexbox
+**Demo:**
+- Building navigation with flexbox
 - Creating card layouts
-- Handling wrapping with flex-wrap
+- Wrapping with flex-wrap
 - Responsive flexbox design
 
-**Students Apply:**
-- Build a flexible navigation menu
-- Create a card layout that wraps on smaller screens
-- Make a content section with sidebar using flexbox
-- Test responsiveness by resizing the browser
+**Apply:**
+- Build flexible navigation menu
+- Create wrapping card layout
+- Make content with sidebar
+- Test responsiveness
 
 ### Homework
-- Create a complete page layout using flexbox:
+- Create complete page layout with flexbox:
   - Header with navigation
   - Main content with sidebar
-  - Card-based section that wraps
-  - Footer with multiple columns
-- Additional exploration: nested flex containers
+  - Card section that wraps
+  - Footer with columns
+- Try nested flex containers
 
 ## Session 7: CSS Grid Layout
 
 ### Review & Introduction
-- Review of flexbox layouts
-- Check homework assignments
-- Introduction to CSS Grid
+- Review flexbox layouts
+- Check homework
+- Intro to CSS Grid
 
 ### Part 1: Grid Container
-**Instructor Demonstrates:**
-- Creating a grid container with `display: grid`
+**Demo:**
+- Creating grid container (display: grid)
 - Setting up columns and rows:
   - grid-template-columns
   - grid-template-rows
 - Using fr units and repeat()
 
-**Students Apply:**
-- Create a basic grid with columns and rows
+**Apply:**
+- Create basic grid
 - Use fr units for flexible layouts
 - Apply repeat() for multiple columns
-- Create a photo gallery grid
+- Create photo gallery grid
 
 ### Part 2: Grid Placement
-**Instructor Demonstrates:**
-- Placing items on the grid:
+**Demo:**
+- Placing items:
   - grid-column
   - grid-row
 - Spanning multiple cells
 - Grid line numbers and naming
 
-**Students Apply:**
-- Place items at specific positions on the grid
-- Make elements span multiple rows or columns
-- Create a layout with different-sized grid areas
-- Use the inspector to visualize grid lines
+**Apply:**
+- Place items at specific positions
+- Make elements span multiple rows/columns
+- Create layout with different-sized areas
+- Use inspector to see grid lines
 
 ### Part 3: Grid Template Areas
-**Instructor Demonstrates:**
-- Using named grid areas:
+**Demo:**
+- Named grid areas:
   - grid-template-areas
   - grid-area
-- Creating complex layouts with areas
+- Creating complex layouts
 - Responsive grid areas
 
-**Students Apply:**
-- Define a layout using grid-template-areas
-- Create a complete page layout with header, footer, content, sidebar
-- Make the layout responsive
-- Combine grid with other layout techniques
+**Apply:**
+- Define layout using grid-template-areas
+- Create page layout with header, footer, content, sidebar
+- Make layout responsive
+- Combine grid with other techniques
 
 ### Homework
-- Create a complete website layout using CSS Grid:
-  - Complex header with logo and navigation
-  - Main content area with different sections
+- Create website layout using CSS Grid:
+  - Header with logo and navigation
+  - Main content with sections
   - Sidebar with widgets
-  - Footer with multiple columns
-- Additional exploration: auto-fit and auto-fill with minmax()
+  - Footer with columns
+- Try auto-fit and auto-fill with minmax()
 
 ## Session 8: Responsive Design & Media Queries
 
 ### Review & Introduction
-- Review of CSS Grid
-- Check homework assignments
-- Introduction to responsive design principles
+- Review CSS Grid
+- Check homework
+- Intro to responsive design
 
 ### Part 1: Viewport & Relative Units
-**Instructor Demonstrates:**
+**Demo:**
 - Viewport meta tag
 - Relative units:
   - percentages
@@ -431,71 +419,71 @@ Each 3-hour session follows this structure:
   - vh and vw
 - Using calc() for mixed units
 
-**Students Apply:**
-- Set up a responsive base with viewport meta tag
-- Convert fixed pixel values to relative units
+**Apply:**
+- Set up responsive base
+- Convert pixels to relative units
 - Use viewport units for full-height sections
-- Create a fluid layout with relative units
+- Create fluid layout
 
 ### Part 2: Media Queries
-**Instructor Demonstrates:**
+**Demo:**
 - Media query syntax
 - Common breakpoints
 - Mobile-first approach
 - Feature queries (@supports)
 
-**Students Apply:**
-- Add media queries to existing layouts
-- Create styles for mobile, tablet, and desktop
-- Test layouts at different sizes
-- Implement a mobile-first approach
+**Apply:**
+- Add media queries to layouts
+- Create styles for mobile, tablet, desktop
+- Test at different sizes
+- Use mobile-first approach
 
 ### Part 3: Responsive Images & Tables
-**Instructor Demonstrates:**
+**Demo:**
 - Responsive images:
   - max-width: 100%
   - object-fit
   - picture element
 - Responsive tables
 
-**Students Apply:**
-- Make images responsive with CSS
-- Use object-fit for image control
-- Create a responsive table
-- Test all responsive elements across different sizes
+**Apply:**
+- Make images responsive
+- Use object-fit for control
+- Create responsive table
+- Test all elements at different sizes
 
 ### Homework
-- Convert a desktop-only design to be fully responsive:
-  - Implement mobile-first approach
-  - Use at least 3 breakpoints
-  - Include responsive images
-  - Ensure all text is readable at all sizes
-- Additional exploration: fluid typography with clamp()
+- Convert desktop design to be responsive:
+  - Use mobile-first approach
+  - Include 3+ breakpoints
+  - Make images responsive
+  - Ensure readable text at all sizes
+- Try fluid typography with clamp()
 
 ## Session 9: Animations & Transitions
 
 ### Review & Introduction
-- Review of responsive design
-- Check homework assignments
-- Introduction to CSS animations and transitions
+- Review responsive design
+- Check homework
+- Intro to animations and transitions
 
 ### Part 1: CSS Transitions
-**Instructor Demonstrates:**
-- Transition property basics:
+**Demo:**
+- Transition basics:
   - transition-property
   - transition-duration
   - transition-timing-function
-- Simple hover effects
+- Hover effects
 - Transition shorthand
 
-**Students Apply:**
+**Apply:**
 - Create button hover effects
-- Add transitions to navigation elements
-- Create a smooth color change transition
-- Use different timing functions
+- Add transitions to navigation
+- Make smooth color changes
+- Try different timing functions
 
 ### Part 2: CSS Transforms
-**Instructor Demonstrates:**
+**Demo:**
 - Transform properties:
   - translate
   - scale
@@ -504,14 +492,14 @@ Each 3-hour session follows this structure:
 - Combining transforms
 - 3D transforms
 
-**Students Apply:**
-- Create elements that move with transform
-- Build hover effects with scale and rotation
-- Combine multiple transform properties
-- Create a flip card effect
+**Apply:**
+- Create moving elements
+- Build hover effects with scale/rotation
+- Combine multiple transforms
+- Create flip card effect
 
 ### Part 3: CSS Animations
-**Instructor Demonstrates:**
+**Demo:**
 - @keyframes rule
 - Animation properties:
   - animation-name
@@ -520,77 +508,77 @@ Each 3-hour session follows this structure:
   - animation-iteration-count
 - Animation shorthand
 
-**Students Apply:**
-- Create a simple loading animation
-- Build a multi-step animation sequence
+**Apply:**
+- Create loading animation
+- Build multi-step animation
 - Control animation playback
-- Add animations to existing page elements
+- Add animations to page elements
 
 ### Homework
-- Create an animated landing page:
+- Create animated landing page:
   - Button hover effects
   - Navigation transitions
   - Loading animations
-  - At least one complex animation sequence
-- Additional exploration: animation-play-state and pausing animations
+  - Complex animation sequence
+- Try animation-play-state
 
 ## Session 10: CSS Best Practices & Advanced Techniques
 
 ### Review & Introduction
-- Review of animations and transitions
-- Check homework assignments
-- Introduction to CSS best practices
+- Review animations and transitions
+- Check homework
+- Intro to CSS best practices
 
 ### Part 1: CSS Organization
-**Instructor Demonstrates:**
-- CSS organization methodologies:
+**Demo:**
+- CSS organization approaches:
   - BEM (Block, Element, Modifier)
   - Component-based approach
-- CSS file structure
-- CSS comments and documentation
+- File structure
+- Comments and documentation
 
-**Students Apply:**
-- Refactor existing CSS using BEM
-- Organize CSS into logical sections
+**Apply:**
+- Refactor CSS using BEM
+- Organize into logical sections
 - Add proper comments
-- Create a style guide for their project
+- Create style guide
 
 ### Part 2: CSS Variables
-**Instructor Demonstrates:**
+**Demo:**
 - Custom properties (CSS variables):
   - Defining variables
   - Using variables
-  - Changing variables with JavaScript
+  - Changing with JavaScript
 - Scoping variables
 
-**Students Apply:**
-- Create a set of variables for colors and sizes
-- Apply variables throughout a stylesheet
-- Create a theme switcher with CSS variables
+**Apply:**
+- Create variables for colors and sizes
+- Apply variables throughout stylesheet
+- Create theme switcher
 - Use variables for responsive design
 
 ### Part 3: CSS Frameworks Introduction
-**Instructor Demonstrates:**
-- Overview of CSS frameworks:
+**Demo:**
+- CSS frameworks overview:
   - Bootstrap basics
-  - Tailwind CSS approach
+  - Tailwind approach
 - When to use frameworks
-- Adding a framework to a project
+- Adding framework to project
 
-**Students Apply:**
-- Implement a simple component with Bootstrap
-- Add a Tailwind utility to a project
-- Convert a custom component to use a framework
-- Compare framework approach to custom CSS
+**Apply:**
+- Implement component with Bootstrap
+- Add Tailwind utility
+- Convert custom component to use framework
+- Compare framework vs. custom approach
 
-### Homework & Final CSS Project
-- Create a complete, responsive website using all CSS techniques learned:
-  - Consistent design system with CSS variables
-  - Well-organized CSS using BEM or similar methodology
-  - Responsive layout using flexbox and/or grid
-  - Interactive elements with transitions and animations
+### Homework & Final Project
+- Create complete responsive website:
+  - Design system with CSS variables
+  - Well-organized CSS using BEM
+  - Responsive layout (flexbox/grid)
+  - Interactive elements with animations
   - Design system documentation
-- Additional exploration: CSS preprocessors (brief introduction to Sass)
+- Try CSS preprocessor (Sass introduction)
 
 ## Resources
 - [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)

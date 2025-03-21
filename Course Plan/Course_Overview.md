@@ -2,21 +2,10 @@
 
 ## Prerequisites
 
-- Basic computer literacy
-- Familiarity with using a web browser
 - No prior programming experience required
-- A computer with VS Code installed
+- VS Code installed
 - Chrome or Edge browser
 
-## Required Software
-
-- **VS Code** - [Download Link](https://code.visualstudio.com/download)
-- **Chrome** or **Edge** browser
-- Extensions for VS Code:
-  - Live Server
-  - HTML CSS Support
-  - JavaScript (ES6) code snippets
-  - Prettier - Code formatter
 
 ## Course Structure
 
@@ -28,7 +17,7 @@
 - **Session 4:**  Tables
 - **Session 5:** Forms & Input Elements
 
-- **Session Advanced:** Semantic HTML & Practice Projects
+- **Session+:** Semantic HTML & Practice Projects
 
 ### CSS  (10 sessions)
 - **Session 1:** CSS Introduction & Selectors
@@ -86,7 +75,6 @@ Each 3-hour session follows this structure:
   - Instructor provides feedback and assistance
 - **Wrap-up:** Summary of key points and assignment of homework
 
-This iterative "I code, you code" approach ensures students get immediate practice with each new concept.
 
 ## Assessment Method
 

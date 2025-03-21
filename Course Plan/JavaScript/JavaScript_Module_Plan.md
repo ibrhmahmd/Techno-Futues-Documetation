@@ -1,859 +1,849 @@
-# JavaScript Module Plan
+
 
 ## Prerequisites
 - Completed HTML Module
 - Completed CSS Module
-- VS Code with JavaScript extensions
- 
-## Teaching Approach
-Each 3-hour session follows this structure:
-- Quick review of previous session and homework check (10 minutes)
-- Brief overview of topics for the current session (5 minutes)
-- Three cycles of:
-  - Instructor demonstration and explanation (20-30 minutes)
-  - Student application of concepts (15-20 minutes)
-  - Feedback and assistance
-- Wrap-up and homework assignment (10 minutes)
+
 
 ## Session 1: JavaScript Introduction & Basic Syntax
 
 ### Review & Introduction
-- Introduction to the course
-- Overview of JavaScript's role in web development
-- Brief history of JavaScript
+- Course intro
+- JavaScript's role in web development
+- Brief history
 
 ### Part 1: JavaScript Integration Methods
-**Instructor Demonstrates:**
+**Demo:**
 - Three ways to add JavaScript:
-  - Inline JavaScript with HTML attributes
-  - Internal JavaScript with `<script>` tags
-  - External JavaScript files with `<script src="...">`
-- Basic syntax elements
+  - Inline (HTML attributes)
+  - Internal (script tags)
+  - External (JS files)
+- Basic syntax
 - Case sensitivity
 - Statements and semicolons
 
-**Students Apply:**
-- Create a simple HTML page
+**Apply:**
+- Create HTML page
 - Add JavaScript using all three methods
 - Write basic statements
-- Test their code in the browser
+- Test in browser
 
 ### Part 2: Console Output & Comments
-**Instructor Demonstrates:**
-- Using console.log() for debugging
-- Browser developer tools console
+**Demo:**
+- Using console.log()
+- Browser developer tools
 - Alert() and document.write()
-- JavaScript comments (single-line and multi-line)
+- Comments (single-line and multi-line)
 
-**Students Apply:**
-- Print different types of messages to console
-- Use alerts for user notification
-- Add proper comments to their code
-- Use the browser console to test commands
+**Apply:**
+- Print messages to console
+- Create alerts
+- Add comments
+- Test in browser console
 
 ### Part 3: Debugging Basics
-**Instructor Demonstrates:**
+**Demo:**
 - Common syntax errors
-- Using the browser console for error messages
+- Using console for errors
 - Debugging workflow
-- Proper indentation and code formatting
+- Code formatting
 
-**Students Apply:**
-- Debug a provided script with errors
+**Apply:**
+- Debug provided script
 - Format code properly
-- Use console to identify and fix problems
-- Create a simple web page with working JavaScript
+- Fix problems using console
+- Create working JavaScript page
 
 ### Homework
-- Create a personal introduction page with:
-  - External JavaScript file
+- Create intro page with:
+  - External JavaScript
   - Console messages
-  - Alert with welcome message
-  - Well-commented code
-- Experiment with different console methods (log, warn, error)
+  - Welcome alert
+  - Comments
+- Try different console methods
 
 ## Session 2: Variables, Data Types & Operators
 
 ### Review & Introduction
-- Review of JavaScript integration methods
-- Check homework assignments
+- Review JavaScript integration
+- Check homework
 - Overview of variables and data types
 
 ### Part 1: Variables & Declaration
-**Instructor Demonstrates:**
+**Demo:**
 - Variable declaration:
-  - `let` for changeable values
-  - `const` for constants
-  - `var` (older method, with explanation of differences)
-- Naming rules and conventions
-- Variable reassignment
-- Variable scope basics
+  - let (changeable)
+  - const (constants)
+  - var (older method)
+- Naming rules
+- Reassignment
+- Scope basics
 
-**Students Apply:**
-- Create variables with different declaration types
-- Follow proper naming conventions
-- Reassign values where appropriate
-- Log variables to the console
+**Apply:**
+- Create variables using different declarations
+- Use proper naming
+- Reassign values
+- Log to console
 
 ### Part 2: Data Types
-**Instructor Demonstrates:**
+**Demo:**
 - Primary data types:
   - Strings
   - Numbers
   - Booleans
   - Undefined and null
-- Using typeof operator
+- Using typeof
 - Type conversion
-- Template literals for strings
+- Template literals
 
-**Students Apply:**
-- Create variables with different data types
+**Apply:**
+- Create variables with different types
 - Check types with typeof
-- Convert between data types
-- Use template literals for string formatting
+- Convert between types
+- Use template literals
 
 ### Part 3: Operators
-**Instructor Demonstrates:**
+**Demo:**
 - Arithmetic operators (+, -, *, /, %)
 - Assignment operators (=, +=, -=, etc.)
 - Comparison operators (==, ===, !=, !==, >, <, >=, <=)
 - Logical operators (&&, ||, !)
 
-**Students Apply:**
-- Create expressions using different operators
-- Build a simple calculator with arithmetic operators
-- Compare values using comparison operators
-- Combine conditions with logical operators
+**Apply:**
+- Create expressions with operators
+- Build simple calculator
+- Compare values
+- Combine conditions
 
 ### Homework
-- Create a script that:
-  - Collects user input with prompt()
+- Create script that:
+  - Collects user input
   - Performs calculations
-  - Converts between data types
-  - Displays formatted results
-- Additional exploration: Try using increment/decrement operators and string methods
+  - Converts types
+  - Shows formatted results
+- Try increment/decrement operators
 
 ## Session 3: Control Flow (Conditionals)
 
 ### Review & Introduction
-- Review of variables, data types, and operators
-- Check homework assignments
-- Introduction to conditional statements
+- Review variables, types, operators
+- Check homework
+- Intro to conditionals
 
 ### Part 1: If Statements
-**Instructor Demonstrates:**
-- Basic if statement syntax
-- if...else statements
-- if...else if...else statements
+**Demo:**
+- Basic if syntax
+- if...else
+- if...else if...else
 - Nested conditionals
 - Truthy and falsy values
 
-**Students Apply:**
-- Create simple condition checks
+**Apply:**
+- Create simple conditions
 - Build multi-condition checks
-- Implement nested conditionals
-- Test with different inputs
+- Create nested conditionals
+- Test with inputs
 
 ### Part 2: Switch Statements
-**Instructor Demonstrates:**
-- Switch statement syntax
+**Demo:**
+- Switch syntax
 - Case and break
 - Default case
 - Fall-through behavior
-- Comparing switch vs. if/else
+- Switch vs. if/else
 
-**Students Apply:**
-- Convert if/else statements to switch
-- Create a menu system with switch
+**Apply:**
+- Convert if/else to switch
+- Create menu system
 - Handle multiple cases
-- Use proper break statements
+- Add break statements
 
 ### Part 3: Ternary Operator
-**Instructor Demonstrates:**
-- Ternary operator syntax (condition ? exprIfTrue : exprIfFalse)
-- When to use ternary vs. if/else
-- Nested ternary operators (with caution)
+**Demo:**
+- Ternary syntax (condition ? true : false)
+- When to use ternary
+- Nested ternary (with caution)
 - Combining with other operators
 
-**Students Apply:**
-- Convert simple if/else to ternary
-- Use ternary for variable assignment
-- Create conditional displays on a webpage
-- Chain multiple conditions
+**Apply:**
+- Convert if/else to ternary
+- Use ternary for assignment
+- Create conditional displays
+- Chain conditions
 
 ### Homework
-- Create a grade calculator that:
-  - Takes a numeric score input
-  - Uses if/else to determine the letter grade
-  - Implements the same logic with switch
-  - Uses ternary for pass/fail determination
-- Additional exploration: Try implementing a simple login system
+- Create grade calculator that:
+  - Takes score input
+  - Determines letter grade with if/else
+  - Implements same logic with switch
+  - Uses ternary for pass/fail
+- Try simple login system
 
 ## Session 4: Functions & Scope
 
 ### Review & Introduction
-- Review of conditional statements
-- Check homework assignments
-- Introduction to functions and scope
+- Review conditionals
+- Check homework
+- Intro to functions and scope
 
 ### Part 1: Function Basics
-**Instructor Demonstrates:**
+**Demo:**
 - Function declaration
 - Function expressions
 - Parameters and arguments
 - Return values
 - Calling functions
 
-**Students Apply:**
+**Apply:**
 - Create simple functions
-- Pass different arguments
+- Pass arguments
 - Return and use values
-- Create functions with multiple parameters
+- Create multi-parameter functions
 
 ### Part 2: Arrow Functions & Default Parameters
-**Instructor Demonstrates:**
+**Demo:**
 - Arrow function syntax
 - Implicit returns
-- Default parameter values
-- When to use arrow functions vs. regular functions
+- Default parameters
+- Arrow vs. regular functions
 
-**Students Apply:**
-- Convert regular functions to arrow functions
-- Create functions with default parameters
+**Apply:**
+- Convert regular to arrow functions
+- Add default parameters
 - Use implicit returns
-- Implement functions with varying parameters
+- Create functions with varying parameters
 
 ### Part 3: Scope & Hoisting
-**Instructor Demonstrates:**
+**Demo:**
 - Global scope
 - Function scope
 - Block scope (let and const)
 - Variable hoisting
 - Function hoisting
 
-**Students Apply:**
+**Apply:**
 - Create variables in different scopes
-- Observe hoisting behavior
-- Fix scope-related issues
-- Create a small application with proper scope management
+- Observe hoisting
+- Fix scope issues
+- Create app with proper scope
 
 ### Homework
-- Create a calculator library with:
-  - Various calculation functions (add, subtract, multiply, etc.)
-  - Different function types (declaration, expression, arrow)
-  - Proper parameter validation
-  - Default parameters where appropriate
-- Additional exploration: Try using closures for private variables
+- Create calculator library with:
+  - Various calculation functions
+  - Different function types
+  - Parameter validation
+  - Default parameters
+- Try closures for private variables
 
 ## Session 5: Arrays & Array Methods
 
 ### Review & Introduction
-- Review of functions and scope
-- Check homework assignments
-- Introduction to arrays
+- Review functions and scope
+- Check homework
+- Intro to arrays
 
 ### Part 1: Array Basics
-**Instructor Demonstrates:**
+**Demo:**
 - Creating arrays
 - Accessing elements with indexes
-- Modifying array elements
-- Array properties (length)
-- Basic array methods (push, pop, shift, unshift)
+- Modifying elements
+- Array length
+- Basic methods (push, pop, shift, unshift)
 
-**Students Apply:**
+**Apply:**
 - Create and modify arrays
-- Access array elements
+- Access elements
 - Change array length
-- Add and remove elements from arrays
+- Add/remove elements
 
 ### Part 2: Array Iteration
-**Instructor Demonstrates:**
-- Looping through arrays with for loop
+**Demo:**
+- Looping with for loop
 - forEach() method
-- Finding elements with indexOf() and includes()
-- Finding objects with find() and findIndex()
+- Finding elements (indexOf, includes)
+- Finding objects (find, findIndex)
 
-**Students Apply:**
-- Loop through arrays using different methods
-- Search for elements in arrays
-- Create a list display from array data
-- Implement a search function
+**Apply:**
+- Loop through arrays
+- Search for elements
+- Create list display
+- Implement search function
 
 ### Part 3: Array Manipulation
-**Instructor Demonstrates:**
-- Slicing and splicing arrays
-- Combining arrays with concat() and spread operator
+**Demo:**
+- Slice and splice
+- Combining arrays (concat, spread)
 - Sorting arrays
 - Reversing arrays
 
-**Students Apply:**
+**Apply:**
 - Extract portions of arrays
-- Combine multiple arrays
-- Sort arrays of numbers and strings
-- Create a sorting interface for array data
+- Combine arrays
+- Sort arrays
+- Create sorting interface
 
 ### Homework
-- Create a to-do list application that:
-  - Stores tasks in an array
-  - Allows adding and removing tasks
-  - Allows searching for tasks
+- Create to-do list app that:
+  - Stores tasks in array
+  - Adds/removes tasks
+  - Searches tasks
   - Displays sorted tasks
-- Additional exploration: Try implementing filtering and array mapping
+- Try filtering and mapping
 
 ## Session 6: Objects & Basic DOM Manipulation
 
 ### Review & Introduction
-- Review of arrays and array methods
-- Check homework assignments
-- Introduction to objects and the DOM
+- Review arrays and methods
+- Check homework
+- Intro to objects and DOM
 
 ### Part 1: Object Basics
-**Instructor Demonstrates:**
-- Creating objects with object literals
-- Accessing and modifying properties
+**Demo:**
+- Creating objects with literals
+- Accessing/modifying properties
 - Methods in objects
-- Object property shorthand
+- Property shorthand
 - Nested objects
 
-**Students Apply:**
-- Create objects with properties and methods
-- Access and modify object properties
-- Add methods to objects
-- Create nested object structures
+**Apply:**
+- Create objects with properties/methods
+- Access/modify properties
+- Add methods
+- Create nested structures
 
 ### Part 2: Introduction to the DOM
-**Instructor Demonstrates:**
+**Demo:**
 - What is the DOM?
 - Accessing elements:
   - getElementById()
   - querySelector()
   - querySelectorAll()
-- DOM tree navigation
+- DOM navigation
 
-**Students Apply:**
-- Select elements from a web page
+**Apply:**
+- Select elements from page
 - Store elements in variables
-- Navigate between parent and child elements
-- Create a simple element selector utility
+- Navigate parent/child elements
+- Create element selector utility
 
 ### Part 3: Basic DOM Manipulation
-**Instructor Demonstrates:**
-- Modifying content with:
+**Demo:**
+- Modifying content:
   - innerHTML
   - textContent
-- Changing attributes with:
+- Changing attributes:
   - setAttribute()
   - getAttribute()
-- Styling elements with the style property
+- Styling with style property
 
-**Students Apply:**
-- Change text content of elements
+**Apply:**
+- Change text content
 - Modify HTML structure
-- Update element attributes
-- Change element styles dynamically
+- Update attributes
+- Change styles dynamically
 
 ### Homework
-- Create a product display application that:
+- Create product display app that:
   - Stores products as objects
-  - Displays products on a webpage
-  - Allows updating product details
-  - Includes styling manipulation
-- Additional exploration: Try adding data validation
+  - Displays products on page
+  - Updates product details
+  - Includes styling
+- Try data validation
 
 ## Session 7: Events & Event Handling
 
 ### Review & Introduction
-- Review of objects and DOM manipulation
-- Check homework assignments
-- Introduction to events
+- Review objects and DOM
+- Check homework
+- Intro to events
 
 ### Part 1: Event Basics
-**Instructor Demonstrates:**
+**Demo:**
 - Common event types:
   - click
   - mouseover, mouseout
   - keydown, keyup
   - submit
-- Adding event listeners with addEventListener()
-- Removing event listeners
+- Adding event listeners
+- Removing listeners
 
-**Students Apply:**
-- Add click handlers to buttons
+**Apply:**
+- Add click handlers
 - Create hover effects
 - Handle keyboard input
-- Properly remove event listeners
+- Remove event listeners
 
 ### Part 2: The Event Object
-**Instructor Demonstrates:**
+**Demo:**
 - Event object properties
-- Preventing default behavior with preventDefault()
-- Stopping propagation with stopPropagation()
+- preventDefault()
+- stopPropagation()
 - Event delegation
 
-**Students Apply:**
-- Access event object properties
-- Create a form that prevents default submission
-- Implement event delegation for a list
+**Apply:**
+- Access event properties
+- Prevent default form submission
+- Implement event delegation
 - Handle event bubbling
 
 ### Part 3: Practical Event Application
-**Instructor Demonstrates:**
+**Demo:**
 - Creating toggles and dropdowns
-- Building modal windows
-- Implementing keyboard shortcuts
-- Form events and validation
+- Building modals
+- Keyboard shortcuts
+- Form validation
 
-**Students Apply:**
-- Create a toggle menu
-- Build a simple modal
-- Add keyboard shortcuts to an application
-- Validate form input on events
+**Apply:**
+- Create toggle menu
+- Build simple modal
+- Add keyboard shortcuts
+- Validate form input
 
 ### Homework
-- Create an interactive image gallery that:
-  - Shows larger images on click
+- Create image gallery that:
+  - Shows large images on click
   - Has prev/next navigation
   - Allows keyboard navigation
-  - Includes modal functionality
-- Additional exploration: Try adding touch events for mobile
+  - Uses modal functionality
+- Try touch events for mobile
 
 ## Session 8: Forms & Input Validation
 
 ### Review & Introduction
-- Review of events and event handling
-- Check homework assignments
-- Introduction to form handling
+- Review events
+- Check homework
+- Intro to form handling
 
 ### Part 1: Form Elements Access
-**Instructor Demonstrates:**
+**Demo:**
 - Accessing form elements
 - Getting input values
-- Working with different input types
+- Working with input types
 - Radio buttons and checkboxes
 - Select dropdowns
 
-**Students Apply:**
-- Access various form elements
-- Get and set form values
-- Handle different input types
-- Create a form data collector
+**Apply:**
+- Access form elements
+- Get/set values
+- Handle different inputs
+- Create form data collector
 
 ### Part 2: Form Validation
-**Instructor Demonstrates:**
+**Demo:**
 - Required field validation
-- Pattern validation with regular expressions
+- Pattern validation with regex
 - Numeric and date validation
 - Custom validation rules
-- Displaying validation errors
+- Displaying errors
 
-**Students Apply:**
+**Apply:**
 - Validate required fields
 - Implement email validation
-- Create password strength validation
+- Create password strength check
 - Display error messages
 
 ### Part 3: Form Submission & Processing
-**Instructor Demonstrates:**
-- Handling form submit event
-- Collecting and processing form data
-- Creating form objects
-- Form reset and clearing
+**Demo:**
+- Handling submit event
+- Collecting form data
+- Creating data objects
+- Form reset
 
-**Students Apply:**
+**Apply:**
 - Handle form submission
 - Create objects from form data
 - Display submitted data
-- Implement form reset functionality
+- Implement reset functionality
 
 ### Homework
-- Create a registration form that:
-  - Has multiple fields with different input types
-  - Implements comprehensive validation
-  - Displays appropriate error messages
-  - Creates a user object on submission
-- Additional exploration: Try implementing a multi-step form
+- Create registration form that:
+  - Has multiple field types
+  - Implements validation
+  - Shows error messages
+  - Creates user object on submit
+- Try multi-step form
 
 ## Session 9: Loops & Iteration
 
 ### Review & Introduction
-- Review of forms and validation
-- Check homework assignments
-- Introduction to loops and iteration
+- Review forms and validation
+- Check homework
+- Intro to loops
 
 ### Part 1: For Loops
-**Instructor Demonstrates:**
+**Demo:**
 - Basic for loop syntax
 - Looping through arrays
-- Nested for loops
-- Loop control with break and continue
+- Nested loops
+- break and continue
 
-**Students Apply:**
-- Create basic counting loops
-- Loop through array data
+**Apply:**
+- Create counting loops
+- Loop through arrays
 - Implement nested loops
-- Control loop execution with break/continue
+- Control execution with break/continue
 
 ### Part 2: While & Do-While Loops
-**Instructor Demonstrates:**
+**Demo:**
 - While loop syntax
-- Do-while loop syntax
-- Choosing between for and while
+- Do-while syntax
+- Choosing loop types
 - Avoiding infinite loops
 
-**Students Apply:**
-- Create while loops for various scenarios
+**Apply:**
+- Create while loops
 - Implement do-while for user input
 - Convert between loop types
-- Debug infinite loop issues
+- Debug infinite loops
 
 ### Part 3: Array Iteration Methods
-**Instructor Demonstrates:**
+**Demo:**
 - forEach()
 - map()
 - filter()
 - reduce()
 - some() and every()
 
-**Students Apply:**
+**Apply:**
 - Transform arrays with map()
-- Filter arrays based on conditions
+- Filter arrays
 - Reduce arrays to single values
-- Check array conditions with some()/every()
+- Check conditions with some()/every()
 
 ### Homework
-- Create a data processing application that:
-  - Processes an array of objects (e.g., products, users)
-  - Provides filtering and searching
-  - Creates transformed data sets
-  - Calculates statistics from the data
-- Additional exploration: Try implementing sorting with custom comparison functions
+- Create data processing app that:
+  - Processes object array
+  - Provides filtering/searching
+  - Creates transformed data
+  - Calculates statistics
+- Try custom sorting
 
 ## Session 10: Advanced DOM Manipulation
 
 ### Review & Introduction
-- Review of loops and iteration
-- Check homework assignments
-- Introduction to advanced DOM techniques
+- Review loops and iteration
+- Check homework
+- Intro to advanced DOM
 
 ### Part 1: Creating & Removing Elements
-**Instructor Demonstrates:**
-- Creating elements with createElement()
-- Adding elements with appendChild() and insertBefore()
-- Removing elements with removeChild()
-- Replacing elements with replaceChild()
+**Demo:**
+- Creating elements (createElement)
+- Adding elements (appendChild, insertBefore)
+- Removing elements (removeChild)
+- Replacing elements (replaceChild)
 
-**Students Apply:**
-- Create new elements dynamically
-- Add elements to the DOM in different positions
-- Remove elements based on conditions
-- Replace existing content
+**Apply:**
+- Create elements dynamically
+- Add elements to DOM
+- Remove elements
+- Replace content
 
 ### Part 2: Working with Classes & Attributes
-**Instructor Demonstrates:**
-- Managing classes with classList (add, remove, toggle, contains)
-- Setting and getting attributes
-- Working with data attributes
-- Managing styles dynamically
+**Demo:**
+- Managing classes with classList
+- Setting/getting attributes
+- Data attributes
+- Dynamic styling
 
-**Students Apply:**
+**Apply:**
 - Toggle element classes
 - Work with multiple classes
-- Use data attributes for storing information
+- Use data attributes
 - Create dynamic styling
 
 ### Part 3: DOM Traversal
-**Instructor Demonstrates:**
+**Demo:**
 - Parent/child relationships
-- Siblings navigation
+- Sibling navigation
 - Relative positioning
-- Finding specific elements from a reference point
+- Finding elements from reference point
 
-**Students Apply:**
+**Apply:**
 - Navigate DOM relationships
-- Select elements relative to others
-- Create a DOM tree viewer
-- Implement DOM traversal utility functions
+- Select relative elements
+- Create DOM tree viewer
+- Build traversal utilities
 
 ### Homework
-- Create a dynamic content management system that:
-  - Allows adding, editing, and removing content
-  - Manages content categories with classes
-  - Implements drag-and-drop functionality
-  - Uses DOM traversal for content relationships
-- Additional exploration: Try implementing a tabbed interface component
+- Create content management system that:
+  - Allows adding/editing/removing content
+  - Manages categories with classes
+  - Implements drag-and-drop
+  - Uses DOM traversal
+- Try tabbed interface
 
 ## Session 11: Error Handling & Browser Storage
 
 ### Review & Introduction
-- Review of advanced DOM manipulation
-- Check homework assignments
-- Introduction to error handling and storage
+- Review advanced DOM
+- Check homework
+- Intro to error handling and storage
 
 ### Part 1: Error Handling
-**Instructor Demonstrates:**
-- Try...catch...finally syntax
-- Error object and properties
+**Demo:**
+- Try...catch...finally
+- Error object properties
 - Throwing custom errors
 - Error handling strategies
 
-**Students Apply:**
-- Implement try/catch blocks
-- Create custom error types
+**Apply:**
+- Implement try/catch
+- Create custom errors
 - Add error logging
 - Build robust error handling
 
 ### Part 2: localStorage
-**Instructor Demonstrates:**
+**Demo:**
 - What is localStorage
 - Setting and getting items
 - Storing objects with JSON
 - localStorage limitations
 
-**Students Apply:**
-- Store and retrieve simple data
-- Save and load objects with JSON
-- Create a persistent settings system
-- Handle localStorage errors
+**Apply:**
+- Store and retrieve data
+- Save/load objects with JSON
+- Create settings system
+- Handle storage errors
 
 ### Part 3: sessionStorage & Cookies
-**Instructor Demonstrates:**
+**Demo:**
 - sessionStorage basics
-- Cookies introduction
-- Choosing the right storage method
+- Cookie introduction
+- Choosing storage method
 - Storage events
 
-**Students Apply:**
-- Implement sessionStorage for temporary data
-- Create and read basic cookies
-- Build a storage manager utility
-- Handle cross-tab storage events
+**Apply:**
+- Use sessionStorage for temp data
+- Create and read cookies
+- Build storage manager
+- Handle cross-tab events
 
 ### Homework
-- Create a note-taking application that:
+- Create note-taking app that:
   - Saves notes to localStorage
-  - Provides proper error handling
-  - Includes auto-save functionality
-  - Allows export and import of notes
-- Additional exploration: Try implementing theme preferences with storage
+  - Provides error handling
+  - Includes auto-save
+  - Allows export/import
+- Try theme preferences with storage
 
 ## Session 12: Working with Dates & Timer Functions
 
 ### Review & Introduction
-- Review of error handling and browser storage
-- Check homework assignments
-- Introduction to dates and timers
+- Review error handling and storage
+- Check homework
+- Intro to dates and timers
 
 ### Part 1: Date Object
-**Instructor Demonstrates:**
+**Demo:**
 - Creating Date objects
-- Getting date components (year, month, day, etc.)
+- Getting date components
 - Setting date components
-- Formatting dates for display
+- Formatting dates
 
-**Students Apply:**
+**Apply:**
 - Create and manipulate dates
 - Extract date components
 - Calculate date differences
-- Format dates in different styles
+- Format dates
 
 ### Part 2: Timer Functions
-**Instructor Demonstrates:**
-- setTimeout() for delayed execution
-- setInterval() for repeated execution
+**Demo:**
+- setTimeout() for delays
+- setInterval() for repetition
 - clearTimeout() and clearInterval()
 - Performance considerations
 
-**Students Apply:**
-- Create delayed function execution
+**Apply:**
+- Create delayed functions
 - Implement recurring tasks
-- Build a countdown timer
+- Build countdown timer
 - Handle timer cleanup
 
 ### Part 3: Practical Timing Applications
-**Instructor Demonstrates:**
-- Creating animations with timers
-- Building a countdown clock
-- Implementing debounce and throttle
-- Scheduling future actions
+**Demo:**
+- Creating animations
+- Building countdown clock
+- Implementing debounce/throttle
+- Scheduling actions
 
-**Students Apply:**
-- Create a digital clock
-- Build an animation using setInterval
-- Implement a slideshow with timers
-- Add debounce to input handling
+**Apply:**
+- Create digital clock
+- Build animation with setInterval
+- Implement slideshow
+- Add debounce to input
 
 ### Homework
-- Create a productivity timer application that:
-  - Includes a countdown timer
-  - Has a scheduling feature
-  - Shows current date/time information
-  - Saves timer history to localStorage
-- Additional exploration: Try implementing a calendar view
+- Create productivity timer that:
+  - Includes countdown
+  - Has scheduling feature
+  - Shows current time/date
+  - Saves history to localStorage
+- Try calendar view
 
 ## Session 13: Introduction to ES6+ Features
 
 ### Review & Introduction
-- Review of dates and timers
-- Check homework assignments
-- Introduction to modern JavaScript features
+- Review dates and timers
+- Check homework
+- Intro to modern JavaScript
 
 ### Part 1: Modern Variable Features
-**Instructor Demonstrates:**
+**Demo:**
 - Let and const (review)
 - Template literals (review)
 - Destructuring assignment
 - Spread and rest operators
 
-**Students Apply:**
-- Use destructuring for objects and arrays
-- Apply spread operator for arrays and objects
-- Use rest parameters in functions
-- Refactor code to use modern syntax
+**Apply:**
+- Use destructuring for objects/arrays
+- Apply spread operator
+- Use rest parameters
+- Refactor code with modern syntax
 
 ### Part 2: Modern Function Features
-**Instructor Demonstrates:**
+**Demo:**
 - Arrow functions (review)
 - Default parameters
 - Parameter destructuring
 - Method shorthand in objects
 
-**Students Apply:**
-- Refactor functions to use modern syntax
+**Apply:**
+- Refactor functions
 - Apply parameter destructuring
 - Create objects with method shorthand
-- Implement functions with default parameters
+- Use default parameters
 
 ### Part 3: Advanced ES6+ Features
-**Instructor Demonstrates:**
+**Demo:**
 - Classes and inheritance
 - Modules (import/export)
 - Promises basics
 - Async/await introduction
 
-**Students Apply:**
-- Create a class-based structure
+**Apply:**
+- Create class-based structure
 - Implement inheritance
 - Convert callbacks to promises
-- Use async/await for asynchronous operations
+- Use async/await
 
 ### Homework
-- Refactor an existing project to use ES6+ features:
-  - Convert variables to let/const
-  - Use template literals for strings
-  - Implement destructuring and spread operators
-  - Refactor functions to use arrow syntax and classes
-- Additional exploration: Try implementing a simple module system
+- Refactor existing project with ES6+:
+  - Convert to let/const
+  - Use template literals
+  - Add destructuring and spread
+  - Convert to arrow functions and classes
+- Try simple module system
 
 ## Session 14: Final Project - Part 1
 
 ### Review & Introduction
-- Review of ES6+ features
-- Check homework assignments
-- Introduction to the final project
+- Review ES6+ features
+- Check homework
+- Intro to final project
 
 ### Part 1: Project Planning
-**Instructor Demonstrates:**
-- Project requirements overview
-- Planning the application structure
+**Demo:**
+- Project requirements
+- Planning structure
 - Creating wireframes
-- Setting up project files
+- Setting up files
 
-**Students Apply:**
-- Choose a project type
-- Plan application features
-- Sketch basic wireframes
-- Set up project file structure
+**Apply:**
+- Choose project type
+- Plan features
+- Create wireframes
+- Set up file structure
 
 ### Part 2: HTML & CSS Structure
-**Instructor Demonstrates:**
-- Setting up the HTML structure
-- Creating the CSS foundation
+**Demo:**
+- Setting up HTML structure
+- Creating CSS foundation
 - Implementing responsive design
-- Adding accessibility features
+- Adding accessibility
 
-**Students Apply:**
-- Create HTML structure for their project
+**Apply:**
+- Create HTML structure
 - Implement CSS styling
-- Ensure responsive design
-- Add proper accessibility attributes
+- Make responsive design
+- Add accessibility attributes
 
 ### Part 3: Core JavaScript Functionality
-**Instructor Demonstrates:**
+**Demo:**
 - Setting up JavaScript files
 - Creating core functionality
 - Implementing data structures
-- Building the initial logic
+- Building initial logic
 
-**Students Apply:**
-- Create JavaScript files and link them
-- Implement core data structures
+**Apply:**
+- Create and link JS files
+- Implement data structures
 - Build essential functions
 - Test basic functionality
 
 ### Homework
-- Continue developing the project:
-  - Complete the HTML structure
-  - Finalize the CSS styling
-  - Implement remaining core functionality
-  - Prepare for adding advanced features
+- Continue project:
+  - Complete HTML structure
+  - Finalize CSS
+  - Implement core functionality
+  - Prepare for advanced features
 
 ## Session 15: Final Project - Part 2
 
 ### Review & Introduction
-- Review of project progress
-- Check current project status
+- Review progress
+- Check project status
 - Plan for completion
 
 ### Part 1: Advanced Features
-**Instructor Demonstrates:**
+**Demo:**
 - Adding advanced functionality
-- Implementing local storage
-- Error handling integration
+- Implementing storage
+- Error handling
 - Performance optimization
 
-**Students Apply:**
-- Add advanced features to their project
+**Apply:**
+- Add advanced features
 - Implement data persistence
-- Add comprehensive error handling
-- Optimize for performance
+- Add error handling
+- Optimize performance
 
 ### Part 2: Testing & Debugging
-**Instructor Demonstrates:**
-- Testing methodologies
+**Demo:**
+- Testing methods
 - Debugging techniques
 - Cross-browser compatibility
 - Mobile testing
 
-**Students Apply:**
-- Test their application thoroughly
+**Apply:**
+- Test thoroughly
 - Debug and fix issues
-- Ensure cross-browser compatibility
-- Test on different devices/screen sizes
+- Ensure browser compatibility
+- Test on different devices
 
 ### Part 3: Project Presentation
-**Instructor Demonstrates:**
-- Presenting a project effectively
-- Highlighting key features
-- Discussing challenges and solutions
-- Getting and giving feedback
+**Demo:**
+- Presenting effectively
+- Highlighting features
+- Discussing challenges
+- Getting feedback
 
-**Students Apply:**
-- Prepare project presentations
-- Present their projects to the class
-- Give and receive feedback
+**Apply:**
+- Prepare presentation
+- Present to class
+- Give/receive feedback
 - Plan future enhancements
 
-### Final JavaScript Module Assessment
-Complete a fully functional interactive web application that demonstrates proficiency in JavaScript. The project should:
-- Use proper JavaScript syntax and best practices
-- Implement several ES6+ features
-- Include event handling and DOM manipulation
-- Utilize arrays, objects, functions, and loops
-- Include form validation if applicable
-- Store data using browser storage
-- Have a polished user interface
-- Run without errors
-- Include all resources locally for offline use
+### Final Assessment
+Create a fully functional web application that:
+- Uses proper JavaScript syntax
+- Implements ES6+ features
+- Includes event handling and DOM manipulation
+- Uses arrays, objects, functions, loops
+- Includes form validation
+- Uses browser storage
+- Has polished UI
+- Runs without errors
+- Works offline
 
 ## Resources
 - [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
