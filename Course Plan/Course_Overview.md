@@ -2,44 +2,42 @@
 
 ## Prerequisites
 
-- No prior programming experience required
+- Basic computer skills
 - VS Code installed
 - Chrome or Edge browser
-
 
 ## Course Structure
 
 ### HTML (5 sessions)
 
 - **Session 1:** HTML Introduction & Basic Structure
-- **Session 2:** Text Elements, Links & Images
+- **Session 2:** Links & Images
 - **Session 3:** Lists
-- **Session 4:**  Tables
-- **Session 5:** Forms & Input Elements
+- **Session 4:** Tables
+- **Session 5:** Forms
 
-- **Session+:** Semantic HTML & Practice Projects
+- **Advanced:** Semantic HTML & Projects
 
-### CSS  (10 sessions)
+### CSS (10 sessions)
 - **Session 1:** CSS Introduction & Selectors
 - **Session 2:** Box Model & Basic Styling
 - **Session 3:** Colors, Backgrounds & Borders
 - **Session 4:** Typography & Text Styling
-- **Session 5:** Layout Basics with Display & Position
+- **Session 5:** Layout with Display & Position
 - **Session 6:** Flexbox Layout
 - **Session 7:** CSS Grid Layout
 - **Session 8:** Responsive Design & Media Queries
 - **Session 9:** Animations & Transitions
 - **Session 10:** CSS Best Practices & Advanced Techniques
 
+### HTML+CSS Projects (5 sessions)
+- **Session 1:** Project Planning
+- **Session 2:** Static Website - Part 1
+- **Session 3:** Static Website - Part 2
+- **Session 4:** Portfolio Website - Part 1
+- **Session 5:** Portfolio Website - Part 2
 
-### HTML+CSS Project (15 hours)
-- **Session 1:** Project Planning & Setup
-- **Session 2:** Static Website Project - Part 1
-- **Session 3:** Static Website Project - Part 2
-- **Session 4:** Portfolio Website Project - Part 1
-- **Session 5:** Portfolio Website Project - Part 2
-
-### JavaScript (45 hours)
+### JavaScript (15 sessions)
 - **Session 1:** JavaScript Introduction & Basic Syntax
 - **Session 2:** Variables, Data Types & Operators
 - **Session 3:** Control Flow (Conditionals)
@@ -51,34 +49,25 @@
 - **Session 9:** Loops & Iteration
 - **Session 10:** Advanced DOM Manipulation
 - **Session 11:** Error Handling & Browser Storage
-- **Session 12:** Working with Dates & Timer Functions
-- **Session 13:** Introduction to ES6+ Features
+- **Session 12:** Dates & Timer Functions
+- **Session 13:** ES6+ Features
 - **Session 14:** Final Project - Part 1
 - **Session 15:** Final Project - Part 2
 
 ## Learning Approach
 
 Each 3-hour session follows this structure:
-- **Start:** Quick review of previous session and homework check
-- **Introduction:** Brief overview of topics to be covered in the session
-- **Part 1:** 
-  - Instructor demonstrates code with explanation (20-30 minutes)
-  - Students apply the demonstrated concepts (15-20 minutes)
-  - Instructor provides feedback and assistance
-- **Part 2:** 
-  - Instructor demonstrates new concepts (20-30 minutes)
-  - Students apply these concepts (15-20 minutes)
-  - Instructor provides feedback and assistance
-- **Part 3:** 
-  - Instructor demonstrates final concepts (20-30 minutes)
-  - Students apply these concepts (15-20 minutes)
-  - Instructor provides feedback and assistance
-- **Wrap-up:** Summary of key points and assignment of homework
-
+- **Review:** Quick review of previous session and homework (10 min)
+- **Intro:** Overview of today's topics (5 min)
+- **Three parts:**
+  - **Demo: I code** (20-30 min) - Instructor demonstrates concepts
+  - **Apply: You code** (15-20 min) - Students practice immediately
+  - **Feedback and help** - Interactive assistance
+- **Wrap-up:** Summary and homework assignment (10 min)
 
 ## Assessment Method
 
 - In-class coding exercises
 - Homework assignments
 - Mini-projects
-- Final portfolio project 
+- Final module projects 

@@ -1,65 +1,52 @@
 # Web Development Course Plan
 
 ## Overview
-This repository contains a comprehensive course plan for teaching web development, covering HTML, CSS, and JavaScript. The course is structured into modules, each with detailed session plans, exercises, and projects.
+Complete course plan for web development: HTML, CSS, and JavaScript. Structured modules with detailed sessions, exercises, and projects.
 
 ## Course Structure
 
-The course is divided into four main modules:
+Four main modules:
 
-1. **HTML Module** (15 hours - 5 sessions of 3 hours each)
-2. **CSS Module** (30 hours - 10 sessions of 3 hours each)
-3. **HTML+CSS Projects Module** (15 hours - 5 sessions of 3 hours each)
-4. **JavaScript Module** (45 hours - 15 sessions of 3 hours each)
+1. **HTML Module** (15 hours - 5 sessions)
+2. **CSS Module** (30 hours - 10 sessions)
+3. **HTML+CSS Projects Module** (15 hours - 5 sessions)
+4. **JavaScript Module** (45 hours - 15 sessions)
 
-Total course duration: 105 hours (35 sessions)
+Total: 105 hours (35 sessions)
 
-## Repository Organization
+## Files and Folders
 
-- **Course_Overview.md**: Main syllabus with prerequisites and module structure
-- **HTML/**: HTML module session plans and materials
-- **CSS/**: CSS module session plans and materials
-- **HTML+CSS Projects/**: Project module session plans and materials
-- **JavaScript/**: JavaScript module session plans and materials
-- **Project_Ideas.md**: Collection of project ideas for all modules
-- **Teaching_Resources.md**: Tips and resources for instructors
+- **Course_Overview.md**: Main syllabus
+- **HTML/**: HTML module materials
+- **CSS/**: CSS module materials
+- **HTML+CSS Projects/**: Project module materials
+- **JavaScript/**: JavaScript module materials
+- **Project_Ideas.md**: Project ideas for all modules
+- **Teaching_Resources.md**: Instructor resources
 
 ## Teaching Approach
 
-Each 3-hour session follows a consistent structure:
-1. **Hour 1: Theory** - Introduction to concepts with explanations and examples
-2. **Hour 2: Guided Practice** - Instructor-led implementation of concepts
-3. **Hour 3: Independent Practice** - Student exercises and mini-projects
+Each 3-hour session:
+1. **Review & Introduction** (15 min) - Quick review and session intro
+2. **Three Parts:**
+   - **Demo: I code** (20-30 min) - Instructor demonstrates
+   - **Apply: You code** (15-20 min) - Students practice
+   - **Feedback and help** - Interactive assistance
+3. **Wrap-up and homework** (10 min)
 
 ## Prerequisites for Students
 
 - Basic computer skills
-- Familiarity with using a web browser
-- No prior programming experience required
-- A computer with VS Code installed
+- VS Code installed
 - Chrome or Edge browser
+- No prior programming required
 
-
-## Assessment Method
-
-The course uses project-based assessment with:
-- In-class exercises
-- Assignments
-- Mini-projects throughout each module
-- Final projects that combine all learned skills
 
 ## Customization
 
-This course plan can be customized based on:
+Adaptable based on:
 - Student skill levels
-- Available time
-- Specific focus areas
-- Industry requirements
+- Time constraints
+- Learning goals
 
-## For Instructors
 
-Before teaching, please review:
-1. The complete syllabus in Course_Overview.md
-2. The detailed session plans for each module
-3. The teaching resources and tips
-4. The project ideas document
