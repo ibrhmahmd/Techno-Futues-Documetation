@@ -3,28 +3,24 @@
 ## Prerequisites
 - Completed HTML Module
 - Completed CSS Module
-- VS Code with Live Server and other extensions
+
 
 ## Module Objectives
-By the end of this module, students will be able to:
 - Apply HTML and CSS knowledge to build complete websites
-- Implement industry-standard project organization
 - Create responsive, accessible, and visually appealing websites
-- Develop offline-friendly websites with all resources included locally
 
 ## Session 1: Project Planning & Setup (3 hours)
 
-### Hour 1: Project Planning Theory
+### Project Planning Theory
 - Website project planning fundamentals
 - Creating a website wireframe
 - Site architecture and navigation planning
 - File and folder organization
 - Naming conventions
 - Creating a style guide
-- Designing for different screen sizes
-- Collecting and organizing assets (images, fonts, etc.)
+- Organizing assets (images, fonts, etc.)
 
-### Hour 2: Guided Practice
+### Guided Practice
 - Setting up a project folder structure
 - Creating boilerplate HTML and CSS files
 - Setting up CSS reset/normalize
@@ -32,7 +28,7 @@ By the end of this module, students will be able to:
 - Implementing a basic responsive grid system
 - Setting up version control (optional: Git basics)
 
-### Hour 3: Independent Practice
+### Independent Practice
 - **Project 1 Planning:**
   - Create wireframes for a static business website (4-5 pages)
   - Plan site navigation and structure
