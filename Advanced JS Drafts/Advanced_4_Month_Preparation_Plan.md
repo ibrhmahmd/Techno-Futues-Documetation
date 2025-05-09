@@ -1,7 +1,3 @@
-# 4-Month Web Development Preparation Plan
-## For Afro-Asian Innovation Forum
-
-This curriculum is designed for 15-year-old students with basic HTML, CSS, and beginner JavaScript skills to prepare for international competition. The plan consists of 32 sessions (2 per week × 3 hours) spread across 16 weeks.
 
 ## Program Overview
 

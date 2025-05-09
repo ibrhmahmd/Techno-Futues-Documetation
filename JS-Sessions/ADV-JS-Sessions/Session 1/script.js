@@ -82,22 +82,22 @@
 
 
 
-let num = 11 ;
+// let num = 11 ;
 
-let remainer = num % 2 ;
+// let remainer = num % 2 ;
 
 
-if (remainer == 0 ){
-    console.log('even')
-}
+// if (remainer == 0 ){
+//     console.log('even')
+// }
 
-else if(remainer == 9) {
-    console.log('odd');
-}
+// else if(remainer == 9) {
+//     console.log('odd');
+// }
 
-else {
-    console.log('unknown')
-}
+// else {
+//     console.log('unknown')
+// }
 
 
 

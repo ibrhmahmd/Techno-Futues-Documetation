@@ -182,7 +182,7 @@ let num = 30;
 let remainer = num % 2;
 
   
-if (remainer == 0) {
+if (remainder == 0) {
     console.log('even');
 } else {
     console.log('odd');

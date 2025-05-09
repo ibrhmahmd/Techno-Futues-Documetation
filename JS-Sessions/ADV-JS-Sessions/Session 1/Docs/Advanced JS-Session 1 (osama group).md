@@ -233,10 +233,10 @@ if (remainer == 0) {
 
 ### Key Differences Between var, let, and const
 
-| Feature | var | let | const |
-|---------|-----|-----|-------|
-| Scope | Function | Block | Block |
-| Redeclaration | ✅ Yes | ❌ No | ❌ No |
-| Reassignment | ✅ Yes | ✅ Yes | ❌ No |
-| Hoisting | ✅ Yes (initialized as undefined) | ✅ Yes (not initialized) | ✅ Yes (not initialized) |
-| Temporal Dead Zone | ❌ No | ✅ Yes | ✅ Yes |
+| Feature            | var                              | let                     | const                   |
+| ------------------ | -------------------------------- | ----------------------- | ----------------------- |
+| Scope              | Function                         | Block                   | Block                   |
+| Redeclaration      | ✅ Yes                            | ❌ No                    | ❌ No                    |
+| Reassignment       | ✅ Yes                            | ✅ Yes                   | ❌ No                    |
+| Hoisting           | ✅ Yes (initialized as undefined) | ✅ Yes (not initialized) | ✅ Yes (not initialized) |
+| Temporal Dead Zone | ❌ No                             | ✅ Yes                   | ✅ Yes                   |
