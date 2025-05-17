@@ -1,25 +1,6 @@
 
-
-
-
-
-
-
-
-
-
-
-let func =  function (input){
-console.log(input);
-};
-
-
-func
-
-
-
-
 function Validation (loginButton, username, password){
+    
     if (loginButton) {
         loginButton.addEventListener("click", function() {
 
@@ -44,9 +25,11 @@ function Validation (loginButton, username, password){
 };
 
 
+
 const loginButton = document.getElementById("loginButton");
 let username = document.getElementById("username").value;
 let password = document.getElementById("password").value;
 
 Validation(loginButton, username, password);
+
 

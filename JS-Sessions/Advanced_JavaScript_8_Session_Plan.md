@@ -25,7 +25,7 @@ tags:
 ### Key Concepts:
 - Differences between variable declaration methods
 - Type conversion and coercion
-- Comparison operators (== vs ===)
+- Comparison operators ( == vs === )
 - Array indexing and modification
 
 ### Visual Project:
