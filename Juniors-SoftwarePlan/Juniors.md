@@ -209,6 +209,14 @@
     <img src="cloud.jpg" width="100" height="80" alt="Cloud">
 </div>
 
+<div style="color:blue;">
+ <h2 style="color:navy;">Blue Box</h2>
+    <p>Everything in this box has blue background!</p>
+    <img src="cloud.jpg" width="100" height="80" alt="Cloud">
+<div>
+
+
+</div>
 <p>My favorite color is <span style="color:purple; font-weight:bold;">purple</span>!</p>
 ```
 
@@ -315,7 +323,7 @@
         p {
             color: darkgreen;
         }
-    </style>
+	    </style>
 </head>
 <body>
     <h1>My Styled Page</h1>
