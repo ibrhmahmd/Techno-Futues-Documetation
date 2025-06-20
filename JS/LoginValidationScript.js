@@ -57,6 +57,13 @@
 
 function Validation(submitButton, username, password){
 
+    const username = document.getElementById("username");
+
+    const password = document.getElementById("password");
+    
+    const submitButton = document.getElementById("submitButton");
+    
+    
     submitButton.addEventListener("click", function() {
     
         if (username.value == null ){
@@ -74,15 +81,6 @@ function Validation(submitButton, username, password){
 
 
 
-
-
-
-
-const username = document.getElementById("username");
-
-const password = document.getElementById("password");
-
-const submitButton = document.getElementById("submitButton");
 
 
 

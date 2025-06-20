@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fun - Session 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .demo-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #666;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Fun - Session 3 Demo</h1>
+
+    <!-- Background Images Section -->
+    <div class="demo-section">
+        <h2>1. Beautiful Backgrounds</h2>
+        
+        <!-- Auto Size -->
+        <div style="
+            background-image: url('0nHJsKEtIabtiFEff04f--4--7xn9d.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        ">
+            <p style="background: rgba(255,255,255,0.8); padding: 10px;">
+                Background Size: Auto
+            </p>
+        </div>
+
+        <!-- Contain Size -->
+        <div style="
+            background-image: url('0nHJsKEtIabtiFEff04f--4--7xn9d.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        ">
+            <p style="background: rgba(255,255,255,0.8); padding: 10px;">
+                Background Size: Contain
+            </p>
+        </div>
+
+        <!-- Cover Size -->
+        <div style="
+            background-image: url('0nHJsKEtIabtiFEff04f--4--7xn9d.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            border: 1px solid black;
+        ">
+            <p style="background: rgba(255,255,255,0.8); padding: 10px;">
+                Background Size: Cover
+            </p>
+        </div>
+    </div>
+    
+    <!-- Borders Section -->
+    <div class="demo-section">
+        <h2>2. Fun with Borders</h2>
+        
+        <div style="
+            border-style: dashed;
+            border-width: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        ">
+            Dashed Border
+        </div>
+
+        <div style="
+            border-style: dotted;
+            border-width: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        ">
+            Dotted Border
+        </div>
+
+        <div style="
+            border-style: double;
+            border-width: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        ">
+            Double Border
+        </div>
+
+        <div style="
+            border: 5px solid purple;
+            padding: 20px;
+            text-align: center;
+        ">
+            Border Shorthand (5px solid purple)
+        </div>
+    </div>
+
+    <!-- Shadows Section -->
+    <div class="demo-section">
+        <h2>3. Magic Shadows</h2>
+
+        <div style="
+            background: white;
+            box-shadow: 10px 10px 5px gray;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        ">
+            Shadow to Bottom-Right (10px 10px 5px gray)
+        </div>
+
+        <div style="
+            background: white;
+            box-shadow: -10px 10px 5px gray;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        ">
+            Shadow to Bottom-Left (-10px 10px 5px gray)
+        </div>
+
+        <div style="
+            background: white;
+            box-shadow: 0 0 20px pink;
+            padding: 20px;
+            text-align: center;
+        ">
+            Glowing Effect (0 0 20px pink)
+        </div>
+    </div>
+
+    <!-- Fonts Section -->
+    <div class="demo-section">
+        <h2>4. Playing with Text</h2>
+
+        <div style="font-family: 'Comic Sans MS', cursive; font-size: 20px; margin-bottom: 20px;">
+            Hello! I'm Comic Sans - fun and friendly! 😊
+        </div>
+
+        <div style="font-family: Georgia, serif; font-size: 20px; margin-bottom: 20px;">
+            Hello! I'm Georgia - elegant and formal!
+        </div>
+
+        <div style="font-family: Arial, sans-serif; font-size: 20px; margin-bottom: 20px;">
+            Hello! I'm Arial - clean and simple!
+        </div>
+
+        <div style="font-family: 'Segoe Script', cursive; font-size: 20px;">
+            Hello! I'm handwritten!
+        </div>
+
+        <!-- Font Styles -->
+        <div style="margin-top: 30px;">
+            <p style="font-style: italic; margin-bottom: 10px;">
+                This text is italic!
+            </p>
+            <p style="font-weight: bold;">
+                This text is bold!
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

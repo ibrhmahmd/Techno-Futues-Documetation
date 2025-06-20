@@ -5,6 +5,10 @@
 - VS Code installed
 
 
+
+
+
+
 ## Session 1: HTML Introduction & Basic Structure
 
 ### Review & Introduction

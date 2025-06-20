@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 let btn = document.querySelector(".bgBtnclass").innerHTML;
 
 console.log(btn)

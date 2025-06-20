@@ -136,13 +136,4 @@ pre code .arabic-comment {
   line-height: 1.8;
   margin: 15px 0;
   font-size: 1.1em;
-}
-
-/* Compact Mermaid diagram styles for PDF */
-.mermaid {
-  font-size: 70%;
-  text-align: center;
-  margin: 15px auto;
-  max-width: 90%;
-  page-break-inside: avoid;
 } 
