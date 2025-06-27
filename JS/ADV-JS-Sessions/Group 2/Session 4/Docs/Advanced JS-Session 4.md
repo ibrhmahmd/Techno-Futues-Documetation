@@ -273,3 +273,5 @@ function createRegistrationForm() {
 <div class="arabic">
 استخدام هذه الميزات يساعد في إنشاء واجهات مستخدم تفاعلية وديناميكية
 </div>
+
+

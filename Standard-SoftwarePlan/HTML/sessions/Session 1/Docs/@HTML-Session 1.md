@@ -32,6 +32,9 @@ date: "2025"
 
 ---
 
+```
+```
+
 ## Topic 2: Headings and Paragraphs
 
 <div class="arabic">

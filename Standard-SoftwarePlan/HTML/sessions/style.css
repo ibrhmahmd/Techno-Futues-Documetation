@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+  }
+  
+  h3 {
+    color: #3a6d99;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Page break controls */
+  .page-break {
+    page-break-after: always;
+  }
+  
+  .no-break {
+    page-break-inside: avoid;
+  }
+  
+  /* First page sections - adjust these for your document structure */
+  h2:nth-of-type(1),
+  h2:nth-of-type(2) {
+    page-break-after: avoid;
+  }
+  
+  /* Second page sections - adjust these for your document structure */
+  h2:nth-of-type(3),
+  h2:nth-of-type(4) {
+    page-break-before: always;
+  }
+  
+  /* Last page for advanced content */
+  h2:nth-of-type(6) {
+    page-break-before: always;
+  }
+  
+  /* Keep related sections together */
+  h3 {
+    page-break-inside: avoid;
+  }
+  
+  /* Table formatting */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  code, pre {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+  }
+  
+  pre {
+    padding: 10px;
+    border-left: 4px solid #3498db;
+    direction: ltr;
+  }
+  
+  /* Fix for Arabic in code blocks */
+  pre code .arabic-comment {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    direction: rtl;
+    unicode-bidi: embed;
+    display: inline-block;
+    color: #999;
+  }
+  
+  .code-comment {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .arabic {
+    direction: rtl;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 15px 0;
+    font-size: 1.1em;
+  }
+  
+  /* Optional - Code syntax highlighting */
+  .javascript .keyword {
+    color: #0077aa;
+  }
+  
+  .javascript .string {
+    color: #669900;
+  }
+  
+  .javascript .comment {
+    color: #999;
+    font-style: italic;
+  }
+  

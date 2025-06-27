@@ -11,7 +11,7 @@ function createImage() {
     const img = document.createElement("img");
 
     // Set image attributes
-    img.setAttribute("src", "https://via.placeholder.com/150");
+    img.setAttribute("src", "");
     img.setAttribute("alt", "Placeholder Image");
     img.setAttribute("width", "150");
 
@@ -19,4 +19,3 @@ function createImage() {
     document.getElementById("imageContainer").appendChild(img);
   }
 
-  
