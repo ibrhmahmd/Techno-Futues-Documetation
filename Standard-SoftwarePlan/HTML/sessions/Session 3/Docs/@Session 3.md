@@ -22,8 +22,8 @@ date: "2025"
     <li>Item 3</li>
 </ul>
 
-<!-- With style attribute -->
-<ul style="list-style-type: square;">
+<!-- With type -->
+<ul type= "square">
     <li>Square bullet item</li>
     <li>Another square bullet</li>
 </ul>

@@ -17,10 +17,6 @@ showImgBtn.addEventListener('click', function() {
 
 
 
-let image_footer = document.createElement('img');
-image_footer.src = 'background.png';
-image_footer.alt = 'Demo Image';
-
 
 
 let footer_container = document.getElementById('footer_container');
@@ -38,6 +34,33 @@ const colorBtn = document.getElementById('colorBtn');
 colorBtn.addEventListener('click', function() {
   this.classList.toggle('red');
 });
+
+
+
+
+
+
+
+
+
+let btn = document.createElement('button');
+btn.textContent = 'Click me';
+btn.classList.add('red');
+document.body.appendChild(btn);
+
+
+
+
+
+btn.addEventListener('click', function() {
+
+
+
+btn.classList.toggle('blue');
+
+})
+
+
 // ممكن كمان تكتب كل الكلاسات مرة واحدة
 // colorBtn.className = 'red big-btn';
 
