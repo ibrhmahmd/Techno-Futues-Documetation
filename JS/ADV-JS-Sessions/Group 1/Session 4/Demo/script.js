@@ -39,13 +39,6 @@ document.body.insertBefore(header, document.body.firstChild);
 
 
 
-
-
-
-
-
-
-
     let btn = document.getElementById('submit');
 
 
