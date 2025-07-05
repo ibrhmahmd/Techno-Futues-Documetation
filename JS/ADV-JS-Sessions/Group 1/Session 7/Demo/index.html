@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 7 Demo</title>
+  <style>
+    
+
+
+.red{
+  background-color: red;
+  border: 5px solid blue;
+}
+
+.blue{
+  background-color: blue;
+  border: 5px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+    #myBox {
+      width: 120px;
+      height: 60px;
+      background: #eee;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    
+    .highlight {
+      background: #ffe066;
+      box-shadow: 0 0 10px #ffd700;
+    }
+    
+    
+    .selected {
+      background: #b2f2ff;
+      font-weight: bold;
+    }
+    
+    .next-selected {
+      background: #d0ebff;
+    }
+    
+    ul { margin: 10px 0; padding: 0; }
+    
+    li { list-style: none; padding: 6px 12px; margin: 2px 0; border-radius: 4px; cursor: pointer; }
+
+    button { margin: 6px 0; padding: 6px 16px; font-size: 1rem; }
+
+    .hovered {
+      background: #ffd6e0;
+      color: #c92a2a;
+      border: 2px solid #c92a2a;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+<body>
+  <h2>Event Handling Demo</h2>
+  <button id="highlightBtn">Highlight Box</button>
+  <div id="myBox">أنا بوكس</div>
+
+
+
+  <h2>Hover Event Demo</h2>
+  <button id="hoverBtn">Hover Over Me</button>
+  <div id="hoverBox">بوكس الهوفر</div>
+
+
+  <h2>DOM Traversal Demo</h2>
+  <ul id="myList">
+    <li>واحد</li>
+    <li>اتنين</li>
+    <li>تلاتة</li>
+  </ul>
+
+  
+  <button id="nextBtn">لون اللي بعده</button>
+
+
+
+  <h2>Mini Project</h2>
+  <ul id="miniList">
+    <li>أ</li>
+    <li>ب</li>
+    <li>ج</li>
+  </ul>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -78,3 +78,40 @@ disableBtn.addEventListener('click', function() {
   this.setAttribute('disabled', 'true'); // خلي الزرار مقفول
   this.textContent = 'Disabled'; // غير الكلام
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let h1 = document.createElement('h1');
+h1.textContent = 'Hello World';
+
+
+h1.classList.add('blue');
+
+h1.classList.remove('blue');
+
+h1.classList.add('red');
+
+
+
+h1.classList.toggle('blue');
+
+
+
+
+
+
+
+

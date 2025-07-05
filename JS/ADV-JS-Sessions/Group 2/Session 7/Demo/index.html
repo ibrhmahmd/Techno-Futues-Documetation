@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced JS - Session 7 Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    section { border: 1px solid #ccc; padding: 16px; margin-bottom: 24px; border-radius: 8px; }
+    h2 { margin-top: 0; }
+    .output { background: #f9f9f9; padding: 8px; margin-top: 8px; min-height: 24px; border-radius: 4px; }
+    button { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <!-- 1. JS Objects Demo -->
+  <section>
+    <h2>1. JS Objects / الكائنات في جافاسكريبت</h2>
+    <button id="objDemoBtn">Run Object Demo / شغل مثال الكائن</button>
+    <div id="objOutput" class="output"></div>
+  </section>
+
+  <!-- 2. DOM Traversal Demo -->
+  <section>
+    <h2>2. DOM Traversal / التنقل في عناصر الصفحة</h2>
+    <ul id="demoList">
+      <li>Item 1 / عنصر ١</li>
+      <li>Item 2 / عنصر ٢</li>
+      <li>Item 3 / عنصر ٣</li>
+    </ul>
+    <button id="firstChildBtn">Show First Child / أول عنصر</button>
+    <button id="lastChildBtn">Show Last Child / آخر عنصر</button>
+    <button id="nextSiblingBtn">Show Next Sibling / العنصر اللي بعده</button>
+    <button id="parentBtn">Show Parent / العنصر الأب</button>
+    <div id="domOutput" class="output"></div>
+  </section>
+
+  <!-- 3. Storing in JSON (localStorage) Demo -->
+  <section>
+    <h2>3. Storing in JSON (localStorage) / التخزين في جيسون</h2>
+    <button id="saveJsonBtn">Save Object to localStorage / احفظ الكائن</button>
+    <button id="loadJsonBtn">Load Object from localStorage / اعرض الكائن</button>
+    <div id="jsonOutput" class="output"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
