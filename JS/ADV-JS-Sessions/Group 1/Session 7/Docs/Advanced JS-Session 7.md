@@ -6,94 +6,177 @@ date: "2025"
 
 ## Introduction
 
-In this session, we learned how to use events to change element styles with classes, got a simple intro to DOM traversal, and combined both in a small demo.
+In this session, we explored essential DOM-manipulation skills: defining and calling JavaScript **functions**, adding, removing, and toggling CSS classes with `classList`, and wiring everything together with `addEventListener`.
 
 <div class="arabic">
-في السيشن دي، اتعلمنا إزاي نستخدم الأحداث (events) عشان نغير شكل العناصر بالكلاسات، وخدنا فكرة بسيطة عن التنقل بين عناصر الصفحة (DOM traversal)، وجربنا ندمج اللي اتعلمناه في مثال عملي صغير.
+في السيشن دي، اتعلمنا أساسيات مهمة في الـ DOM: إزاي نكتب ونستخدم الـ **functions** في جافاسكريبت، وإزاي نضيف ونشيل ونقلب (toggle) الكلاسات باستخدام `classList`، وكمان إزاي نربط الأحداث بـ `addEventListener`.
 </div>
 
-## Topic 1: Event Handling to Manipulate Styles with Classes
+## Topic 1: Functions (Declaration vs Expression)
 
-You can use event listeners to add, remove, or toggle classes and change how elements look when users interact with them.
+Functions group reusable code. Two common ways to create them are **function declarations** and **function expressions**.
 
 ```javascript
-// HTML: <button id="highlightBtn">Highlight Box</button>
-//        <div id="myBox">أنا بوكس</div>
+// Function Declaration
+function greet(name) {
+  console.log('Hello', name);
+}
 
-document.getElementById('highlightBtn').addEventListener('click', function() {
-  document.getElementById('myBox').classList.toggle('highlight');
+// Function Expression (stored in a variable)
+const greetExp = function (name) {
+  console.log('Hello', name);
+};
+```
+
+<div class="arabic">
+الـ Function Declarations بتتكتب بكلمة `function` في أول السطر وبتتـHoist، أما الـ Function Expressions بتتخزن في متغيّر ومش بتتـHoist بنفس الشكل.
+</div>
+
+## Topic 2: classList.add
+
+`element.classList.add('className')` adds a class to the element.
+
+```javascript
+myBox.classList.add('highlight');
+```
+
+<div class="arabic">
+`add` بتضيف كلاس للعُنصر لو مش موجود.
+</div>
+
+## Topic 3: classList.remove
+
+`element.classList.remove('className')` removes a class if it exists.
+
+```javascript
+myBox.classList.remove('highlight');
+```
+
+<div class="arabic">
+`remove` بتشيل الكلاس لو كان موجود.
+</div>
+
+## Topic 4: classList.toggle
+
+`element.classList.toggle('className')` adds the class if it isn’t there or removes it if it is — perfect for switches.
+
+```javascript
+myBox.classList.toggle('highlight'); // يضيف أو يشيل على حسب الحالة الحالية
+```
+
+<div class="arabic">
+`toggle` مفيدة لو عايز تفتح/تقفل مود معيّن بكليك واحدة.
+</div>
+
+## Topic 5: addEventListener
+
+`addEventListener` attaches a function that will run when a specific event fires.
+
+```javascript
+button.addEventListener('click', function () {
+  console.log('Button clicked');
 });
 ```
 
-This code toggles the 'highlight' class on the box when you click the button.
-
 <div class="arabic">
-تقدر تضيف أو تشيل كلاس للعناصر لما المستخدم يتفاعل معاها. هنا لما تدوس على الزرار، البوكس بياخد كلاس "highlight" أو يتشال منه.
+`addEventListener` بتربط كودك بالحدث (زي click) عشان يتنفذ لما الحدث يحصل.
 </div>
 
-## Topic 2: DOM Traversal (Intro & Simple Demo)
+## Topic 6: Comparing Common Event Types
 
-DOM traversal means moving between elements in the page, like من الأب للابن أو من الأخ للأخ (parent, child, sibling).
-
-```javascript
-// HTML: <ul id="myList">
-//   <li>واحد</li>
-//   <li>اتنين</li>
-//   <li>تلاتة</li>
-// </ul>
-// <button id="nextBtn">لون اللي بعده</button>
-
-const list = document.getElementById('myList');
-const nextBtn = document.getElementById('nextBtn');
-let current = list.firstElementChild;
-
-nextBtn.addEventListener('click', function() {
-  if (current) {
-    current.classList.remove('selected');
-    current = current.nextElementSibling || list.firstElementChild;
-    current.classList.add('selected');
-  }
-});
-```
-
-This code moves the highlight to the next list item every time you click the button.
+| Event | Fires When | Typical Elements | Bubbles? | Notes |
+|-------|------------|------------------|----------|-------|
+| click | User clicks (mouse or touch) | Buttons, links, any element | Yes | Default for most interactions |
+| dblclick | User double-clicks | Same as click | Yes | Less common on mobile |
+| mouseover | Pointer enters element | Any element | Yes | Handy for tooltips/menus |
+| keydown | Key pressed down | Document, inputs | Yes | Good for keyboard shortcuts |
+| submit | Form is submitted | `<form>` | Yes | Prevent with `event.preventDefault()` |
+| input | User types/changes value | Inputs, textareas | Yes | Fires on every change |
 
 <div class="arabic">
-DOM traversal يعني تعرف تتنقل بين العناصر في الصفحة. هنا كل ما تدوس على الزرار، العنصر اللي عليه الدور بيتلون.
+مقارنة بين أشهر الـ Events: `click`، `dblclick`، `mouseover`، `keydown`، `submit`، و`input`.
 </div>
 
-## Topic 3: Mini Project – Combine Events & Traversal
+## Topic 7: Full Event Reference (Quick Cheat-Sheet)
 
-Let's combine what we learned: Click a list item to highlight it and its next sibling.
+Below is a non-exhaustive but **practical** catalogue of DOM events you can attach with `addEventListener`. Keep it handy when you build UI features.
 
-```javascript
-// HTML: <ul id="miniList">
-//   <li>أ</li>
-//   <li>ب</li>
-//   <li>ج</li>
-// </ul>
+| Category | Events |
+|----------|--------|
+| **Clipboard** | copy, cut, paste |
+| **Composition / IME** | compositionstart, compositionupdate, compositionend |
+| **Drag & Drop** | drag, dragstart, dragend, dragenter, dragleave, dragover, drop |
+| **Focus** | focus, blur, focusin, focusout |
+| **Form & Input** | input, change, submit, reset, invalid |
+| **Keyboard** | keydown, keyup, keypress |
+| **Mouse / Pointer** | click, dblclick, mousedown, mouseup, mousemove, mouseenter, mouseleave, mouseover, mouseout, contextmenu |
+| **Pointer (touch / pen)** | pointerdown, pointerup, pointermove, pointerenter, pointerleave, pointerover, pointerout, pointercancel |
+| **Touch** | touchstart, touchend, touchmove, touchcancel |
+| **Wheel / Scroll** | wheel, scroll |
+| **UI & View** | resize, scroll, load, unload, beforeunload, error |
+| **Media** | play, pause, ended, volumechange, timeupdate, seeked, waiting |
+| **Animation & Transition** | animationstart, animationend, animationiteration, transitionstart, transitionend, transitionrun |
+| **Network** | online, offline |
+| **Selection** | select, selectstart, selectionchange |
+| **Storage & Data** | storage, beforeprint, afterprint |
 
-document.querySelectorAll('#miniList li').forEach(function(item) {
-  item.addEventListener('click', function() {
-    // شيل الكلاس من الكل
-    document.querySelectorAll('#miniList li').forEach(li => li.classList.remove('selected'));
-    // ضيف الكلاس على العنصر اللي اتداس عليه
-    this.classList.add('selected');
-    // ولو فيه أخ بعده، ضيف له كلاس كمان
-    if (this.nextElementSibling) {
-      this.nextElementSibling.classList.add('next-selected');
+<div class="arabic">
+مرجع سريع لأشهر الأحداث اللي ممكن تستخدمها مع `addEventListener`.
+</div>
+
+## Task – Light Switch Button
+
+Create a button that turns a "light bulb" on and off.
+
+### Requirements
+1. Use **only JavaScript** for logic.
+2. Toggle a CSS class `.on` on a bulb element.
+3. Attach a **click** event with `addEventListener`.
+4. Use `classList.toggle` (or `.add()` / `.remove()`).
+5. Bulb color changes: gray (off) ↔ yellow (on).
+
+### Starter Template
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #bulb {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: gray; /* Off */
+      margin: 20px auto;
     }
+    .on {
+      background-color: yellow; /* On */
+    }
+  </style>
+</head>
+<body>
+
+<div id="bulb"></div>
+<button id="toggleBtn">Toggle Light</button>
+
+<script>
+  const bulb = document.getElementById('bulb');
+  const btn  = document.getElementById('toggleBtn');
+
+  btn.addEventListener('click', () => {
+    bulb.classList.toggle('on');
   });
-});
+</script>
+
+</body>
+</html>
 ```
 
-This code highlights the clicked item and its next sibling.
-
 <div class="arabic">
-في المشروع الصغير ده، لما تدوس على عنصر في الليست، هو وأخوه اللي بعده بيتلونوا.
+مطلوب زر يفتح ويطفئ مصباحًا بسيطًا باستخدام `classList.toggle` وحدث `click`.
 </div>
 
 ---
+
 
 ## Key Concepts Covered
 
@@ -101,6 +184,7 @@ This code highlights the clicked item and its next sibling.
 الحاجات المهمة اللي اتعلمناها في السيشن:
 </div>
 
-1. **Event Handling**: إزاي تتعامل مع الأحداث وتغير شكل العناصر بالكلاسات
-2. **DOM Traversal**: فكرة بسيطة عن التنقل بين عناصر الصفحة
-3. **دمج اللي اتعلمناه**: مثال عملي بيجمع الأحداث والتنقل بين العناصر
+1. **Functions**
+2. **classList.add / remove / toggle**
+3. **addEventListener**
+4. **أنواع الأحداث الشائعة & مرجع كامل للأحداث**

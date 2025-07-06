@@ -1,78 +1,65 @@
-// 1. JS Objects Demo / مثال الكائنات
-// -------------------------------
-document.getElementById('objDemoBtn').onclick = function() {
-  // Create object / اعمل كائن
-  // English: Create a student object
-  // Arabic: هنعمل كائن طالب
-  let student = {
-    name: 'Omar', // الاسم
-    age: 15,      // السن
-    grade: 'A'    // التقدير
-  };
+// 1. التعامل مع الأحداث وتغيير الكلاسات
+const highlightBtn = document.getElementById('highlightBtn');
+const myBox = document.getElementById('myBox');
+highlightBtn.addEventListener('click', function() {
+  myBox.classList.toggle('highlight'); // لما تدوس الزرار، البوكس يتلون أو يرجع عادي
+});
 
-  // Access property / اعرض خاصية
-  let name = student.name; // English: Access name / Arabic: اعرض الاسم
 
-  // Add property / ضيف خاصية
-  student.school = 'Techno School'; // English: Add school / Arabic: ضيف المدرسة
 
-  // Delete property / امسح خاصية
-  delete student.grade; // English: Delete grade / Arabic: امسح التقدير
 
-  // Show result / اعرض النتيجة
-  document.getElementById('objOutput').textContent =
-    'Student: ' + JSON.stringify(student) + '\nName: ' + name +
-    '\n(الكائن بعد التعديلات: ' + JSON.stringify(student) + ')';
-};
+
+// 2. الهوفر: لما تعدي الماوس على الزرار
+const hoverBtn = document.getElementById('hoverBtn');
+const hoverBox = document.getElementById('hoverBox');
+
+hoverBtn.addEventListener('mouseenter', function() {
+  hoverBox.classList.add('hovered'); // لما تعدي الماوس، البوكس يتلون
+});
+
+hoverBtn.addEventListener('mouseleave', function() {
+  hoverBox.classList.remove('hovered'); // لما تخرج بالماوس، البوكس يرجع عادي
+});
 
 
 
 
 
 
+// 3. التنقل بين عناصر الليست
+const list = document.getElementById('myList');
+const nextBtn = document.getElementById('nextBtn');
+
+let current = list.firstElementChild;
+current.classList.add('selected'); // أول عنصر متلون في الأول
+
+nextBtn.addEventListener('click', function() {
+  current.classList.remove('selected');
+  current = current.nextElementSibling || list.firstElementChild;
+  current.classList.add('selected');
+});
 
 
 
 
 
-
-
-
-
-
-
-// ---------------------------------------------
-const demoList = document.getElementById('demoList');
-const domOutput = document.getElementById('domOutput');
-
-document.getElementById('firstChildBtn').onclick = function() {
-  let first = demoList.firstElementChild;
-  domOutput.textContent = 'First Child: ' + first.textContent + ' / أول عنصر: ' + first.textContent;
-};
-
-
-document.getElementById('lastChildBtn').onclick = function() {
-  let last = demoList.lastElementChild;
-  domOutput.textContent = 'Last Child: ' + last.textContent + ' / آخر عنصر: ' + last.textContent;
-};
-
-
-document.getElementById('nextSiblingBtn').onclick = function() {
-  let first = demoList.firstElementChild;
-  let next = first.nextElementSibling;
-  domOutput.textContent = next ? ('Next Sibling: ' + next.textContent + ' / العنصر اللي بعده: ' + next.textContent) : 'No next sibling / مفيش عنصر بعده';
-};
-
-
-
-// Show parent / العنصر الأب
-// English: Show parent of the list
-// Arabic: اعرض العنصر الأب لليست
-
-document.getElementById('parentBtn').onclick = function() {
-  let parent = demoList.parentElement;
-  domOutput.textContent = 'Parent tag: ' + parent.tagName + ' / العنصر الأب: ' + parent.tagName;
-};
+// 4. المشروع الصغير: لون العنصر اللي تدوس عليه وأخوه اللي بعده
+const miniItems = document.querySelectorAll('#miniList li');
+miniItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    // شيل الكلاسات من الكل
+    miniItems.forEach(li => {
+      li.classList.remove('selected');
+      li.classList.remove('next-selected');
+    });
+    // ضيف الكلاس على العنصر اللي اتداس عليه
+    this.classList.add('selected');
+    // ولو فيه أخ بعده، ضيف له كلاس كمان
+    if (this.nextElementSibling) {
+      this.nextElementSibling.classList.add('next-selected');
+    }
+  });
+});
 
 
 
@@ -84,30 +71,23 @@ document.getElementById('parentBtn').onclick = function() {
 
 
 
-// 3. Storing in JSON (localStorage) Demo / مثال التخزين في جيسون
-// ----------------------------------------------------------
-const studentObj = { name: 'Omar', age: 15, school: 'Techno School' };
-const jsonOutput = document.getElementById('jsonOutput');
 
-// Save object to localStorage / احفظ الكائن
-// English: Save studentObj as JSON
-// Arabic: احفظ الكائن في localStorage
 
-document.getElementById('saveJsonBtn').onclick = function() {
-  localStorage.setItem('student', JSON.stringify(studentObj));
-  jsonOutput.textContent = 'Saved! / اتحفظ!';
-};
+let btn = document.createElement('button');
+btn.textContent = 'Click me';
+btn.classList.add('red');
+document.body.appendChild(btn);
 
-// Load object from localStorage / اعرض الكائن
-// English: Load studentObj from JSON
-// Arabic: اعرض الكائن من localStorage
 
-document.getElementById('loadJsonBtn').onclick = function() {
-  let data = localStorage.getItem('student');
-  if (data) {
-    let obj = JSON.parse(data);
-    jsonOutput.textContent = 'Loaded: ' + JSON.stringify(obj) + ' / الكائن: ' + JSON.stringify(obj);
-  } else {
-    jsonOutput.textContent = 'Nothing saved / مفيش حاجة محفوظة';
-  }
-};
+
+
+
+btn.addEventListener('mouseenter', function() {
+
+  btn.classList.toggle('blue');
+})
+
+btn.addEventListener('mouseleave', function() {
+
+  btn.classList.toggle('blue');
+})
