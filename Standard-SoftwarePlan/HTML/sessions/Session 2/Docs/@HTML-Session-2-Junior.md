@@ -1,5 +1,5 @@
 ---
-title: "🌟 HTML - Session 2: Links, Images & Multi-Page Magic! 🌟"
+title: "🌟 HTML - Session 2: Images, Links & Web Magic! 🌟"
 author: "Ibrahim Ahmed/Techno Future"
 date: "2025"
 ---
@@ -11,9 +11,64 @@ h1, h2, h3, h4, h5, h6 { margin-top: 1.4em; margin-bottom: 0.6em; }
 code { white-space: pre-wrap; }
 </style>
 
-# 🔗 Topic 1: Links - The Magic Doors of the Web!
+# 🖼️ Topic 1: Images - Bringing Your Page to Life!
 
-## 🔗 الموضوع ١: اللينكات - أبواب الإنترنت السحرية!
+## 🖼️ الموضوع ١: الصور - خلي صفحتك تعيش!
+
+<div class="arabic">
+الصور بتخلي الصفحة شكلها حلو وتخلي الناس تفهم أسرع! 🖼️
+</div>
+
+**Adding images is like decorating your room with your favorite posters!**
+
+```html
+<!-- Basic image from the internet -->
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Beautiful Forest" width="300">
+<p>غابة جميلة في الصباح - A beautiful forest in the morning.</p>
+<a href="https://en.wikipedia.org/wiki/Forest" target="_blank">تعرف على الغابات - Learn about forests</a>
+
+<!-- Another image from Wikimedia Commons -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="Transparent PNG Example" width="300">
+<p>مثال لصورة شفافة - Example of a transparent image.</p>
+<a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics" target="_blank">ما هو PNG؟ - What is PNG?</a>
+```
+
+<div class="tip">
+💡 Always use <code>alt</code> to describe your image. It helps everyone, even if the picture doesn't show up!
+</div>
+
+<div class="arabic tip">
+💡 لازم دايمًا تكتب وصف للصورة في <code>alt</code>، عشان لو الصورة ما ظهرتش أو حد عنده مشكلة في النظر.
+</div>
+
+---
+
+# 🌐 Where to Find Images
+
+## 🌐 فين تلاقي صور كويسة لموقعك؟
+
+<div class="arabic">
+ممكن تدور على صور مجانية وعالية الجودة من مواقع زي:
+</div>
+
+- [Unsplash](https://unsplash.com/) - صور مجانية عالية الجودة
+- [Wikimedia Commons](https://commons.wikimedia.org/) - مكتبة صور ضخمة لكل المواضيع
+- [Pexels](https://www.pexels.com/) - صور وفيديوهات مجانية
+- [Pixabay](https://pixabay.com/) - صور، فيديوهات، ورسومات مجانية
+
+<div class="tip">
+💡 Always check the license of the image before using it, but these sites are usually safe for students!
+</div>
+
+<div class="arabic tip">
+💡 اتأكد إن الصورة مجانية ومسموح تستخدمها، والمواقع دي مناسبة للطلاب.
+</div>
+
+---
+
+# 🔗 Topic 2: Links - The Magic Doors of the Web!
+
+## 🔗 الموضوع ٢: اللينكات - أبواب الإنترنت السحرية!
 
 <div class="arabic">
 اللينكات زي الأبواب اللي بتوديك أماكن تانية على الإنترنت أو حتى تفتحلك صفحة جديدة أو إيميل! 🪄
@@ -40,140 +95,66 @@ code { white-space: pre-wrap; }
 💡 استخدم <code>href</code> عشان تحدد مكان اللينك. ولو عايز تفتح الباب في تاب جديد، استخدم <code>target="_blank"</code>.
 </div>
 
-<!-- PAGE BREAK -->
-
 ---
 
-# 🖼️ Topic 2: Images - Bringing Your Page to Life!
+# 🏆 Practical Exercise: Find, Describe & Link Images!
 
-## 🖼️ الموضوع ٢: الصور - خلي صفحتك تعيش!
+## 🏆 تدريب عملي: دور على صور، أوصفها، واربطها!
 
 <div class="arabic">
-الصور بتخلي الصفحة شكلها حلو وتخلي الناس تفهم أسرع! 🖼️
+دور على ٢ أو ٣ صور من الإنترنت (من المواقع اللي فوق)، وحطهم في صفحتك. لكل صورة:
+- ضيف الصورة باستخدام لينك مباشر
+- اكتب وصف للصورة
+- اعمل لينك لموضوع له علاقة بالصورة
 </div>
 
-**Adding images is like decorating your room with your favorite posters!**
+**Your task:**
+1. Find 2 or 3 images from the internet (using the sites above).
+2. For each image:
+   - Add it to your page using the image URL.
+   - Write a short description.
+   - Add a link to a related subject (e.g., Wikipedia page).
 
 ```html
-<!-- Basic image -->
-<img src="images/photo.jpg" alt="وصف للصورة">
-
-<!-- Image with size -->
-<img src="images/logo.png" alt="لوجو الشركة" width="200" height="100">
+<!-- Example for the exercise -->
+<img src="https://images.pexels.com/photos/34950/pexels-photo.jpg" alt="Mountain Landscape" width="250">
+<p>منظر جبلي رائع - A beautiful mountain landscape.</p>
+<a href="https://en.wikipedia.org/wiki/Mountain" target="_blank">اعرف أكتر عن الجبال - Learn more about mountains</a>
 ```
 
 <div class="tip">
-💡 Always use <code>alt</code> to describe your image. It helps everyone, even if the picture doesn't show up!
+💡 Try to choose different topics for your images to make your page interesting!
 </div>
 
 <div class="arabic tip">
-💡 لازم دايمًا تكتب وصف للصورة في <code>alt</code>، عشان لو الصورة ما ظهرتش أو حد عنده مشكلة في النظر.
+💡 اختار صور لمواضيع مختلفة عشان صفحتك تكون ممتعة!
 </div>
-
-<!-- PAGE BREAK -->
 
 ---
 
-# 📄 Topic 3: Multi-Page Websites & Navigation - Your Own Website Adventure!
+# 📄 Coming Soon: Multi-Page Websites!
 
-## 📄 الموضوع ٣: مواقع فيها كذا صفحة - مغامرة موقعك!
+## 📄 قريبًا: مواقع فيها كذا صفحة!
 
 <div class="arabic">
-لو عندك أكتر من صفحة، لازم تربطهم ببعض وتخلي التنقل بينهم سهل زي لعبة المتاهة! 🗺️
+في الجلسة الجاية هنتعلم إزاي نربط أكتر من صفحة مع بعض ونعمل موقع كامل! 🗺️
 </div>
 
-**Block vs Inline Elements:**
-- Block elements: زي الصناديق الكبيرة، كل واحد في سطر لوحده (زي <code>div</code> و <code>p</code>)
-- Inline elements: زي الكلمات اللي جنب بعض في نفس السطر (زي <code>span</code>)
-
-**Navigation:**
-- استخدم <code>nav</code> عشان تعمل قائمة تنقل بين الصفحات
-
-```html
-<!-- Block elements -->
-<div>ده عنصر بلوك</div>
-<p>ده كمان عنصر بلوك</p>
-
-<!-- Inline elements -->
-الكلام ده فيه <span>عنصر إنلاين</span> جواه.
-
-<!-- Navigation -->
-<nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">عننا</a>
-    <a href="contact.html">اتصل بينا</a>
-</nav>
-```
-
-<div class="tip">
-💡 Navigation is like a map for your website. Make it easy for visitors to find their way!
-</div>
-
-<div class="arabic tip">
-💡 قائمة التنقل زي الخريطة، خليها واضحة وسهلة عشان كل اللي يدخل موقعك يعرف يروح فين بسرعة!
-</div>
-
-<!-- PAGE BREAK -->
+**In the next session, we'll learn how to connect multiple pages together to make a real website adventure!**
 
 ---
 
-# 🏆 Practical Exercise: Build Your Own Mini Website!
+# 📝 Homework Challenge: Show Off Your Image Skills!
 
-## 🏆 تدريب عملي: ابني موقع صغير بنفسك!
-
-<div class="arabic">
-اعمل صفحتين HTML: واحدة رئيسية وواحدة عن هواياتك. اربطهم ببعض، وحط صور وروابط زي ما اتعلمت! 🎨
-</div>
-
-```html
-<!-- Example skeleton code for navigation and images -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Hobbies</title>
-</head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="hobbies.html">My Hobbies</a>
-    </nav>
-    <h1>هواياتي</h1>
-    <h2>كرة القدم</h2>
-    <img src="images/football.jpg" alt="صورة كرة القدم" width="200">
-    <p>بحب ألعب كورة مع صحابي في النادي.</p>
-    <h2>القراءة</h2>
-    <img src="images/reading.jpg" alt="صورة قراءة" width="200">
-    <p>القراءة بتخليني أتعلم حاجات جديدة.</p>
-    <!-- زود هوايات وروابط تانية لو حابب -->
-</body>
-</html>
-```
-
-<div class="tip">
-💡 Try adding more hobbies, images, and links to make your site unique!
-</div>
-
-<div class="arabic tip">
-💡 جرب تزود هوايات وصور وروابط أكتر عشان موقعك يبقى مميز!
-</div>
-
-<!-- PAGE BREAK -->
-
----
-
-# 📝 Homework Challenge: Show Off Your Hobbies!
-
-## 📝 تحدي الواجب: ورينا هواياتك!
+## 📝 تحدي الواجب: ورينا شطارتك في الصور!
 
 <div class="arabic">
-اعمل صفحة "هواياتي" فيها ٣ هوايات أو أكتر، لكل هواية صورة ووصف، وروابط لمواقع ليها علاقة، وكمان لينك يرجعك للصفحة الرئيسية. 🏅
+اعمل صفحة فيها ٣ صور من الإنترنت، لكل صورة وصف ولينك لموضوع له علاقة. زين صفحتك بالألوان وخليها ممتعة!
 </div>
 
-1. Create a "My Hobbies" page with at least 3 hobbies.
-2. For each hobby, add a picture, a description, and a link to a related website.
-3. Add a link to go back to your main page.
-4. Decorate your page with colors and fun!
+1. Create a page with 3 images from the internet.
+2. For each image, add a description and a link to a related subject.
+3. Decorate your page with colors and fun!
 
 ---
 
@@ -182,17 +163,15 @@ code { white-space: pre-wrap; }
 <div class="arabic">
 ## 🕵️ تحدي المحقق HTML
 
-في صفحة "هواياتي" بتاعتك، تقدر تلاقي كام تاج من كل نوع؟
-- تاجات العناوين: ___
-- تاجات الفقرات: ___
+في صفحتك، تقدر تلاقي كام تاج من كل نوع؟
 - تاجات الصور: ___
+- تاجات الفقرات: ___
 - تاجات اللينك: ___
 </div>
 
-Can you count how many of each tag you used in your "My Hobbies" page?
-- Heading tags: ___
-- Paragraph tags: ___
+Can you count how many of each tag you used in your page?
 - Image tags: ___
+- Paragraph tags: ___
 - Link tags: ___
 
 ---
@@ -200,7 +179,7 @@ Can you count how many of each tag you used in your "My Hobbies" page?
 ## 🏅 Achievement Unlocked!
 
 <div class="arabic">
-لما تخلص موقعك الصغير، انت كده بقيت Web Explorer! 🥳
+لما تخلص صفحتك، انت كده بقيت Web Explorer! 🥳
 </div>
 
-When you finish your mini website, you are now a Web Explorer! 🥳
+When you finish your page, you are now a Web Explorer! 🥳
