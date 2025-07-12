@@ -3,7 +3,7 @@ title: "Advanced JavaScript - Session 8"
 author: "---"
 date: "2025"
 ---
-
+c
 ## Introduction
 
 In this session, we learned about **CDNs (Content Delivery Networks)**, how to use them for CSS, and how to work with CDN-powered styles using JavaScript.

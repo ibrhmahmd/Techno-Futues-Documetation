@@ -22,15 +22,51 @@ if (!faLink) {
 
 
 
+let CDNLINK = document.createElement('link');
+CDNLINK.rel = 'stylesheet';
+CDNLINK.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css';
 
-// Set up body
+CDNLINK.crossOrigin = 'anonymous';
+CDNLINK.referrerPolicy = 'no-referrer';
+CDNLINK.integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" ;
+
+document.head.appendChild(CDNLINK);
+
+
+
+
+
+
+
+
+
 document.body.className = 'bg-light text-center p-5';
 const container = document.createElement('div');
 document.body.appendChild(container);
 
 
+const btn1 = document.createElement('button');
+btn1.textContent = 'Primary';
+btn1.className = 'btn btn-primary m-2';
 
 
+btn1.onclick = function () {
+  btn1.classList.toggle('btn-primary');
+  btn1.classList.toggle('btn-warning'); // Toggle between blue and yellow
+
+  setTimeout(()=>{
+    const alert1 = document.createElement('div');
+    alert1.className = 'alert alert-danger my-2';
+    alert1.role = 'alert';
+    alert1.textContent = 'This is a Failed alert!';
+    container.appendChild(alert1);
+    
+  }, 3000);
+
+
+};
+
+container.appendChild(btn1);
 
 
 
@@ -47,14 +83,10 @@ container.appendChild(title);
 
 // 3 Colorful Bootstrap Buttons with toggle event listeners
 
-const btn1 = document.createElement('button');
-btn1.textContent = 'Primary';
-btn1.className = 'btn btn-primary m-2';
-btn1.onclick = function () {
-  btn1.classList.toggle('btn-primary');
-  btn1.classList.toggle('btn-warning'); // Toggle between blue and yellow
-};
-container.appendChild(btn1);
+
+
+
+
 
 
 

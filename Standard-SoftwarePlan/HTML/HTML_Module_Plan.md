@@ -669,7 +669,8 @@ This text has <span>an inline element</span> within it.
             </ul>
         </nav>
     </header>
-    
+
+
     <main>
         <section>
             <h2>Main Content Section</h2>
