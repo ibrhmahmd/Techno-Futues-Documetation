@@ -73,7 +73,7 @@ myBox.classList.toggle('highlight'); // يضيف أو يشيل على حسب ا�
 `addEventListener` attaches a function that will run when a specific event fires.
 
 ```javascript
-button.addEventListener('click', function () {
+button.addEventListener('mouseover', function () {
   console.log('Button clicked');
 });
 ```
@@ -84,14 +84,14 @@ button.addEventListener('click', function () {
 
 ## Topic 6: Comparing Common Event Types
 
-| Event | Fires When | Typical Elements | Bubbles? | Notes |
-|-------|------------|------------------|----------|-------|
-| click | User clicks (mouse or touch) | Buttons, links, any element | Yes | Default for most interactions |
-| dblclick | User double-clicks | Same as click | Yes | Less common on mobile |
-| mouseover | Pointer enters element | Any element | Yes | Handy for tooltips/menus |
-| keydown | Key pressed down | Document, inputs | Yes | Good for keyboard shortcuts |
-| submit | Form is submitted | `<form>` | Yes | Prevent with `event.preventDefault()` |
-| input | User types/changes value | Inputs, textareas | Yes | Fires on every change |
+| Event     | Fires When                   | Typical Elements            | Bubbles? | Notes                                 |
+| --------- | ---------------------------- | --------------------------- | -------- | ------------------------------------- |
+| click     | User clicks (mouse or touch) | Buttons, links, any element | Yes      | Default for most interactions         |
+| dblclick  | User double-clicks           | Same as click               | Yes      | Less common on mobile                 |
+| mouseover | Pointer enters element       | Any element                 | Yes      | Handy for tooltips/menus              |
+| keydown   | Key pressed down             | Document, inputs            | Yes      | Good for keyboard shortcuts           |
+| submit    | Form is submitted            | `<form>`                    | Yes      | Prevent with `event.preventDefault()` |
+| input     | User types/changes value     | Inputs, textareas           | Yes      | Fires on every change                 |
 
 <div class="arabic">
 مقارنة بين أشهر الـ Events: `click`، `dblclick`، `mouseover`، `keydown`، `submit`، و`input`.
@@ -101,24 +101,24 @@ button.addEventListener('click', function () {
 
 Below is a non-exhaustive but **practical** catalogue of DOM events you can attach with `addEventListener`. Keep it handy when you build UI features.
 
-| Category | Events |
-|----------|--------|
-| **Clipboard** | copy, cut, paste |
-| **Composition / IME** | compositionstart, compositionupdate, compositionend |
-| **Drag & Drop** | drag, dragstart, dragend, dragenter, dragleave, dragover, drop |
-| **Focus** | focus, blur, focusin, focusout |
-| **Form & Input** | input, change, submit, reset, invalid |
-| **Keyboard** | keydown, keyup, keypress |
-| **Mouse / Pointer** | click, dblclick, mousedown, mouseup, mousemove, mouseenter, mouseleave, mouseover, mouseout, contextmenu |
-| **Pointer (touch / pen)** | pointerdown, pointerup, pointermove, pointerenter, pointerleave, pointerover, pointerout, pointercancel |
-| **Touch** | touchstart, touchend, touchmove, touchcancel |
-| **Wheel / Scroll** | wheel, scroll |
-| **UI & View** | resize, scroll, load, unload, beforeunload, error |
-| **Media** | play, pause, ended, volumechange, timeupdate, seeked, waiting |
-| **Animation & Transition** | animationstart, animationend, animationiteration, transitionstart, transitionend, transitionrun |
-| **Network** | online, offline |
-| **Selection** | select, selectstart, selectionchange |
-| **Storage & Data** | storage, beforeprint, afterprint |
+| Category                   | Events                                                                                                   |
+| -------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Clipboard**              | copy, cut, paste                                                                                         |
+| **Composition / IME**      | compositionstart, compositionupdate, compositionend                                                      |
+| **Drag & Drop**            | drag, dragstart, dragend, dragenter, dragleave, dragover, drop                                           |
+| **Focus**                  | focus, blur, focusin, focusout                                                                           |
+| **Form & Input**           | input, change, submit, reset, invalid                                                                    |
+| **Keyboard**               | keydown, keyup, keypress                                                                                 |
+| **Mouse / Pointer**        | click, dblclick, mousedown, mouseup, mousemove, mouseenter, mouseleave, mouseover, mouseout, contextmenu |
+| **Pointer (touch / pen)**  | pointerdown, pointerup, pointermove, pointerenter, pointerleave, pointerover, pointerout, pointercancel  |
+| **Touch**                  | touchstart, touchend, touchmove, touchcancel                                                             |
+| **Wheel / Scroll**         | wheel, scroll                                                                                            |
+| **UI & View**              | resize, scroll, load, unload, beforeunload, error                                                        |
+| **Media**                  | play, pause, ended, volumechange, timeupdate, seeked, waiting                                            |
+| **Animation & Transition** | animationstart, animationend, animationiteration, transitionstart, transitionend, transitionrun          |
+| **Network**                | online, offline                                                                                          |
+| **Selection**              | select, selectstart, selectionchange                                                                     |
+| **Storage & Data**         | storage, beforeprint, afterprint                                                                         |
 
 <div class="arabic">
 مرجع سريع لأشهر الأحداث اللي ممكن تستخدمها مع `addEventListener`.
@@ -188,3 +188,8 @@ Create a button that turns a "light bulb" on and off.
 2. **classList.add / remove / toggle**
 3. **addEventListener**
 4. **أنواع الأحداث الشائعة & مرجع كامل للأحداث**
+
+
+
+
+
