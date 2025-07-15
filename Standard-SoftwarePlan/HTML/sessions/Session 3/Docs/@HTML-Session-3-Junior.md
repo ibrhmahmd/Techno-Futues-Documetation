@@ -48,11 +48,11 @@ code { white-space: pre-wrap; }
 ```
 
 <div class="tip">
-💡 Use <code>&lt;ul&gt;</code> for the list, and <code>&lt;li&gt;</code> for each item. Try changing the bullet style for more fun!
+💡 Use <code><ul></code> for the list, and <code><li></code> for each item. Try changing the bullet style for more fun!
 </div>
 
 <div class="arabic tip">
-💡 استخدم <code>&lt;ul&gt;</code> عشان تعمل قايمة بنقط، و<code>&lt;li&gt;</code> لكل عنصر. جرب تغير شكل النقط عشان القايمة تبقى أظرف!
+💡 استخدم <code><ul></code> عشان تعمل قايمة بنقط، و<code><li></code> لكل عنصر. جرب تغير شكل النقط عشان القايمة تبقى أظرف!
 </div>
 
 <!-- PAGE BREAK -->
@@ -103,11 +103,11 @@ code { white-space: pre-wrap; }
 ```
 
 <div class="tip">
-💡 Use <code>&lt;ol&gt;</code> for numbered lists, and <code>type</code> or <code>start</code> to change the style or starting number!
+💡 Use <code><ol></code> for numbered lists, and <code>type</code> or <code>start</code> to change the style or starting number!
 </div>
 
 <div class="arabic tip">
-💡 استخدم <code>&lt;ol&gt;</code> عشان تعمل قايمة مرقمة، و<code>type</code> أو <code>start</code> لو عايز تغير شكل الترقيم أو تبدأ من رقم معين!
+💡 استخدم <code><ol></code> عشان تعمل قايمة مرقمة، و<code>type</code> أو <code>start</code> لو عايز تغير شكل الترقيم أو تبدأ من رقم معين!
 </div>
 
 <!-- PAGE BREAK -->
@@ -208,10 +208,10 @@ code { white-space: pre-wrap; }
 </div>
 
 1. Create a recipe page with:
-    - An unordered list for ingredients
-    - An ordered list for steps
-    - A description list for new words or cooking terms
-    - (Optional) Add an audio explanation!
+   - An unordered list for ingredients
+   - An ordered list for steps
+   - A description list for new words or cooking terms
+   - (Optional) Add an audio explanation!
 2. Make it colorful and fun!
 
 ---
@@ -222,12 +222,15 @@ code { white-space: pre-wrap; }
 ## 🕵️ تحدي المحقق HTML
 
 في صفحة الوصفة بتاعتك، تقدر تلاقي كام تاج من كل نوع؟
+
 - تاجات القوايم الغير مرتبة: ___
 - تاجات القوايم المرتبة: ___
 - تاجات الصوت: ___
+
 </div>
 
 Can you count how many of each tag you used in your recipe page?
+
 - Unordered list tags: ___
 - Ordered list tags: ___
 - Audio tags: ___
