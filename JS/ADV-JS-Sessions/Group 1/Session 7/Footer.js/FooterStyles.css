@@ -1,0 +1,112 @@
+/* Footer component styles extracted from home.css */
+
+.footer {
+  background-color: burlywood;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(163, 128, 84);
+  margin-top: 10px; /* removed absolute positioning */
+}
+  
+.footer-links {
+  display: flex;
+  flex: 2 1 500px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fff;
+  border-bottom: 2px solid rgb(239, 213, 179);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-column a {
+  display: block;
+  color: rgb(163, 128, 84);
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-right: 8px;
+}
+
+.footer-column a:hover {
+  color: rgb(239, 213, 179);
+}
+
+.social-icons2 {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icons2 a img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons2 a img:hover {
+  transform: scale(1.2);
+}
+
+.footer2 {
+  background-color: burlywood;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+}
