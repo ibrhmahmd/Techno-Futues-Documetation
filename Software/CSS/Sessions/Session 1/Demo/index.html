@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Session 1 Demo - Introduction & Selectors</title>
+    <!-- Internal CSS Example -->
+    <style>
+        /* This is an internal CSS block. It styles elements with the class 'internal-demo' */
+        .internal-demo {
+            color: green;
+            background-color: #fffbe7;
+            border-radius: 12px;
+            border: 3px dashed #2e7d32;
+            padding: 10px;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+    </style>
+    <!-- External CSS Example -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS Example -->
+    <h1 style="color: #1976d2; background-color: #e3f2fd; border: 2px solid #1976d2; border-radius: 10px; padding: 10px;">Welcome to CSS Session 1!</h1>
+    <p style="color: #d32f2f; background-color: #fffde7; font-size: 20px; border: 2px solid #d32f2f; border-radius: 8px; padding: 8px;">This heading uses <strong>inline CSS</strong> to style itself directly.</p>
+
+    <!-- Internal CSS Example -->
+    <p class="internal-demo">This paragraph is styled using <strong>internal CSS</strong> (inside the &lt;style&gt; tag in the &lt;head&gt;).</p>
+
+    <!-- External CSS Example: Class selector -->
+    <p class="paragraph">This paragraph uses the <code>.paragraph</code> class and is styled by <strong>external CSS</strong> (in styles.css).</p>
+
+    <!-- Element selector example (styled by external CSS) -->
+    <p>This is a normal paragraph. All &lt;p&gt; tags are styled by the external CSS file.</p>
+
+    <!-- Container with class selector -->
+    <div class="container">
+        <h2>Container Example</h2>
+        <p>This <code>div</code> uses the <code>.container</code> class, styled by external CSS.</p>
+    </div>
+
+    <!-- Ordered list styled by external CSS -->
+    <ol>
+        <li>First item (styled by element selector in external CSS)</li>
+        <li>Second item</li>
+    </ol>
+
+    <!-- DevTools Practice Section -->
+    <section style="margin-top: 32px;">
+        <h2>Try This with DevTools!</h2>
+        <p>Right-click any element and choose <strong>Inspect</strong> (or press <kbd>F12</kbd>) to open DevTools. Try changing colors, borders, or font sizes and see what happens!</p>
+    </section>
+
+    <!-- Tips for beginners -->
+    <footer style="margin-top: 40px; font-size: 16px; color: #555;">
+        <hr>
+        <p><strong>Tip:</strong> Inline CSS is quick for small changes, but internal and external CSS are better for organizing your styles!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* Navigation */
+.simple-nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/* Color Demo */
+.color-demo {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.color-box {
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+}
+
+.color-box span {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 200px; /* Extra space for scrolling */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Positioning Demo */
+.positioning-demo {
+    position: relative;
+    height: 400px;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #3498db;
+}
+
+
+
+
+
+.static {
+    position: static;
+}
+
+
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    background-color: #2ecc71;
+}
+
+.absolute {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    background-color: #e74c3c;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9b59b6;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 20px;
+    background-color: #f39c12;
+}
+
+
+
+
+
+
+
+
+
+
+/* Units Demo */
+.units-demo {
+    background-color: #f9f9f9;
+}
+
+.unit-px {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.unit-em {
+    font-size: 1.5em; /* Relative to parent */
+    margin: 10px 0;
+}
+
+.unit-rem {
+    font-size: 1.5rem; /* Relative to root */
+    margin: 10px 0;
+}
+
+.unit-vw {
+    font-size: 5vw; /* Relative to viewport width */
+    margin: 10px 0;
+}
+
+/* Box Shadow Demo */
+.shadow-demo {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.shadow-box {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px green;
+    transition: transform 0.3s;
+}
+
+.shadow-box:hover {
+    transform: translateY(-5px);
+}
+
+.shadow-box.multiple {
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-box.inset {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display Demo */
+.display-demo {
+    background-color: #f0f0f0;
+}
+
+.display-container {
+    border: 2px solid #333;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.display-box {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.block {
+    display: block;
+    background-color: #2ecc71;
+}
+
+.inline {
+    display: inline;
+    background-color: #e74c3c;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    background-color: #9b59b6;
+}
+
+.none {
+    display: none;
+}
