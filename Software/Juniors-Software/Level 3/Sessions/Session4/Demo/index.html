@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Playground – Session 4 Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎯 Flexbox Playground</h1>
+
+  <section class="controls">
+    <label>
+      flex-direction:
+      <select id="direction">
+        <option value="row">row</option>
+        <option value="row-reverse">row-reverse</option>
+        <option value="column">column</option>
+        <option value="column-reverse">column-reverse</option>
+      </select>
+    </label>
+    <label>
+      justify-content:
+      <select id="justify">
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center" selected>center</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+        <option value="space-evenly">space-evenly</option>
+      </select>
+    </label>
+    <label>
+      align-items:
+      <select id="align">
+        <option value="stretch">stretch</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center" selected>center</option>
+        <option value="baseline">baseline</option>
+      </select>
+    </label>
+  </section>
+
+  <div id="container" class="box-container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <script>
+    const container = document.getElementById('container');
+    const directionSel = document.getElementById('direction');
+    const justifySel   = document.getElementById('justify');
+    const alignSel     = document.getElementById('align');
+    
+    // Function to apply all flexbox properties
+    function applyFlexboxProperties() {
+      container.style.flexDirection  = directionSel.value;
+      container.style.justifyContent = justifySel.value;
+      container.style.alignItems     = alignSel.value;
+    }
+    
+    // Add event listeners to each select element
+    directionSel.addEventListener('change', applyFlexboxProperties);
+    justifySel.addEventListener('change', applyFlexboxProperties);
+    alignSel.addEventListener('change', applyFlexboxProperties);
+    
+    // Apply defaults on load
+    applyFlexboxProperties();
+  </script>
+</body>
+</html>
