@@ -16,10 +16,30 @@
         <section class="box-model-demo">
             <h2>1. Understanding the Box Model</h2>
             <div class="box">
-                <div class="content">Content</div>
-                <div class="padding">Padding</div>
-                <div class="border">Border</div>
-                <div class="margin">Margin</div>
+                <div class="margin">
+                    <span class="label">Margin</span>
+                    <div class="measurement m-top"></div>
+                    <div class="measurement m-right"></div>
+                    <div class="measurement m-bottom"></div>
+                    <div class="measurement m-left"></div>
+                    <div class="border">
+                        <span class="label">Border</span>
+                        <div class="measurement b-top"></div>
+                        <div class="measurement b-right"></div>
+                        <div class="measurement b-bottom"></div>
+                        <div class="measurement b-left"></div>
+                        <div class="padding">
+                            <span class="label">Padding</span>
+                            <div class="measurement p-top"></div>
+                            <div class="measurement p-right"></div>
+                            <div class="measurement p-bottom"></div>
+                            <div class="measurement p-left"></div>
+                            <div class="content" contenteditable="true">
+                                Edit this text to test the box model
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="controls">
                 <div class="control-group">
@@ -38,11 +58,15 @@
                     <label>Margin: <span id="margin-value">20</span>px</label>
                     <input type="range" id="margin" min="0" max="50" value="20">
                 </div>
-                <div class="control-group">
+                <div class="control-group checkbox">
                     <label>
-                        <input type="checkbox" id="box-sizing" checked>
-                        Use box-sizing: border-box
+                        <input type="checkbox" id="box-sizing">
+                        Use border-box
                     </label>
+                </div>
+                <div class="control-group text-input">
+                    <label for="content-text">Test your text:</label>
+                    <input type="text" id="content-text" placeholder="Type something...">
                 </div>
             </div>
         </section>
