@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatFlex - Learn Flexbox with Cats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CatFlex</h1>
+        <div class="level-indicator">
+            <span id="current-level">Level 1</span>
+            <span id="current-challenge">Challenge 1</span>
+        </div>
+    </header>
+
+    <main class="game-container">
+        <div class="challenge-area">
+            <div class="instructions" id="challenge-instructions">
+                <h2>Challenge:</h2>
+                <p>Use <code>flex-direction: row</code> to arrange the cats in a horizontal row.</p>
+            </div>
+            <div class="target-display">
+                <h3>Target Arrangement:</h3>
+                <div class="target-container">
+                    <!-- Visual representation of the target arrangement -->
+                    <div class="target-cat">😺</div>
+                    <div class="target-cat">😸</div>
+                    <div class="target-cat">😹</div>
+                </div>
+            </div>
+            <div class="flex-playground">
+                <h3>Your Playground:</h3>
+                <div class="flex-container" id="target-container">
+                    <div class="cat-item">😺</div>
+                    <div class="cat-item">😸</div>
+                    <div class="cat-item">😹</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="code-area">
+            <div class="code-editor">
+                <h3>Write your CSS:</h3>
+                <div class="css-prefix">
+                    <pre>.flex-container {
+    /* Write your flexbox properties below */</pre>
+                </div>
+                <textarea id="css-input" placeholder="display: flex;"></textarea>
+                <div class="css-suffix">
+                    <pre>}</pre>
+                </div>
+            </div>
+            <div class="feedback" id="feedback-message">
+                <!-- Success/failure messages will appear here -->
+            </div>
+            <div class="controls">
+                <button id="check-solution">Check Solution</button>
+                <button id="show-hint" class="secondary">Hint</button>
+                <button id="next-challenge" class="success" disabled>Next Challenge</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="hint-modal" id="hint-modal">
+        <div class="hint-content">
+            <span class="close-hint">&times;</span>
+            <h3>Hint</h3>
+            <p id="hint-text">Try using <code>flex-direction: row</code> to arrange items horizontally.</p>
+        </div>
+    </div>
+
+    <script src="levels.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
