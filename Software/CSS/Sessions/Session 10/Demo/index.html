@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Best Practices - Design System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">Design System</h1>
+                <div class="theme-switcher">
+                    <button class="theme-switcher__btn" data-theme="light">
+                        <i class="fas fa-sun"></i> Light
+                    </button>
+                    <button class="theme-switcher__btn" data-theme="dark">
+                        <i class="fas fa-moon"></i> Dark
+                    </button>
+                    <button class="theme-switcher__btn" data-theme="high-contrast">
+                        <i class="fas fa-universal-access"></i> High Contrast
+                    </button>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="#colors" class="nav__link">Colors</a></li>
+                    <li class="nav__item"><a href="#typography" class="nav__link">Typography</a></li>
+                    <li class="nav__item"><a href="#components" class="nav__link">Components</a></li>
+                    <li class="nav__item"><a href="#layout" class="nav__link">Layout</a></li>
+                    <li class="nav__item"><a href="#utilities" class="nav__link">Utilities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="colors" class="section">
+            <div class="container">
+                <h2 class="section__title">Color System</h2>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-card__swatch" style="--color: var(--color-primary)"></div>
+                        <div class="color-card__info">
+                            <span class="color-card__name">Primary</span>
+                            <code class="color-card__value">var(--color-primary)</code>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-card__swatch" style="--color: var(--color-secondary)"></div>
+                        <div class="color-card__info">
+                            <span class="color-card__name">Secondary</span>
+                            <code class="color-card__value">var(--color-secondary)</code>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-card__swatch" style="--color: var(--color-success)"></div>
+                        <div class="color-card__info">
+                            <span class="color-card__name">Success</span>
+                            <code class="color-card__value">var(--color-success)</code>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-card__swatch" style="--color: var(--color-warning)"></div>
+                        <div class="color-card__info">
+                            <span class="color-card__name">Warning</span>
+                            <code class="color-card__value">var(--color-warning)</code>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-card__swatch" style="--color: var(--color-danger)"></div>
+                        <div class="color-card__info">
+                            <span class="color-card__name">Danger</span>
+                            <code class="color-card__value">var(--color-danger)</code>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-card__swatch" style="--color: var(--color-text)"></div>
+                        <div class="color-card__info">
+                            <span class="color-card__name">Text</span>
+                            <code class="color-card__value">var(--color-text)</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography" class="section">
+            <div class="container">
+                <h2 class="section__title">Typography</h2>
+                <div class="typography-grid">
+                    <div class="typography-card">
+                        <h1 class="typography-card__heading">Heading 1</h1>
+                        <p class="typography-card__meta">Font Size: var(--font-size-xxl)</p>
+                    </div>
+                    <div class="typography-card">
+                        <h2 class="typography-card__heading">Heading 2</h2>
+                        <p class="typography-card__meta">Font Size: var(--font-size-xl)</p>
+                    </div>
+                    <div class="typography-card">
+                        <h3 class="typography-card__heading">Heading 3</h3>
+                        <p class="typography-card__meta">Font Size: var(--font-size-lg)</p>
+                    </div>
+                    <div class="typography-card">
+                        <p class="typography-card__body">Body text - The quick brown fox jumps over the lazy dog.</p>
+                        <p class="typography-card__meta">Font Size: var(--font-size-base)</p>
+                    </div>
+                    <div class="typography-card">
+                        <p class="typography-card__small">Small text - Used for captions and secondary information.</p>
+                        <p class="typography-card__meta">Font Size: var(--font-size-sm)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="components" class="section">
+            <div class="container">
+                <h2 class="section__title">Components</h2>
+                
+                <h3 class="section__subtitle">Buttons</h3>
+                <div class="component-showcase">
+                    <button class="btn btn--primary">Primary Button</button>
+                    <button class="btn btn--secondary">Secondary Button</button>
+                    <button class="btn btn--outline">Outline Button</button>
+                    <button class="btn btn--text">Text Button</button>
+                    <button class="btn btn--icon"><i class="fas fa-heart"></i> Icon Button</button>
+                </div>
+
+                <h3 class="section__subtitle">Cards</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card__image" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                        <div class="card__content">
+                            <h3 class="card__title">Card Title</h3>
+                            <p class="card__text">This is a sample card component with an image and some text content.</p>
+                            <button class="btn btn--primary btn--sm">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="card card--elevated">
+                        <div class="card__content">
+                            <h3 class="card__title">Elevated Card</h3>
+                            <p class="card__text">This card has an elevation effect on hover.</p>
+                            <div class="card__actions">
+                                <button class="btn btn--text">Cancel</button>
+                                <button class="btn btn--primary">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section__subtitle">Form Elements</h3>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span class="checkbox__checkmark"></span>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="layout" class="section">
+            <div class="container">
+                <h2 class="section__title">Layout</h2>
+                <div class="layout-grid">
+                    <div class="layout-card">
+                        <h3 class="layout-card__title">Container</h3>
+                        <div class="layout-preview">
+                            <div class="container-demo">
+                                <div class="box">Container</div>
+                            </div>
+                        </div>
+                        <code class="layout-card__code">.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }</code>
+                    </div>
+                    <div class="layout-card">
+                        <h3 class="layout-card__title">Grid</h3>
+                        <div class="layout-preview">
+                            <div class="grid-demo">
+                                <div class="grid-item">1</div>
+                                <div class="grid-item">2</div>
+                                <div class="grid-item">3</div>
+                                <div class="grid-item">4</div>
+                            </div>
+                        </div>
+                        <code class="layout-card__code">.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="utilities" class="section">
+            <div class="container">
+                <h2 class="section__title">Utility Classes</h2>
+                <div class="utilities-grid">
+                    <div class="utility-card">
+                        <h3 class="utility-card__title">Spacing</h3>
+                        <div class="utility-example">
+                            <div class="spacing-demo mb-1">Margin Bottom 1</div>
+                            <div class="spacing-demo p-2">Padding 2</div>
+                        </div>
+                        <code class="utility-card__code">.mb-1 { margin-bottom: 0.5rem; }
+.p-2 { padding: 1rem; }</code>
+                    </div>
+                    <div class="utility-card">
+                        <h3 class="utility-card__title">Text</h3>
+                        <div class="utility-example">
+                            <p class="text-center">Centered Text</p>
+                            <p class="text-uppercase">uppercase text</p>
+                            <p class="text-muted">Muted text</p>
+                        </div>
+                        <code class="utility-card__code">.text-center { text-align: center; }
+.text-uppercase { text-transform: uppercase; }
+.text-muted { opacity: 0.7; }</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2023 Design System. Created with ❤️ for CSS Best Practices.</p>
+            <div class="footer__links">
+                <a href="#" class="footer__link">GitHub</a>
+                <a href="#" class="footer__link">Documentation</a>
+                <a href="#" class="footer__link">Contribute</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
