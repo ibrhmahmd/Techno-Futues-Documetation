@@ -77,14 +77,6 @@ function Validation(submitButton, username, password){
     }
 
 
-
-
-
-
-
-
-
-
 Validation(submitButton, username, password);
 
 
