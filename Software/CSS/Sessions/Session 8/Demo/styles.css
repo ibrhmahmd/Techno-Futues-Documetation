@@ -1,0 +1,63 @@
+/* CSS Variables */
+:root {
+  --primary: #3498db;
+  --secondary: #2ecc71;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --text: #333;
+  --bg: #fff;
+  --code-bg: #282c34;
+}
+
+/* Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Header & Navigation */
+header { background: var(--primary); color: white; padding: 1.5rem 0; margin-bottom: 2rem; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; margin-top: 1rem; }
+nav a { color: white; text-decoration: none; position: relative; }
+nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: white; transition: width 0.3s; }
+nav a:hover::after { width: 100%; }
+
+/* Preprocessor Selector */
+.preprocessor-selector { display: flex; gap: 1rem; margin: 1.5rem 0; }
+.preprocessor-selector button { 
+  padding: 0.5rem 1.5rem; border: 2px solid var(--primary); background: none; 
+  color: var(--primary); font-weight: 600; border-radius: 4px; cursor: pointer; 
+  transition: all 0.3s; 
+}
+.preprocessor-selector button.active,
+.preprocessor-selector button:hover { background: var(--primary); color: white; }
+
+/* Demo Grid */
+.demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.code-container, .preview-container { background: var(--light); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.code-container h3, .preview-container h3 { background: var(--dark); color: white; padding: 0.75rem 1.5rem; margin: 0; }
+.code-container textarea { width: 100%; min-height: 400px; padding: 1rem; border: none; font-family: 'Fira Code', monospace; background: var(--code-bg); color: #f8f8f2; resize: none; }
+.preview { padding: 1.5rem; background: white; min-height: 200px; }
+
+/* Buttons & Components */
+.button { display: inline-block; padding: 0.5rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; margin: 0 0.5rem 0.5rem 0; transition: all 0.3s; }
+.button-primary { background: var(--primary); color: white; }
+.button-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+/* Messages */
+.message, .success, .error { padding: 1rem; border-radius: 4px; margin: 1rem 0; border: 1px solid transparent; }
+.message { background: #f8f9fa; border-color: #e9ecef; }
+.success { background: #d4edda; border-color: #c3e6cb; color: #155724; }
+.error { background: #f8d7da; border-color: #f5c6cb; color: #721c24; }
+
+/* Color Swatches */
+.color-swatches { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+.swatch { padding: 1rem; border-radius: 4px; color: white; font-weight: 600; text-align: center; flex: 1; min-width: 100px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .demo-grid { grid-template-columns: 1fr; }
+  nav ul { flex-direction: column; gap: 0.5rem; }
+}
+
+/* CodeMirror */
+.CodeMirror { height: 400px !important; font-family: 'Fira Code', monospace !important; padding: 1rem 0; }

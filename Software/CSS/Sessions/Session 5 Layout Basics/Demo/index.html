@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Session 5: Layout Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">CSS Layout Basics</h1>
+        <p class="subtitle">Interactive Demo - Session 5</p>
+    </header>
+
+    <main class="container">
+        <!-- Display Property -->
+        <section class="demo-section">
+            <h2>Display Property</h2>
+            <div class="display-examples">
+                <div class="display-box block">Block</div>
+                <span class="display-box inline">Inline</span>
+                <span class="display-box inline-block">Inline-Block</span>
+                <div class="display-box none">None</div>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code:</h3>
+                <pre><code class="language-css">.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.none { display: none; }</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+
+        <!-- Positioning -->
+        <section class="demo-section">
+            <h2>Positioning</h2>
+            <div class="positioning-container">
+                <div class="position-box static">Static</div>
+                <div class="position-box relative">Relative</div>
+                <div class="position-box absolute">Absolute</div>
+                <div class="position-box fixed">Fixed</div>
+                <div class="position-box sticky">Sticky</div>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code:</h3>
+                <pre><code class="language-css">.static { position: static; }
+.relative { position: relative; top: 10px; left: 20px; }
+.absolute { position: absolute; top: 0; right: 0; }
+.fixed { position: fixed; bottom: 20px; right: 20px; }
+.sticky { position: sticky; top: 0; }</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+
+        <!-- Floats -->
+        <section class="demo-section">
+            <h2>Floats</h2>
+            <div class="float-container">
+                <div class="float-box left">Float Left</div>
+                <p>This text flows around the floated element. Floats were traditionally used for layouts but are now mainly used for text wrapping around images and other content.</p>
+                <div class="float-box right">Float Right</div>
+                <p class="clearfix">This paragraph has the clearfix class to clear the floats. Notice how it appears below both floated elements.</p>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code:</h3>
+                <pre><code class="language-css">.float-left { float: left; margin-right: 20px; }
+.float-right { float: right; margin-left: 20px; }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+
+        <!-- Flexbox -->
+        <section class="demo-section">
+            <h2>Flexbox</h2>
+            <div class="flex-controls">
+                <div class="control-group">
+                    <label for="flex-direction">Flex Direction:</label>
+                    <select id="flex-direction">
+                        <option value="row">Row</option>
+                        <option value="column">Column</option>
+                        <option value="row-reverse">Row Reverse</option>
+                        <option value="column-reverse">Column Reverse</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="justify-content">Justify Content:</label>
+                    <select id="justify-content">
+                        <option value="flex-start">Flex Start</option>
+                        <option value="center">Center</option>
+                        <option value="flex-end">Flex End</option>
+                        <option value="space-between">Space Between</option>
+                        <option value="space-around">Space Around</option>
+                        <option value="space-evenly">Space Evenly</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="align-items">Align Items:</label>
+                    <select id="align-items">
+                        <option value="stretch">Stretch</option>
+                        <option value="flex-start">Flex Start</option>
+                        <option value="center">Center</option>
+                        <option value="flex-end">Flex End</option>
+                        <option value="baseline">Baseline</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="flex-container" id="flex-demo">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code (Live Preview):</h3>
+                <pre><code class="language-css" id="flex-code">.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+}</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+
+        <!-- Grid -->
+        <section class="demo-section">
+            <h2>CSS Grid</h2>
+            <div class="grid-controls">
+                <div class="control-group">
+                    <label for="grid-template-columns">Grid Template Columns:</label>
+                    <input type="text" id="grid-template-columns" value="1fr 1fr 1fr">
+                </div>
+                <div class="control-group">
+                    <label for="grid-gap">Gap:</label>
+                    <input type="range" id="grid-gap" min="0" max="30" value="10">
+                    <span id="grid-gap-value">10px</span>
+                </div>
+            </div>
+            
+            <div class="grid-container" id="grid-demo">
+                <div class="grid-item header">Header</div>
+                <div class="grid-item sidebar">Sidebar</div>
+                <div class="grid-item main">Main Content</div>
+                <div class="grid-item footer">Footer</div>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code (Live Preview):</h3>
+                <pre><code class="language-css" id="grid-code">.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 200px auto;
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+
+        <!-- Holy Grail Layout -->
+        <section class="demo-section">
+            <h2>Holy Grail Layout</h2>
+            <div class="holy-grail">
+                <header class="holy-header">Header</header>
+                <div class="holy-content">
+                    <nav class="holy-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <main class="holy-main">
+                        <h3>Main Content</h3>
+                        <p>This is the main content area. It will take up the remaining space between the header and footer.</p>
+                        <p>Resize the browser window to see how the layout responds to different screen sizes.</p>
+                    </main>
+                    <aside class="holy-sidebar">
+                        <h3>Sidebar</h3>
+                        <p>Additional content or widgets can go here.</p>
+                    </aside>
+                </div>
+                <footer class="holy-footer">
+                    <p>© 2025 CSS Layout Demo. All rights reserved.</p>
+                </footer>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code:</h3>
+                <pre><code class="language-css">.holy-grail {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 80vh;
+}
+
+.holy-content {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .holy-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .holy-nav, .holy-sidebar {
+        order: 2;
+    }
+}</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Try resizing the browser window to see how the layouts respond to different screen sizes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

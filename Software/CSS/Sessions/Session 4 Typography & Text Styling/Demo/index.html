@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Session 4: Typography & Text Styling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Typography & Text Styling</h1>
+        <p class="subtitle">Interactive Demo - Session 4</p>
+    </header>
+
+    <main class="container">
+        <!-- Font Families -->
+        <section class="demo-section">
+            <h2>Font Families</h2>
+            <div class="font-grid">
+                <div class="font-card" style="font-family: 'Cairo', sans-serif;">
+                    <h3>Cairo</h3>
+                    <p class="font-demo" contenteditable="true">The quick brown fox jumps over the lazy dog</p>
+                    <p class="font-demo arabic" contenteditable="true">الكلب البني السريع يقفز فوق الثعلب الكسول</p>
+                </div>
+                <div class="font-card" style="font-family: 'Roboto', sans-serif;">
+                    <h3>Roboto</h3>
+                    <p class="font-demo" contenteditable="true">The quick brown fox jumps over the lazy dog</p>
+                    <p class="font-demo arabic" contenteditable="true">الكلب البني السريع يقفز فوق الثعلب الكسول</p>
+                </div>
+                <div class="font-card" style="font-family: 'Courier New', monospace;">
+                    <h3>Monospace</h3>
+                    <p class="font-demo" contenteditable="true">The quick brown fox jumps over the lazy dog</p>
+                    <p class="font-demo arabic" contenteditable="true">الكلب البني السريع يقفز فوق الثعلب الكسول</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Styling -->
+        <section class="demo-section">
+            <h2>Text Styling</h2>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="font-size">Font Size: <span id="font-size-value">16</span>px</label>
+                    <input type="range" id="font-size" min="8" max="48" value="16">
+                </div>
+                <div class="control-group">
+                    <label for="line-height">Line Height: <span id="line-height-value">1.5</span></label>
+                    <input type="range" id="line-height" min="0.8" max="3" step="0.1" value="1.5">
+                </div>
+                <div class="control-group">
+                    <label for="letter-spacing">Letter Spacing: <span id="letter-spacing-value">0</span>px</label>
+                    <input type="range" id="letter-spacing" min="-2" max="10" value="0">
+                </div>
+            </div>
+            
+            <div class="text-sample" id="text-sample">
+                <h3>Sample Text</h3>
+                <p>This is a sample paragraph that demonstrates how text styling can be applied. You can adjust the controls above to see real-time changes to the text properties.</p>
+                <p class="arabic">هذا نموذج لنص عربي يوضح كيفية تطبيق أنماط النصوص. يمكنك ضبط عناصر التحكم أعلاه لرؤية التغييرات الفورية على خصائص النص.</p>
+            </div>
+        </section>
+
+        <!-- Text Effects -->
+        <section class="demo-section">
+            <h2>Text Effects</h2>
+            <div class="effects-grid">
+                <div class="effect-card">
+                    <h3>Text Shadow</h3>
+                    <div class="effect-preview" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                        Shadow Effect
+                    </div>
+                    <code>text-shadow: 2px 2px 4px rgba(0,0,0,0.3);</code>
+                </div>
+                <div class="effect-card">
+                    <h3>Glow Effect</h3>
+                    <div class="effect-preview" style="text-shadow: 0 0 8px #3498db, 0 0 16px #3498db;">
+                        Glow Effect
+                    </div>
+                    <code>text-shadow: 0 0 8px #3498db, 0 0 16px #3498db;</code>
+                </div>
+                <div class="effect-card">
+                    <h3>3D Text</h3>
+                    <div class="effect-preview" style="text-shadow: 1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;">
+                        3D Text
+                    </div>
+                    <code>text-shadow: 1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;</code>
+                </div>
+                <div class="effect-card">
+                    <h3>Outline Text</h3>
+                    <div class="effect-preview" style="color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        Outline Text
+                    </div>
+                    <code>text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Overflow -->
+        <section class="demo-section">
+            <h2>Text Overflow</h2>
+            <div class="overflow-examples">
+                <div class="overflow-example">
+                    <h3>Default</h3>
+                    <div class="text-box">
+                        This is a long text that will overflow its container if it's too long to fit in one line.
+                    </div>
+                </div>
+                <div class="overflow-example">
+                    <h3>Ellipsis</h3>
+                    <div class="text-box ellipsis">
+                        This is a long text that will be truncated with an ellipsis (...) when it overflows.
+                    </div>
+                </div>
+                <div class="overflow-example">
+                    <h3>Word Break</h3>
+                    <div class="text-box break-word">
+                        Thisisareallylongwordthatwillbebrokenifitdoesn'tfitintocontainer.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Try editing the text in the font cards above! Just click and type.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

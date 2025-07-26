@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions & Animations - Session 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">CSS Transitions & Animations</h1>
+            <p class="subtitle">Interactive Demo - Session 7</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">CSS Animations</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#transitions">Transitions</a></li>
+                <li><a href="#animations">Animations</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="transitions" class="section">
+            <h2>CSS Transitions</h2>
+            <p>Transitions enable you to define the transition between two states of an element.</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <label for="transition-property">Property:</label>
+                        <select id="transition-property">
+                            <option value="all">All Properties</option>
+                            <option value="background">Background</option>
+                            <option value="transform">Transform</option>
+                            <option value="opacity">Opacity</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="transition-duration">Duration: <span id="duration-value">0.3</span>s</label>
+                        <input type="range" id="transition-duration" min="0.1" max="2" step="0.1" value="0.3">
+                    </div>
+                    <div class="control-group">
+                        <label for="transition-timing">Timing Function:</label>
+                        <select id="transition-timing">
+                            <option value="ease">ease</option>
+                            <option value="linear">linear</option>
+                            <option value="ease-in">ease-in</option>
+                            <option value="ease-out">ease-out</option>
+                            <option value="ease-in-out">ease-in-out</option>
+                            <option value="cubic-bezier(0.68, -0.55, 0.27, 1.55)">bounce</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="demo-preview">
+                    <div class="transition-box">Hover Me!</div>
+                </div>
+                <div class="code-container">
+                    <h3>Generated CSS</h3>
+                    <button class="copy-button"><i class="far fa-copy"></i> Copy</button>
+                    <pre><code class="language-css" id="transition-code">.transition-box {
+  transition: all 0.3s ease;
+}
+
+.transition-box:hover {
+  transform: scale(1.1);
+  background: #4f46e5;
+  color: white;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="animations" class="section">
+            <h2>CSS Animations</h2>
+            <p>Create complex animations using @keyframes and control them with animation properties.</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <label for="animation-type">Animation:</label>
+                        <select id="animation-type">
+                            <option value="bounce">Bounce</option>
+                            <option value="pulse">Pulse</option>
+                            <option value="rotate">Rotate</option>
+                            <option value="shake">Shake</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="animation-duration">Duration: <span id="anim-duration-value">1</span>s</label>
+                        <input type="range" id="animation-duration" min="0.5" max="3" step="0.5" value="1">
+                    </div>
+                    <div class="control-group">
+                        <label for="animation-iteration">Iteration:</label>
+                        <select id="animation-iteration">
+                            <option value="1">Once</option>
+                            <option value="2">Twice</option>
+                            <option value="infinite">Infinite</option>
+                        </select>
+                    </div>
+                    <button id="play-animation" class="btn">Play Animation</button>
+                </div>
+                <div class="demo-preview">
+                    <div class="animation-box">Animate Me!</div>
+                </div>
+                <div class="code-container">
+                    <h3>Generated CSS</h3>
+                    <button class="copy-button"><i class="far fa-copy"></i> Copy</button>
+                    <pre><code class="language-css" id="animation-code">@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animation-box {
+  animation: bounce 1s infinite;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="performance" class="section">
+            <h2>Performance & Best Practices</h2>
+            <p>Learn which properties are best for smooth animations and how to optimize performance.</p>
+            
+            <div class="performance-demo">
+                <div class="performance-option">
+                    <h4>Good for Performance</h4>
+                    <div class="performance-box transform-demo">
+                        <code>transform</code> & <code>opacity</code>
+                    </div>
+                    <p>Uses GPU acceleration for smooth animations.</p>
+                </div>
+                <div class="performance-option">
+                    <h4>Bad for Performance</h4>
+                    <div class="performance-box layout-demo">
+                        <code>width</code>, <code>height</code>, <code>margin</code>
+                    </div>
+                    <p>Causes layout recalculations and repaints.</p>
+                </div>
+            </div>
+            
+            <div class="reduced-motion">
+                <h4>Respect User Preferences</h4>
+                <p>Always respect the user's motion preferences:</p>
+                <pre><code class="language-css">@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}</code></pre>
+                <button id="toggle-motion" class="btn">Toggle Reduced Motion</button>
+            </div>
+        </section>
+
+        <section id="advanced" class="section">
+            <h2>Advanced Techniques</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Scroll Animations</h3>
+                    <div class="scroll-demo">
+                        <div class="scroll-item">Scroll down to see me appear</div>
+                        <div class="scroll-item">Here I come!</div>
+                        <div class="scroll-item">Now you see me!</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>SVG Animations</h3>
+                    <div class="svg-demo">
+                        <svg viewBox="0 0 100 100" width="150" height="150">
+                            <circle class="circle" cx="50" cy="50" r="40" fill="none" stroke="#4f46e5" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="251.2"/>
+                        </svg>
+                        <button id="animate-svg" class="btn">Animate SVG</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>3D Transforms</h3>
+                    <div class="cube-container">
+                        <div class="cube">
+                            <div class="face front">Front</div>
+                            <div class="face back">Back</div>
+                            <div class="face right">Right</div>
+                            <div class="face left">Left</div>
+                            <div class="face top">Top</div>
+                            <div class="face bottom">Bottom</div>
+                        </div>
+                    </div>
+                    <button id="rotate-cube" class="btn">Rotate Cube</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>CSS Transitions & Animations - Session 7</p>
+            <p>Techno Future &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Session 3: Colors, Backgrounds & Borders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="gradient-header">
+        <h1>Colors, Backgrounds & Borders</h1>
+        <p>Interactive Demo - Session 3</p>
+    </header>
+
+    <main>
+        <section class="color-demo">
+            <h2>Color Values</h2>
+            <div class="color-grid">
+                <div class="color-box" style="background-color: #ff0000;">
+                    <span>#ff0000</span>
+                    <span>Red</span>
+                </div>
+                <div class="color-box" style="background-color: #00ff00;">
+                    <span>#00ff00</span>
+                    <span>Green</span>
+                </div>
+                <div class="color-box" style="background-color: #0000ff;">
+                    <span>#0000ff</span>
+                    <span>Blue</span>
+                </div>
+                <div class="color-box" style="background-color: rgba(255, 165, 0, 0.7);">
+                    <span>rgba(255, 165, 0, 0.7)</span>
+                    <span>Orange 70%</span>
+                </div>
+                <div class="color-box" style="background-color: hsl(300, 100%, 50%);">
+                    <span>hsl(300, 100%, 50%)</span>
+                    <span>Magenta</span>
+                </div>
+                <div class="color-box" style="background-color: hsla(60, 100%, 50%, 0.5);">
+                    <span>hsla(60, 100%, 50%, 0.5)</span>
+                    <span>Yellow 50%</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-demo">
+            <h2>Background Examples</h2>
+            <div class="background-grid">
+                <div class="background-example solid-bg">
+                    <h3>Solid Color</h3>
+                    <p>background-color: #e0f7fa;</p>
+                </div>
+                <div class="background-example gradient-bg">
+                    <h3>Gradient</h3>
+                    <p>linear-gradient(135deg, #ff9966, #ff5e62)</p>
+                </div>
+                <div class="background-example image-bg">
+                    <h3>Image</h3>
+                    <p>background-image: url('pattern.png')</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-demo">
+            <h2>Borders & Effects</h2>
+            <div class="border-examples">
+                <div class="border-box solid">
+                    <h3>Solid Border</h3>
+                    <p>border: 3px solid #3498db;</p>
+                </div>
+                <div class="border-box dashed">
+                    <h3>Dashed Border</h3>
+                    <p>border: 3px dashed #e74c3c;</p>
+                </div>
+                <div class="border-box rounded">
+                    <h3>Rounded Corners</h3>
+                    <p>border-radius: 15px;</p>
+                </div>
+                <div class="border-box shadow">
+                    <h3>Box Shadow</h3>
+                    <p>box-shadow: 5px 5px 15px rgba(0,0,0,0.3);</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-demo">
+            <h2>Interactive Demo</h2>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="bg-color">Background Color:</label>
+                    <input type="color" id="bg-color" value="#ffffff">
+                </div>
+                <div class="control-group">
+                    <label for="border-color">Border Color:</label>
+                    <input type="color" id="border-color" value="#3498db">
+                </div>
+                <div class="control-group">
+                    <label for="border-radius">Border Radius: <span id="radius-value">0</span>px</label>
+                    <input type="range" id="border-radius" min="0" max="50" value="0">
+                </div>
+            </div>
+            <div id="interactive-box" class="interactive-box">
+                <p>Edit my styles using the controls above!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Open DevTools (F12) to inspect and experiment with the elements!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

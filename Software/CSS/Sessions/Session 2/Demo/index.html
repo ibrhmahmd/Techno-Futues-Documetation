@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo - Session 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box Model Demo</h1>
+        <p>Interactive examples for Session 2: Box Model & Basic Styling</p>
+    </header>
+
+    <main>
+        <section class="box-model-demo">
+            <h2>1. Understanding the Box Model</h2>
+            <div class="box">
+                <div class="content">Content</div>
+                <div class="padding">Padding</div>
+                <div class="border">Border</div>
+                <div class="margin">Margin</div>
+            </div>
+            <div class="controls">
+                <div class="control-group">
+                    <label>Content Width: <span id="width-value">200</span>px</label>
+                    <input type="range" id="width" min="100" max="400" value="200">
+                </div>
+                <div class="control-group">
+                    <label>Padding: <span id="padding-value">20</span>px</label>
+                    <input type="range" id="padding" min="0" max="50" value="20">
+                </div>
+                <div class="control-group">
+                    <label>Border: <span id="border-value">2</span>px</label>
+                    <input type="range" id="border" min="0" max="20" value="2">
+                </div>
+                <div class="control-group">
+                    <label>Margin: <span id="margin-value">20</span>px</label>
+                    <input type="range" id="margin" min="0" max="50" value="20">
+                </div>
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="box-sizing" checked>
+                        Use box-sizing: border-box
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="display-demo">
+            <h2>2. Display Property Examples</h2>
+            <div class="display-examples">
+                <div class="example">
+                    <h3>Block</h3>
+                    <div class="block">Block Element</div>
+                    <div class="block">Another Block</div>
+                </div>
+                <div class="example">
+                    <h3>Inline</h3>
+                    <span class="inline">Inline</span>
+                    <span class="inline">Elements</span>
+                    <span class="inline">Stay Inline</span>
+                </div>
+                <div class="example">
+                    <h3>Inline-Block</h3>
+                    <div class="inline-block">Inline-</div>
+                    <div class="inline-block">Block</div>
+                    <div class="inline-block">Elements</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="homework">
+            <h2>3. Practice Exercise</h2>
+            <div class="exercise">
+                <div class="box box1">Box 1 (200x100px)</div>
+                <div class="box box2">Box 2 (50% width)</div>
+                <div class="box box3">Box 3 (300px width)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Open DevTools (F12) to inspect the elements and see the box model in action!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
