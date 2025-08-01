@@ -1,0 +1,77 @@
+# Documentation Standards for Educational Content
+
+## Markdown Documentation Structure
+Each session should include comprehensive documentation with:
+
+### Session Documentation Template
+```markdown
+# Session Title
+
+## Learning Objectives
+- Clear, measurable learning outcomes
+- Prerequisites from previous sessions
+- Skills students will acquire
+
+## Key Concepts
+- Main topics covered
+- Important definitions
+- Core principles
+
+## Demo Code
+- Complete, working examples
+- Step-by-step explanations
+- Code comments for clarity
+
+## Activities
+- Hands-on exercises
+- Progressive difficulty levels
+- Real-world applications
+
+## Wrap-up
+- Summary of key points
+- Common pitfalls to avoid
+- Preview of next session
+```
+
+## File Organization Standards
+- **Session X.md** - Main session documentation
+- **Session X.pdf** - PDF version for printing/distribution
+- **settings-template.json** - Session configuration
+- **style-template.css** - Session-specific styling
+
+## Documentation Best Practices
+- Use clear, concise language appropriate for target audience
+- Include visual examples and screenshots when helpful
+- Provide both basic and advanced explanations
+- Use consistent formatting and structure
+- Include troubleshooting sections for common issues
+
+## Session Planning Structure
+Each session follows this pattern:
+1. **Review & Introduction** (15 min)
+2. **Demo: I code** (20-30 min)
+3. **Apply: You code** (15-20 min)
+4. **Feedback and help** (ongoing)
+5. **Wrap-up and homework** (10 min)
+
+## Content Organization
+- Group related sessions into logical modules
+- Maintain consistent naming conventions
+- Include cross-references between related topics
+- Provide clear progression paths for different skill levels
+
+## Assessment Documentation
+- Include clear criteria for success
+- Provide examples of expected outcomes
+- Document common mistakes and solutions
+- Include extension activities for advanced learners
+
+## Template Usage
+- Use [Doc Templates/](mdc:Doc Templates/) for consistent formatting
+- Adapt templates for different skill levels
+- Maintain version control for template updates
+- Include metadata for easy searching and organization
+description:
+globs:
+alwaysApply: false
+---

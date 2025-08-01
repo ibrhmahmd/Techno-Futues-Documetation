@@ -1,0 +1,87 @@
+# Advanced JavaScript Patterns
+
+## Modern JavaScript Standards
+Based on [Advanced-JS/Review-DOC.md](mdc:Advanced-JS/Review-DOC.md) and [LoginValidationScript.js](mdc:Advanced-JS/LoginValidationScript.js):
+
+### Variable Declarations
+```javascript
+// Prefer const and let over var
+const PI = 3.14159;  // Constants
+let counter = 0;     // Mutable variables
+var legacy = 'old';  // Avoid in new code
+```
+
+### DOM Manipulation Patterns
+```javascript
+// Modern selector methods
+const element = document.querySelector('.class-name');
+const elements = document.querySelectorAll('.class-name');
+
+// Event handling
+element.addEventListener('click', (event) => {
+    // Handle event
+});
+
+// Dynamic element creation
+const newElement = document.createElement('div');
+parentElement.appendChild(newElement);
+```
+
+### Form Validation Patterns
+```javascript
+// Input validation
+function validateInput(input) {
+    return input.trim() !== '' && input.length >= 3;
+}
+
+// Form submission handling
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Process form data
+});
+```
+
+### Modern Array Methods
+```javascript
+// Use functional programming approaches
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(n => n * 2);
+const evens = numbers.filter(n => n % 2 === 0);
+const sum = numbers.reduce((acc, n) => acc + n, 0);
+```
+
+## Session Structure (9 Sessions)
+1. **Variables & Basics** - var/let/const, primitives, arrays
+2. **Conditionals & Loops** - switch, while, for, break/continue
+3. **DOM Selectors, Functions & Objects** - DOM manipulation, validation, localStorage
+4. **DOM Queries & Dynamic Elements** - querySelectorAll, createElement, events
+5. **Event Handling** - Event listeners, event objects, delegation
+6. **Advanced Functions** - Arrow functions, callbacks, closures
+7. **Async JavaScript** - Promises, async/await, fetch API
+8. **ES6+ Features** - Template literals, destructuring, modules
+9. **Final Project** - Comprehensive application
+
+## Code Organization Standards
+- Use ES6+ syntax consistently
+- Implement proper error handling
+- Follow functional programming principles
+- Use meaningful variable and function names
+- Include comprehensive comments for educational purposes
+
+## Educational Code Examples
+- Provide both basic and advanced implementations
+- Show progressive complexity within sessions
+- Include debugging techniques (console.log, breakpoints)
+- Demonstrate real-world applications
+- Use interactive examples that students can modify
+
+## Testing and Debugging
+- Include console.log statements for debugging
+- Show browser developer tools usage
+- Provide error scenarios and solutions
+- Use try-catch blocks for robust error handling
+- Demonstrate debugging best practices
+description:
+globs:
+alwaysApply: false
+---

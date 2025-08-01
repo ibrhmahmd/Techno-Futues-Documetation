@@ -1,0 +1,53 @@
+# Educational Software Development Workspace Structure
+
+This is a comprehensive educational workspace for teaching software development across multiple skill levels and technologies.
+
+## Main Project Areas
+
+### Software/ - Main Web Development Course
+The primary web development curriculum with structured modules:
+- [HTML/](mdc:Software/HTML/) - 5 sessions covering HTML fundamentals
+- [CSS/](mdc:Software/CSS/) - 10 sessions covering CSS styling and layout
+- [JavaScript/](mdc:Software/JavaScript/) - 15 sessions covering JavaScript programming
+- [Python/](mdc:Software/Python/) - Python programming modules (Junior and Standard levels)
+- [README.md](mdc:Software/README.md) - Main course overview and structure
+- [Web_Development_Course_Overview.md](mdc:Software/Web_Development_Course_Overview.md) - Detailed syllabus
+
+### Juniors-Software/ - Beginner-Friendly HTML Course
+Specialized curriculum for younger learners:
+- [Juniors.md](mdc:Juniors-Software/Juniors.md) - Complete course outline with 2 levels
+- Level 1 (HTML) - 5 sessions covering basic HTML structure
+- Level 2 (HTML, CSS) - 5 sessions introducing CSS styling
+
+### Advanced-JS/ - Advanced JavaScript Course
+Advanced JavaScript curriculum with 9 sessions:
+- [Review-DOC.md](mdc:Advanced-JS/Review-DOC.md) - Comprehensive session summaries
+- [LoginValidationScript.js](mdc:Advanced-JS/LoginValidationScript.js) - Example validation code
+- Sessions/ - Organized session materials by groups
+
+### Other Educational Areas
+- [Robotics/](mdc:Robotics/) - EV3 and Spike Essential robotics content
+- [Afro-Asian-Docs/](mdc:Afro-Asian-Docs/) - Competition and project documentation
+- [Doc Templates/](mdc:Doc Templates/) - Reusable documentation templates
+
+## Session Structure Pattern
+Each session typically contains:
+- **Demo/** - Working code examples and demonstrations
+- **Docs/** - Documentation, PDFs, and learning materials
+- **Task.md** - Assignment instructions (when applicable)
+
+## Teaching Methodology
+- **Demo: I code** (20-30 min) - Instructor demonstrates concepts
+- **Apply: You code** (15-20 min) - Students practice immediately  
+- **Feedback and help** - Interactive assistance
+- **Wrap-up** - Summary and homework assignment
+
+## File Naming Conventions
+- Session materials use "Session X" format
+- Documentation files use descriptive names with .md and .pdf versions
+- Demo files are typically index.html, script.js, and style.css
+- Settings files use settings-template.json format
+description:
+globs:
+alwaysApply: false
+---

@@ -1,0 +1,64 @@
+# Web Development Patterns for Educational Content
+
+## HTML Structure Standards
+- Always use proper DOCTYPE declaration: `<!DOCTYPE html>`
+- Include semantic HTML5 elements when appropriate (header, nav, main, section, article, footer)
+- Use descriptive alt attributes for images
+- Follow accessibility best practices with proper heading hierarchy (h1-h6)
+- Include viewport meta tag for responsive design: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+## CSS Organization
+- Use external CSS files when possible (style.css)
+- Follow BEM methodology for class naming when teaching advanced concepts
+- Use CSS custom properties (variables) for consistent theming
+- Implement responsive design with media queries
+- Use flexbox and grid for modern layouts
+
+## JavaScript Best Practices
+- Use `const` and `let` instead of `var` (ES6+ standards)
+- Implement proper error handling with try-catch blocks
+- Use template literals for string interpolation
+- Follow functional programming principles when appropriate
+- Use modern array methods (map, filter, reduce) instead of traditional loops
+
+## Educational Code Examples
+- Keep examples simple and focused on single concepts
+- Include comments explaining complex logic
+- Use descriptive variable and function names
+- Provide both basic and advanced implementations
+- Include console.log statements for debugging demonstrations
+
+## File Organization in Sessions
+- **index.html** - Main HTML structure
+- **script.js** - JavaScript functionality
+- **style.css** - CSS styling
+- **settings-template.json** - Configuration files
+- **Session X.md** - Session documentation
+
+## Demo Structure Pattern
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Content here -->
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+## Teaching Code Standards
+- Use consistent indentation (2 or 4 spaces)
+- Include explanatory comments for educational purposes
+- Demonstrate progressive enhancement
+- Show both inline and external styling approaches
+- Include interactive elements for engagement
+description:
+globs:
+alwaysApply: false
+---

@@ -1,0 +1,80 @@
+# Juniors Curriculum Guidelines
+
+## Target Audience
+- Younger learners (typically 7-12 years old)
+- Beginners with basic computer skills
+- Students learning HTML and CSS for the first time
+
+## Teaching Approach for Juniors
+- Use simple, concrete analogies (e.g., "head is like the brain", "body is like the body")
+- Focus on visual and interactive learning
+- Keep code examples short and focused
+- Use colorful, engaging examples
+- Provide immediate visual feedback
+
+## Level 1 (HTML Fundamentals) Structure
+Based on [Juniors.md](mdc:Juniors-Software/Juniors.md):
+
+### Session Progression
+1. **Session 1**: Web Page Blocks - Basic structure, headers, paragraphs
+2. **Session 2**: Text Styling and Images - formatting, images, attributes
+3. **Session 3**: Lists and Links - OL, UL, LI, hyperlinks
+4. **Session 4**: Major Revision and Input Elements - review + inputs
+5. **Session 5**: Forms - Creating forms with inputs and submit
+
+### Code Examples for Juniors
+- Use simple, descriptive variable names
+- Include lots of comments
+- Show immediate visual results
+- Use familiar topics (pets, hobbies, favorite things)
+
+## Level 2 (HTML + CSS) Structure
+1. **Session 1**: Div, Span, Semantic Tags and Audio
+2. **Session 2**: Tables - Creating and styling tables
+3. **Session 3**: Simple CSS Styling - Introduction to CSS
+4. **Session 4**: CSS Classes - Reusable styling
+5. **Session 5**: Final Project - Complete multi-page website
+
+## Junior-Friendly Code Patterns
+```html
+<!-- Use descriptive comments -->
+<h1>My Pet Page</h1>  <!-- Big title about my pet -->
+<p>This is my cat Zaki.</p>  <!-- Tell about my pet -->
+
+<!-- Simple, colorful examples -->
+<div style="background-color:lightblue; border: 2px solid blue;">
+    <h2 style="color:navy;">Blue Box</h2>
+    <p>Everything in this box has blue background!</p>
+</div>
+```
+
+## Activity Guidelines
+- Create personal pages about their interests
+- Use familiar topics (pets, games, sports, music)
+- Include hands-on activities with immediate results
+- Provide step-by-step instructions
+- Allow for creativity and personalization
+
+## Assessment for Juniors
+- Focus on completion rather than perfection
+- Celebrate small achievements
+- Provide positive reinforcement
+- Allow for multiple attempts
+- Encourage creativity and experimentation
+
+## File Organization
+- Keep session folders simple and clear
+- Use descriptive folder names
+- Include both demo and documentation
+- Provide templates for consistency
+
+## Communication Style
+- Use simple, clear language
+- Avoid technical jargon
+- Provide visual examples
+- Use analogies and metaphors
+- Encourage questions and exploration
+description:
+globs:
+alwaysApply: false
+---
