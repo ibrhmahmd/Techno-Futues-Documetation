@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 8 Demo - Forms & Input Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Forms & Input Validation</h1>
+  </header>
+  <main>
+    <form id="registrationForm">
+      <section aria-labelledby="username-section">
+        <h2 id="username-section">Username Validation</h2>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <p id="usernameError" class="error"></p>
+      </section>
+
+      <section aria-labelledby="email-section">
+        <h2 id="email-section">Email Validation</h2>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <p id="emailError" class="error"></p>
+      </section>
+
+      <section aria-labelledby="password-section">
+        <h2 id="password-section">Password Validation</h2>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <p id="passwordError" class="error"></p>
+      </section>
+
+      <section aria-labelledby="terms-section">
+        <h2 id="terms-section">Terms Agreement</h2>
+        <label>
+          <input type="checkbox" id="agreeTerms" name="agreeTerms">
+          I agree to the terms and conditions
+        </label>
+      </section>
+
+      <button type="submit" id="submitBtn">Register</button>
+    </form>
+
+    <section aria-labelledby="console-output">
+      <h2 id="console-output">Console Output</h2>
+      <p>Open your browser console to see validation details.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
