@@ -19,18 +19,37 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridGapValue = document.getElementById('grid-gap-value');
     const flexCode = document.getElementById('flex-code');
     const gridCode = document.getElementById('grid-code');
+    const hoverCode = document.getElementById('hover-code');
     const copyButtons = document.querySelectorAll('.copy-button');
+    
+    // Hover Effect Controls
+    const scaleValue = document.getElementById('scale-value');
+    const scaleInput = document.getElementById('scale');
+    const rotateValue = document.getElementById('rotate-value');
+    const rotateInput = document.getElementById('rotate');
+    const translateXValue = document.getElementById('translate-x-value');
+    const translateXInput = document.getElementById('translate-x');
+    const shadowX = document.getElementById('shadow-x');
+    const shadowY = document.getElementById('shadow-y');
+    const shadowBlur = document.getElementById('shadow-blur');
+    const shadowColor = document.getElementById('shadow-color');
+    const transitionDuration = document.getElementById('transition-duration');
+    const transitionTiming = document.getElementById('transition-timing');
+    const hoverDemo = document.querySelector('.hover-demo');
+    const hoverEffectType = document.getElementById('hover-effect-type');
 
     // Initialize the demo
     function init() {
         // Set up event listeners
         setupFlexControls();
         setupGridControls();
+        setupHoverControls();
         setupCodeCopy();
         
         // Initial updates
         updateFlexCode();
         updateGridCode();
+        updateHoverCode();
         
         // Add console message for developers
         console.log('%c🎨 Layout Basics Demo', 
@@ -121,6 +140,165 @@ document.addEventListener('DOMContentLoaded', function() {
         
         gridCode.textContent = code;
         Prism.highlightElement(gridCode);
+    }
+    
+    // Set up hover effect controls
+    function setupHoverControls() {
+        // Handle effect type change
+        hoverEffectType.addEventListener('change', function() {
+            // Hide all options first
+            document.querySelectorAll('.effect-options').forEach(option => {
+                option.style.display = 'none';
+            });
+            
+            // Show selected effect options
+            const selectedEffect = this.value;
+            if (selectedEffect === 'scale') {
+                document.getElementById('scale-options').style.display = 'block';
+            } else if (selectedEffect === 'transform') {
+                document.getElementById('transform-options').style.display = 'block';
+            } else if (selectedEffect === 'shadow') {
+                document.getElementById('shadow-options').style.display = 'block';
+            }
+            
+            updateHoverDemo();
+            updateHoverCode();
+        });
+        
+        // Initialize with scale effect
+        document.getElementById('scale-options').style.display = 'block';
+        
+        // Update scale value display
+        scaleInput.addEventListener('input', function() {
+            scaleValue.textContent = this.value;
+            updateHoverDemo();
+            updateHoverCode();
+        });
+        
+        // Update rotate value display
+        rotateInput.addEventListener('input', function() {
+            rotateValue.textContent = this.value + 'deg';
+            updateHoverDemo();
+            updateHoverCode();
+        });
+        
+        // Update translateX value display
+        translateXInput.addEventListener('input', function() {
+            translateXValue.textContent = this.value + 'px';
+            updateHoverDemo();
+            updateHoverCode();
+        });
+        
+        // Update shadow controls
+        const shadowControls = [
+            shadowX, shadowY, shadowBlur, shadowColor, 
+            transitionDuration, transitionTiming
+        ];
+        
+        // Update shadow value displays
+        shadowX.addEventListener('input', function() {
+            document.getElementById('shadow-x-value').textContent = this.value + 'px';
+        });
+        
+        shadowY.addEventListener('input', function() {
+            document.getElementById('shadow-y-value').textContent = this.value + 'px';
+        });
+        
+        shadowBlur.addEventListener('input', function() {
+            document.getElementById('shadow-blur-value').textContent = this.value + 'px';
+        });
+        
+        // Update transition duration display
+        transitionDuration.addEventListener('input', function() {
+            document.getElementById('duration-value').textContent = this.value;
+        });
+        
+        // Add event listeners for all controls
+        shadowControls.forEach(control => {
+            control.addEventListener('input', function() {
+                updateHoverDemo();
+                updateHoverCode();
+            });
+        });
+    }
+    
+    // Update hover demo based on controls
+    function updateHoverDemo() {
+        const scale = scaleInput.value;
+        const rotate = rotateInput.value;
+        const translateX = translateXInput.value;
+        const shadow = `${shadowX.value}px ${shadowY.value}px ${shadowBlur.value}px ${shadowColor.value}`;
+        const duration = transitionDuration.value;
+        const timing = transitionTiming.value;
+        const effectType = hoverEffectType.value;
+        
+        // Reset all hover effects
+        hoverDemo.style.transform = '';
+        hoverDemo.style.boxShadow = '';
+        hoverDemo.style.backgroundColor = '';
+        hoverDemo.style.color = '';
+        hoverDemo.style.transition = '';
+        
+        // Apply selected effect
+        switch(effectType) {
+            case 'scale':
+                hoverDemo.style.transform = `scale(${scale})`;
+                hoverDemo.style.transition = `all ${duration}ms ${timing}`;
+                break;
+                
+            case 'color':
+                hoverDemo.style.backgroundColor = '#2c3e50';
+                hoverDemo.style.color = 'white';
+                hoverDemo.style.transition = `all ${duration}ms ${timing}`;
+                break;
+                
+            case 'shadow':
+                hoverDemo.style.boxShadow = shadow;
+                hoverDemo.style.transform = `translateY(-3px)`;
+                hoverDemo.style.transition = `all ${duration}ms ${timing}`;
+                break;
+                
+            case 'transform':
+                hoverDemo.style.transform = `rotate(${rotate}deg) translateX(${translateX}px)`;
+                hoverDemo.style.transition = `all ${duration}ms ${timing}`;
+                break;
+        }
+    }
+    
+    // Update hover effect code preview
+    function updateHoverCode() {
+        const scale = scaleInput.value;
+        const rotate = rotateInput.value;
+        const translateX = translateXInput.value;
+        const shadow = `${shadowX.value}px ${shadowY.value}px ${shadowBlur.value}px ${shadowColor.value}`;
+        const duration = transitionDuration.value;
+        const timing = transitionTiming.value;
+        const effectType = hoverEffectType.value;
+        
+        let code = `/* ${effectType.charAt(0).toUpperCase() + effectType.slice(1)} Effect */\n`;
+        
+        switch(effectType) {
+            case 'scale':
+                code += `.element:hover {\n  transform: scale(${scale});\n  transition: all ${duration}ms ${timing};\n}`;
+                break;
+                
+            case 'color':
+                code += `.element:hover {\n  background-color: #2c3e50;\n  color: white;\n  transition: all ${duration}ms ${timing};\n}`;
+                break;
+                
+            case 'shadow':
+                code += `.element:hover {\n  box-shadow: ${shadow};\n  transform: translateY(-3px);\n  transition: all ${duration}ms ${timing};\n}`;
+                break;
+                
+            case 'transform':
+                code += `.element:hover {\n  transform: rotate(${rotate}deg) translateX(${translateX}px);\n  transition: all ${duration}ms ${timing};\n}`;
+                break;
+        }
+        
+        if (hoverCode) {
+            hoverCode.textContent = code;
+            Prism.highlightElement(hoverCode);
+        }
     }
     
     // Set up copy to clipboard functionality

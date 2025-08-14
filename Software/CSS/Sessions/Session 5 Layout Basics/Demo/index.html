@@ -6,6 +6,10 @@
     <title>CSS - Session 5: Layout Basics</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Prism.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -234,6 +238,116 @@
     .holy-nav, .holy-sidebar {
         order: 2;
     }
+}</code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+        </section>
+
+        <!-- Hover Effects -->
+        <section class="demo-section">
+            <h2>Hover Effects</h2>
+            <p>Customize hover effects with the controls below and see the results in real-time. The code will update automatically.</p>
+            
+            <div class="hover-controls">
+                <div class="control-group">
+                    <label for="hover-effect-type">Effect Type:</label>
+                    <select id="hover-effect-type">
+                        <option value="scale">Scale</option>
+                        <option value="color">Color Change</option>
+                        <option value="shadow">Shadow</option>
+                        <option value="transform">Transform</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="transition-duration">Duration: <span id="duration-value">300</span>ms</label>
+                    <input type="range" id="transition-duration" min="100" max="1000" step="50" value="300">
+                </div>
+                
+                <div class="control-group">
+                    <label for="transition-timing">Timing Function:</label>
+                    <select id="transition-timing">
+                        <option value="ease">ease</option>
+                        <option value="ease-in">ease-in</option>
+                        <option value="ease-out">ease-out</option>
+                        <option value="ease-in-out">ease-in-out</option>
+                        <option value="linear">linear</option>
+                        <option value="cubic-bezier(0.68, -0.55, 0.27, 1.55)">bounce</option>
+                    </select>
+                </div>
+                
+                <div class="effect-options" id="scale-options">
+                    <h4>Scale Options</h4>
+                    <div class="control-group">
+                        <label for="scale">Scale: <span id="scale-value">1.1</span>x</label>
+                        <input type="range" id="scale" min="0.5" max="2" step="0.1" value="1.1">
+                    </div>
+                </div>
+                
+                <div class="effect-options" id="transform-options">
+                    <h4>Transform Options</h4>
+                    <div class="control-group">
+                        <label for="rotate">Rotate: <span id="rotate-value">5deg</span></label>
+                        <input type="range" id="rotate" min="-180" max="180" step="1" value="5">
+                    </div>
+                    <div class="control-group">
+                        <label for="translate-x">Translate X: <span id="translate-x-value">10px</span></label>
+                        <input type="range" id="translate-x" min="-50" max="50" step="1" value="10">
+                    </div>
+                </div>
+                
+                <div class="effect-options" id="shadow-options">
+                    <h4>Shadow Options</h4>
+                    <div class="control-group">
+                        <label for="shadow-x">X-offset: <span id="shadow-x-value">0px</span></label>
+                        <input type="range" id="shadow-x" min="-20" max="20" step="1" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label for="shadow-y">Y-offset: <span id="shadow-y-value">10px</span></label>
+                        <input type="range" id="shadow-y" min="0" max="20" step="1" value="10">
+                    </div>
+                    <div class="control-group">
+                        <label for="shadow-blur">Blur: <span id="shadow-blur-value">20px</span></label>
+                        <input type="range" id="shadow-blur" min="0" max="50" step="1" value="20">
+                    </div>
+                    <div class="control-group">
+                        <label for="shadow-color">Color:</label>
+                        <input type="color" id="shadow-color" value="#000000">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hover-preview">
+                <h3>Preview</h3>
+                <div class="hover-demo">Hover over me!</div>
+            </div>
+            
+            <div class="code-container">
+                <h3>CSS Code:</h3>
+                <pre><code class="language-css">/* Scale Effect */
+.scale .hover-demo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Color Change */
+.color-change .hover-demo:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Shadow Effect */
+.shadow .hover-demo:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Transform */
+.transform .hover-demo:hover {
+    transform: rotate(5deg) translateX(10px);
+    transition: transform 0.3s ease;
 }</code></pre>
                 <button class="copy-button">Copy Code</button>
             </div>

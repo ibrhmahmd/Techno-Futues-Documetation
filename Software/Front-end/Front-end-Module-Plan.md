@@ -10,7 +10,6 @@
 ### Session 1: Front-End Basics & Bootstrap Grid
 - What is front-end development?
 - Bootstrap grid system (new concepts only)
-- UI/UX: Mobile-first design
 - Simple JS: Dynamic container creation
 - Task: Create a simple responsive layout
 

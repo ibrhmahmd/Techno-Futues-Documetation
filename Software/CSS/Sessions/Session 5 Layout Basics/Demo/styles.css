@@ -373,6 +373,111 @@ a:hover {
     padding: 1rem;
 }
 
+/* Hover Effects */
+.hover-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hover-preview {
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.hover-demo {
+    background: var(--secondary-color);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 180px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+}
+
+/* Effect Options Styling */
+.effect-options {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    display: none;
+    border: 1px solid #e9ecef;
+}
+
+.effect-options h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Show active effect options */
+#scale-options[style*="display: block"],
+#shadow-options[style*="display: block"],
+#transform-options[style*="display: block"] {
+    display: block !important;
+}
+
+/* Control Group Styling */
+.control-group {
+    margin-bottom: 15px;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.control-group input[type="range"],
+.control-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.control-group input[type="color"] {
+    width: 100%;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hover-controls {
+        grid-template-columns: 1fr;
+    }
+    
+    .hover-demo {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 /* Code Containers */
 .code-container {
     margin: 1.5rem 0;

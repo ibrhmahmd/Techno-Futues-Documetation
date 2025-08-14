@@ -1,0 +1,87 @@
+.header {
+    background-color: red;
+    border: 5px solid black;
+    color: blue;
+    box-shadow: 2px 2px 5px rgb(25, 156, 20);
+    border-radius: 25px;
+
+}
+
+
+
+.btn {
+    background-color: red;
+    border: 5px solid black;
+    color: blue;
+    box-shadow: 2px 2px 5px rgb(25, 156, 20);
+    border-radius: 25px;
+}
+
+
+
+.btn:hover {
+    background-color: blue;
+    width: 150px;
+    height: 50px;
+    color: red;
+}
+
+
+
+.image {
+    border-radius: 25px;
+}
+
+
+
+.image:hover {
+    box-shadow: 0 0 8px #3498db, 0 0 16px #3498db;
+}
+
+
+
+
+
+
+
+
+
+.u-list1{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.u-list2{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.u-list3{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.u-list4{
+    height: 700px;
+    border: 5px solid gray;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.item {
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding :10px
+}
