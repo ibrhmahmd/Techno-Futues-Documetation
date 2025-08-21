@@ -1,0 +1,40 @@
+.title {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+  font-family: "Cairo", sans-serif;
+  border-radius: 10px;
+
+  box-shadow: 3px 3px 5px blue;
+}
+
+.subtitle {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  box-shadow: 3px 3px 5px red;
+}
+
+.ibrahim {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  box-shadow: 3px 3px 5px green;
+
+  width: 300px;
+  text-align: center;
+
+  text-shadow: 1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;
+}
+
+.lorem {
+  background-color: rgb(255, 255, 0);
+  line-height: 1.5;
+  letter-spacing: 3;
+  word-spacing: 10px;
+}
