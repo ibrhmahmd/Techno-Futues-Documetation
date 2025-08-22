@@ -1,0 +1,115 @@
+/* Holy Grail Layout (CSS Grid) */
+:root {
+  --gap: 16px;
+  --sidebar: 220px;
+  --bg: #f7f7f9;
+  --ink: #222;
+  --brand: #4c8bf5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.page {
+  min-height: 100dvh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header,
+.site-footer {
+  background: #fff;
+  border-block: 1px solid #e6e6ef;
+  padding: 16px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.layout {
+  flex: 1 1 auto; /* push footer to bottom when content is short */
+  display: grid;
+  gap: var(--gap);
+  padding: var(--gap);
+  grid-template-columns: 1fr; /* mobile-first: single column */
+}
+
+.sidebar-left,
+.sidebar-right,
+.content {
+  background: #fff;
+  border: 1px solid #e6e6ef;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.sidebar-left h3,
+.sidebar-right h3 {
+  margin-top: 0;
+}
+
+/* Desktop: three columns */
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: var(--sidebar) 1fr var(--sidebar);
+    grid-template-areas: "left content right";
+  }
+  .sidebar-left {
+    grid-area: left;
+  }
+  .content {
+    grid-area: content;
+  }
+  .sidebar-right {
+    grid-area: right;
+  }
+}
+
+/* Simple visuals */
+.sidebar-left {
+  border-color: #d9e4ff;
+}
+.sidebar-right {
+  border-color: #ffd9e0;
+}
+.content {
+  border-color: #d9f7e8;
+}
+
+.site-footer {
+  text-align: center;
+  color: #666;
+  background: #fafafa;
+}
+
+/* Demo helpers (not required) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  margin-bottom: 8px;
+}
+nav a {
+  color: var(--brand);
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}

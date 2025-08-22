@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header style="position: sticky; top: 0; background:#222; color:#fff; padding: 10px; z-index: 1;">
+    <h1 style="margin:0; font-size: 18px;">CSS Position Demo</h1>
+  </header>
+
+  <main class="container">
+    <section style="margin: 24px 0;">
+      <h2>static</h2>
+      <div class="box" style="position: static;">static (top/left ignored)</div>
+    </section>
+    <br>
+    <br>
+    <section style="margin: 24px 0;">
+        <h2>sticky</h2>
+        <div class="box" style=" position: sticky; top: 8px; background:#e67e22;">sticky (top: 8px)</div>
+        <p>Scroll to see the sticky box stick near the top.</p>
+      </section>
+      <br>
+      <br>
+    <section style="margin: 24px 0;">
+      <h2>relative</h2>
+      <div class="box" style="position: relative; top: 10px; left: 20px;">relative (top:10px; left:20px)</div>
+    </section>
+    <br>
+    <br>
+    <section style="margin: 24px 0;">
+      <h2>absolute</h2>
+      <div style="position: relative; height: 150px; background:#f0f0f0; border:1px dashed #bbb;">
+        <div class="box" style="position: absolute; top: 10px; right: 10px;">absolute (to parent)</div>
+      </div>
+    </section>
+
+    
+
+    <section style="height: 800px;">
+      <p>Filler content for scrolling...</p>
+    </section>
+  </main>
+
+  <div style="position: fixed; bottom: 12px; right: 12px; background:#2ecc71; color:#fff; padding:8px 12px; border-radius:6px; font: 14px/1.2 sans-serif; box-shadow:0 2px 8px rgba(0,0,0,.15);">
+    fixed
+  </div>
+</body>
+
+</html>
