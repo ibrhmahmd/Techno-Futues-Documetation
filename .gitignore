@@ -1,0 +1,34 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# iCloud placeholders
+*.icloud
+
+# Obsidian (ignore ephemeral state, keep configs)
+.obsidian/cache/
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/appearance.json
+.obsidian/plugins/*/data.json
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.code-workspace
+#.cursor
+
+# Temp/backup
+~$*
+*.tmp
+*.swp
+*.bak
+
+# Logs
+*.log
+
+# Project-specific (keep if intentional)
+Robotics/
+.cursorrules
