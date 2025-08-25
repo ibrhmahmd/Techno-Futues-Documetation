@@ -4,39 +4,7 @@ author: "---"
 date: "2025-08-09"
 ---
 
-## Topic 1: Hover Effect
-
-<div class="arabic">
-تأثير الـ Hover لتغيير مظهر العنصر عند مرور مؤشر الفأرة عليه
-</div>
-
-### مثال
-
-```html
-<button class="btn">TEST</button>
-<img src="https://placehold.co/600x400" class="image" />
-```
-
-```css
-.btn:hover {
-  background-color: blue;
-  width: 150px;
-  height: 50px;
-  color: red;
-}
-
-.image:hover {
-  box-shadow: 0 0 8px #3498db, 0 0 16px #3498db;
-}
-```
-
-<div class="arabic">
-عند مرور المؤشر على الزر أو الصورة يتغير اللون أو يُضاف ظل مميز لإبراز العنصر.
-</div>
-
----
-
-## Topic 2: Flexbox Basics
+## Topic 1: Flexbox Basics
 
 <div class="arabic">
 مقدمة عن Flexbox لتنظيم العناصر داخل الحاويات بسهولة والتحكم باتجاهها ومحاذاتها.
@@ -136,11 +104,10 @@ Aligns items on the cross-axis (vertical when `flex-direction: row`).
 المفاهيم الأساسية التي تم تناولها في هذه الجلسة:
 </div>
 
-1. **Hover Effect** – تغيير مظهر العنصر عند المرور عليه.
-2. **display: flex** – تفعيل وضع Flexbox.
-3. **flex-direction** – تحديد اتجاه العناصر.
-4. **justify-content** – توزيع العناصر على المحور الرئيسي.
-5. **align-items** – محاذاة العناصر على المحور المتقاطع.
+1. **display: flex** – تفعيل وضع Flexbox.
+2. **flex-direction** – تحديد اتجاه العناصر.
+3. **justify-content** – توزيع العناصر على المحور الرئيسي.
+4. **align-items** – محاذاة العناصر على المحور المتقاطع.
 
 ---
 
@@ -170,7 +137,7 @@ Aligns items on the cross-axis (vertical when `flex-direction: row`).
 ## Resources
 
 <div class="arabic">
-مصادر إضافية للتعمق في خصائص Flexbox و تأثيرات Hover:
+مصادر إضافية للتعمق في خصائص Flexbox تأثيرات :
 </div>
 
 | Topic | Link |

@@ -2,11 +2,12 @@ import random
 
 list = ["✂️", '🪨', '📃']
 
-number_of_games = 5 
 
-while number_of_games >= 0:
-    
-    user_input = input("ادخل اختيارك :")
+
+def game(score):
+
+    user_input = input("enter your choice :")
+
     computer_choice = random.choice(list)
     
     print("The computer choice is : " + computer_choice)
@@ -21,7 +22,9 @@ while number_of_games >= 0:
          user_input == "🪨" and computer_choice == "✂️" or
          user_input == "✂️" and computer_choice ==  "📃"
          ):
-            
+        
+        score = score + 1
+
         print("you WOONN 🎆🎆")
         
     elif ( 
@@ -34,7 +37,34 @@ while number_of_games >= 0:
     
     else: 
          print("choose only from : " + list )
+
+    return score
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+number_of_games = 5 
+score = 0
+
+while number_of_games >= 0:
+
+    score = game(score)
+    
+    print("Your Score is : " + str(score) )
+
     number_of_games = number_of_games - 1
+
     
 
 
